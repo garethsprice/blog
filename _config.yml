@@ -1,0 +1,35 @@
+title: Gareth Price
+tagline: "CTO. AI Engineer. Builder."
+description: >-
+  Thoughts on AI, engineering leadership, and building technology teams
+  from a startup CTO with an AI degree, ex-NYT, and 2021 Pulitzer Prize contributor.
+url: "https://www.garethsprice.com"
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:title/
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: Gareth Price
+  title: "CTO @ CorralData"
+  email: gareth.s.price@gmail.com
+  linkedin: https://www.linkedin.com/in/garethsprice
+  website: https://www.garethsprice.com
+  bio: >-
+    CTO with an AI degree from the University of Manchester, 14+ years
+    hands-on engineering and 6+ years leadership experience. Currently
+    building AI tools at CorralData. Previously led teams at The New York
+    Times contributing to the 2021 Pulitzer Prize and +$500MM ARR growth.
+  location: "New York, NY"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Gareth Price

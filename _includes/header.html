@@ -1,0 +1,4 @@
+<header>
+  <h1>{% if page.url == '/' %}{{ site.title | escape }}{% else %}<a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>{% endif %}</h1>
+  <p>{{ site.tagline | escape }}</p>
+</header>

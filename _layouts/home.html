@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="intro">
+  {{ content }}
+</section>
+
+<section class="posts">
+  <h2>Latest Posts</h2>
+  {% for post in site.posts %}
+  <article class="post-preview">
+    <header>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    </header>
+    {% if post.excerpt %}
+    <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>

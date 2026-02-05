@@ -1,0 +1,40 @@
+/* 12-column typographic grid system
+   Columns: 12 | Gutter: 1.25rem | Margin: 1.5rem
+   Breakpoints: 12 col (>=64rem) → 8 col (>=40rem) → 4 col (<40rem) */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1.25rem;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+body > header { grid-column: 1 / -1; }
+body > nav    { grid-column: 1 / span 3; }
+body > main   { grid-column: 4 / -1; }
+body > footer { grid-column: 1 / -1; }
+
+@media (max-width: 64rem) {
+  body {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  body > nav,
+  body > main {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 64.01rem) {
+  nav summary {
+    display: none;
+  }
+}
+
+@media (max-width: 40rem) {
+  body {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
