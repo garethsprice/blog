@@ -8,4 +8,4 @@ bundle exec jekyll serve --baseurl ''
 ```
 
 ## GitHub Pages
-If your repo name is not `jekyll`, set `baseurl` in `_config.yml` to `"/your-repo-name"` so asset and nav links work on GitHub Pages.
+Uses the default **Deploy from a branch** build. Ensure **Settings → Pages** has the correct branch and that `baseurl` in `_config.yml` matches your repo name (e.g. `/blog`).
