@@ -3,8 +3,8 @@ tagline: "CTO. AI Engineer. Builder."
 description: >-
   Thoughts on AI, engineering leadership, and building technology teams
   from a startup CTO with an AI degree, ex-NYT, and 2021 Pulitzer Prize contributor.
-url: "https://www.garethsprice.com"
-baseurl: ""
+url: "http://garethsprice.github.io"
+baseurl: "/blog"
 markdown: kramdown
 permalink: /blog/:title/
 excerpt_separator: "<!--more-->"
