@@ -10,8 +10,10 @@ module Jekyll
         return if ARGV.include?("--no-revision")
         %w(posts pages docs_to_write).each do |type|
           site.send(type).each do |item|
-            revisions = GitLogger.new(site.source, item.path, site.config['revision']).revisions
+            logger = GitLogger.new(site.source, item.path, site.config['revision'])
+            revisions = logger.revisions
             item.data['revisions'] = revisions
+            item.data['revisions_max_count'] = logger.max_count
             item.data['last_modified_at'] = revisions&.first&.dig('date')
           end
         end
@@ -29,19 +31,66 @@ module Jekyll
 
       def revisions
         return nil unless is_git_repo?
-        logs = Executor.sh('git', 'log', '--pretty=%h|%ci|%an|%s', '--max-count=' + max_count.to_s, relative_path_from_git_dir)
-        logs.lines.map do |line|
-          parts = line.split('|')
-          {"short_hash" => parts[0], "date" => parts[1], "author" => parts[2], "message" => parts[3..-1].join('|')}
+        logs = Executor.sh(
+          'git', 'log',
+          '--pretty=COMMIT|%h|%ci|%an|%s',
+          '--name-status',
+          '--follow',
+          '--max-count=' + max_count.to_s,
+          '--',
+          relative_path_from_git_dir
+        )
+        parse_logs(logs)
+      end
+
+      def parse_logs(logs)
+        return [] if logs.nil? || logs.empty?
+        revisions = []
+        current_revision = nil
+
+        logs.lines.each do |line|
+          line = line.strip
+          next if line.empty?
+
+          if line.start_with?('COMMIT|')
+            revisions << current_revision if current_revision
+            parts = line.sub('COMMIT|', '').split('|')
+            current_revision = {
+              "short_hash" => parts[0],
+              "date" => parts[1],
+              "author" => parts[2],
+              "message" => parts[3..-1]&.join('|')&.strip,
+              "status" => nil,
+              "renamed_from" => nil
+            }
+          elsif current_revision
+            # Parse name-status line (e.g., "M\tfile.md" or "R100\told.md\tnew.md")
+            if line =~ /^([AMDRT])(\d*)\t(.+)$/
+              status_code = $1
+              paths = $3.split("\t")
+              current_revision["status"] = case status_code
+                when 'A' then 'added'
+                when 'M' then 'modified'
+                when 'D' then 'deleted'
+                when 'R' then 'renamed'
+                when 'T' then 'type_changed'
+                else status_code
+              end
+              current_revision["renamed_from"] = paths[0] if status_code == 'R' && paths.length > 1
+            end
+          end
         end
+
+        revisions << current_revision if current_revision
+        revisions
+      end
+
+      def max_count
+        config['max_revisions_count'] || 5
       end
 
       private
-      
-      def max_count
-        config['max_count'] || 5
-      end
-      
+
       def is_git_repo?
         @@is_git_repo ||= begin
           Dir.chdir(site_source) do
