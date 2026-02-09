@@ -1,8 +1,10 @@
 .PHONY: serve build clean install update
 
+JEKYLL = docker run --rm -v "$$PWD":/srv/jekyll jekyll/jekyll:4
+
 # Run Jekyll development server
 serve:
-	docker run --rm -v "$$PWD":/srv/jekyll -p 4000:4000 jekyll/jekyll:4 jekyll serve --watch --drafts
+	$(JEKYLL) -p 4000:4000 jekyll serve --watch --drafts
 
 # Build the site for production
 build:
@@ -14,8 +16,8 @@ clean:
 
 # Install/update dependencies
 install:
-	docker run --rm -v "$$PWD":/srv/jekyll -w /srv/jekyll ruby:3.2 bundle install
+	$(JEKYLL) bundle install
 
 # Update dependencies
 update:
-	docker run --rm -v "$$PWD":/srv/jekyll -w /srv/jekyll ruby:3.2 bundle update
+	$(JEKYLL) bundle update
