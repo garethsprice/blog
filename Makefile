@@ -1,11 +1,11 @@
 .PHONY: up serve build clean install update
 
-DOCKER = docker run --rm -v "$$PWD":/srv/jekyll
+DOCKER = docker run -v "$$PWD":/srv/jekyll
 
 # Run Jekyll development server (serves from root /)
 up: serve
 serve:
-	$(DOCKER) -p 4000:4000 jekyll/jekyll:4 jekyll serve --watch --baseurl ''
+	$(DOCKER) -p 4000:4000 jekyll/jekyll:4 jekyll serve --watch --baseurl "/"
 
 # Build the site for production (uses /blog from _config.yml)
 build:
