@@ -3,14 +3,14 @@
 <aside>
   <details open>
     <summary>Commits</summary>
-  {% for rev in page.revisions %}
-      commit <a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a>
-      <div class="post-meta"><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | date: "%B %-d, %Y" }}</time></div>
-      {% if rev.author != site.author.name %}
-        <div class="post-meta">Author: {{ rev.author }}</div>
-      {% endif %}
-      <p><em>{{ rev.message }}</em></p>
-  {% endfor %}
+    {% for rev in page.revisions %}
+        commit <a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a>
+        <div class="post-meta"><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | date: "%B %-d, %Y" }}</time></div>
+        {% if rev.author != site.author.name %}
+          <div class="post-meta">Author: {{ rev.author }}</div>
+        {% endif %}
+        <p><em>{{ rev.message }}</em></p>
+    {% endfor %}
 </details>
 </aside>
 {% endif %}
