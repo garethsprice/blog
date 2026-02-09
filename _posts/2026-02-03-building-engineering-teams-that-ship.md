@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building Engineering Teams That Ship"
-date: 2026-02-03
+created_date: 2026-02-03
 ---
 
 I've built and managed engineering teams at organizations ranging from a 6-person agency to The New York Times. The scale changes, but the principles for building teams that consistently deliver don't.

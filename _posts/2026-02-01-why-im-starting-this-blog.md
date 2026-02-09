@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Why I'm Starting This Blog"
-date: 2026-02-01
+created_date: 2026-02-01
+updated_date: 2026-02-08
 ---
 
 I’ve spent nearly two decades building software and teams — running an agency, leading engineering teams at The New York Times, and now working as CTO at an AI startup. That work leaves you with opinions: about what actually works, what fails predictably, and which advice is detached from reality.
