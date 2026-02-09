@@ -8,6 +8,8 @@ baseurl: "/blog"
 markdown: kramdown
 permalink: /blog/:title/
 excerpt_separator: "<!--more-->"
+max_revisions_count: 3
+google_analytics_id: G-H4W90T5EWY
 
 collections:
   docs:
@@ -25,7 +27,6 @@ author:
   linkedin: https://www.linkedin.com/in/garethsprice
   github: https://www.github.com/garethsprice
   github_repo: https://www.github.com/garethsprice/blog
-  website: https://www.garethsprice.com
   bio: >-
     CTO with an AI degree from the University of Manchester, 14+ years
     hands-on engineering and 6+ years leadership experience. Currently
