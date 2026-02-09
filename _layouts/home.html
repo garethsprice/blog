@@ -25,7 +25,7 @@ layout: default
       <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>{% if age_seconds > 31536000 %} ({{ check_date | date: "%Y" }}){% endif %}</h3>
     </header>
     {% if post.excerpt %}
-    <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 40 }} <span class="reading-time"><em>{{ post.content | reading_time | append: " min read." }}</em></span></p>
     {% endif %}
   </article>
   {% endfor %}

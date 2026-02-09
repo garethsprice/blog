@@ -6,6 +6,7 @@ layout: default
   <article class="post">
     <header class="post-header">
       <h2>{{ page.title | escape }}</h2>
+      <p class="reading-time"><em>{{ page.content | reading_time | append: " min read" }}</em></p>
     </header>
     {{ content }}
     <footer class="post-footer">
