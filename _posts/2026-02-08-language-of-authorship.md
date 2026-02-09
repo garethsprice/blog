@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "A Word We Don't Have for a Problem We Can't Solve"
-date: 2026-02-08
+title: "Our Language of Authorship Is Unprepared for What Is Already Here"
+created_date: 2026-02-08
+updated_date: 2026-02-09
 ---
 
-### AI has not changed who is responsible for a claim. Our language has failed to keep up, and institutions are already enforcing rules they cannot define.
+### AI is becoming a writing partner, not just a writing tool. But we have no language for that collaboration - and institutions are already enforcing rules they cannot define.
 
 <!--more-->
 
@@ -38,7 +39,7 @@ That student in Georgia deserved a word for what she actually did, and a differe
 
 _This article was written syngraphically. The author supplied the arguments and judgments; multiple AI models assisted with drafting, revision and stress-testing._
 
-### Footnotes
+### References
 
 [^1]: Mobilio, A., Nijjar, B., Parrotta, C., & Burmanmore, J. (2024). The Grammarly girl: A case of "unintentional cheating." In J. Heng Hartse (Ed.), _Unveiling academic integrity: Case studies of real-world academic misconduct_. BCcampus. [https://pressbooks.bccampus.ca/aicasestudies/chapter/83/](https://pressbooks.bccampus.ca/aicasestudies/chapter/83/) 
 
