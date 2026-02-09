@@ -1,4 +1,8 @@
 <meta charset="utf-8">
+<script>
+var t = localStorage.getItem('theme');
+if (t) document.documentElement.style.colorScheme = t;
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark">
 <title>{% if page.title and page.title != "Home" %}{{ page.title | escape }} – {{ site.author.name }}, {{ site.author.title }} @ {{ site.author.company }} - {{ site.title | escape }}{% else %}{{ site.title | escape }} – {{ site.tagline | escape }}{% endif %}</title>

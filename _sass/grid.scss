@@ -17,7 +17,8 @@ body {
   margin: 1.5rem;
 }
 
-body > header   { grid-column: 1 / -1; }
+body > header   { grid-column: 1 / -1; position: relative; }
+.theme-toggle { position: absolute; top: 0; right: 0; background: none; border: none; cursor: pointer; }
 body > .sidebar { grid-column: 1 / span 3; }
 body > main     { grid-column: 4 / -1; }
 body > footer   { grid-column: 1 / -1; }
