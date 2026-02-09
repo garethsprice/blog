@@ -144,8 +144,6 @@ Credit sources plainly and accurately. Link where it helps the reader.
 
 Do not name institutions or credentials to borrow authority. Use them only when they materially affect the argument.
 
-Here’s a clean addition that fits the existing tone and influences. I’d place it as a short standalone section immediately after **Attribution**.
-
 ### Citations
 
 Use **APA citation style**, adapted for the web.
