@@ -1,32 +1,18 @@
 ---
-layout: post
-title: "Why I'm Starting This Blog"
+layout: page
+title: "Machine Collaboration Has Created a New Form of Writing, Perhaps"
 created_date: 2026-02-01
-updated_date: 2026-02-08
+updated_date: 2026-02-09
 ---
 
-I’ve spent nearly two decades building software and teams — running an agency, leading engineering teams at The New York Times, and now working as CTO at an AI startup. That work leaves you with opinions: about what actually works, what fails predictably, and which advice is detached from reality.
+### AI hasn't just made writing faster — it has changed what writing is. This blog exists to test that claim in public.
 
 <!--more-->
 
-Until recently, I didn’t feel much need to publish these opinions. What changed is the process. Writing can now be iterative and collaborative, with machine intelligence in the loop. The quality of that collaboration has improved dramatically in a short time, to the point where it’s changing how thinking gets onto the page. This blog is an experiment in exploring what that enables — and where it fails — in practice.
+I've been building software and teams for close to twenty years — running an agency, leading engineering teams at The New York Times, and now working as CTO at an AI startup. That work leaves you with opinions about what actually works, what fails predictably, and which advice is detached from reality.
 
-I’ll write from direct experience, focusing on:
+Until recently, I was too busy building to write about it. What changed is the process. Writing can now be iterative and collaborative, with machine intelligence in the loop. That collaboration has improved enough to change how thinking gets onto the page. This blog is an experiment in exploring what that enables — and where it fails — in practice.
 
-<dl>
-  <dt><strong>AI in practice.</strong></dt>
-  <dd>Building and operating AI systems in the real world. Tooling, tradeoffs, failure modes. No hype.</dd>
-
-  <dt><strong>Engineering leadership.</strong></dt>
-  <dd>How teams ship. Hiring, incentives, culture, and management. Mistakes included.</dd>
-
-  <dt><strong>Growth engineering.</strong></dt>
-  <dd>Treating growth as an engineering problem: experimentation, systems, and constraints.</dd>
-
-  <dt><strong>The startup CTO role.</strong></dt>
-  <dd>What the job actually looks like at an early-stage company, and how it differs from larger organizations.</dd>
-</dl>
-
-I’ve written and spoken publicly before, but I’ve never had a single place to think in public. This is that place.
+I'll write from direct experience, focusing on four areas. **AI in practice**: building and operating AI systems in the real world — tooling, tradeoffs, failure modes, no hype. **Engineering leadership**: how teams ship, how they don't, and why — hiring, incentives, culture, and management. **Growth engineering**: treating growth as an engineering problem with experimentation, systems, and constraints. **The startup CTO role**: what the job actually looks like at an early-stage company, and how it differs from larger organisations.
 
 No comments. If something here needs correction or extension, open an issue or submit a PR.
