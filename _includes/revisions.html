@@ -4,13 +4,18 @@
   <details open>
     <summary>Commits</summary>
     {% for rev in page.revisions %}
-        commit <a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a>
-        <div class="post-meta"><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | date: "%B %-d, %Y" }}</time></div>
-        {% if rev.author != site.author.name %}
-          <div class="post-meta">Author: {{ rev.author }}</div>
-        {% endif %}
-        <p><em>{{ rev.message }}</em></p>
+      {% if forloop.index <= site.max_revisions_count %}
+          <code>commit <a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code>
+          <div class="post-meta"><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | date: "%B %-d, %Y" }}</time></div>
+          {% if rev.author != site.author.name %}
+            <div class="post-meta">Author: {{ rev.author }}</div>
+          {% endif %}
+          <p><em>{{ rev.message }}</em></p>
+      {% endif %}
     {% endfor %}
+    {% if page.revisions.size >= site.max_revisions_count %}
+        <p><a target="_blank" href="{{ site.author.github_repo }}/commits/main/{{ page.path }}">More commits...</a></p>
+    {% endif %}
 </details>
 </aside>
 {% endif %}
