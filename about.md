@@ -4,29 +4,28 @@ title: About
 permalink: /about/
 ---
 
-I'm a CTO with 14+ years of hands-on engineering experience and 6+ years of management experience. I hold a BSc(Hons) in Artificial Intelligence from the University of Manchester and attended NYU's Interactive Telecommunications Program (ITP).
+I’m a CTO and engineer with deep hands-on experience building systems and teams. I hold a BSc (Hons) in Artificial Intelligence from the University of Manchester and attended NYU’s Interactive Telecommunications Program Camp.
 
-My passion is building high-growth, mission-driven technology companies. I develop positive, diverse, user-centric team cultures and establish deep collaboration with design, product, and executive teams to accomplish audacious goals.
+I work at the intersection of engineering, product, and growth, with a focus on building AI-enabled systems that ship, scale, and remain understandable to the people responsible for them. I’m particularly interested in how human judgment and emerging machine intelligence collaborate in practice - where that partnership works, and where it breaks.
 
 ## Currently
 
-**CTO at [CorralData](https://www.corraldata.com)** (2023 - Present) -- Building AI tools that make data accessible to everyone. Leading product development from ideation to deployment, building and mentoring a high-performing engineering team, and driving R&D initiatives in AI.
+**CTO at [CorralData](https://www.corraldata.com)**, building AI tools that make data accessible to non-experts and leading product and engineering from early experimentation through production.
 
-## Previously
+**Previously:** Senior Engineering Manager at **The New York Times**, where I led web conversion growth teams that helped double the digital subscriber base (5.25M → 10.98M), contributing over $500M in ARR. I was a founding member of the internal generative AI working group and helped train an internal LLM over the Times archive. My Storylines team built the COVID data dashboards and data infrastructure for the Times’ COVID coverage, part of the work recognized with the 2021 Pulitzer Prize for Public Service[^1].
 
-**Senior Engineering Manager at The New York Times** (2019 - 2023) -- Led web conversion growth teams that doubled the digital subscription base from 5.25MM to 10.98MM, contributing to +$500MM in Annual Recurring Revenue. Founding member of the internal generative AI working group. Trained an internal LLM on the Times' archive (TimesMachineAI). My Storylines team developed the COVID data dashboard that won the **2021 Pulitzer Prize for Public Service**.
+Before that, I managed product teams at **Codecademy**, contributing to doubling monthly recurring revenue growth prior to its eventual $525M exit[^2], and built and led engineering at **Ready Set Rocket** as it scaled from a small NYC agency to a 50-person organization. I have spoken at SXSW Interactive[^3], with media coverage in AdWeek, TechCrunch, Mashable, and PSFK.
 
-**Engineering Manager at Codecademy** (2018 - 2019) -- Managed multiple teams building education products reaching 45+ million learners. Established Growth marketing and Free product teams. Doubled monthly recurring revenue in the first year, contributing to the eventual $525MM exit.
-
-**Director of Technology at Ready Set Rocket** (2012 - 2018) -- Built and led the development department of an award-winning digital agency through its growth from 6 to 50 employees. Built the first large brand advertising campaign on Google Glass for Kenneth Cole. Spoke at SXSW Interactive, with media coverage in AdWeek, TechCrunch, Mashable, and PSFK.
-
-## Areas of Focus
-
-- **AI & LLMs** -- LLMOps, training and deploying large language models, AI product development
-- **Growth Engineering** -- Subscription growth, A/B testing, conversion optimization, marketing technology
-- **Engineering Leadership** -- Team building, hiring, mentoring, Agile process design, cross-functional collaboration
-- **Full-Stack Development** -- JavaScript/TypeScript, React, Node.js, Python, PHP, AWS, Docker, Kubernetes
+This site is a place to think in public about AI in practice, engineering leadership, growth systems, and the evolving role of the CTO — including experiments in writing alongside machine intelligence.
 
 ## Get in Touch
 
 I'm always open to conversations about AI, engineering leadership, and building great teams. Find me on [LinkedIn](https://www.linkedin.com/in/garethsprice).
+
+<hr />
+
+### Footnotes
+
+[^1]: The Pulitzer Prizes. (2021). *2021 Pulitzer Prize winners & finalists*. [https://www.pulitzer.org/prize-winners-by-year/2021](https://www.pulitzer.org/prize-winners-by-year/2021)
+[^2]: Mascarenhas, N. (2021, December 23). Codecademy sends it with Skillsoft in a $525M deal. *TechCrunch*. [https://techcrunch.com/2021/12/23/codecademy-sends-it-with-skillsoft-in-a-525m-deal/](https://techcrunch.com/2021/12/23/codecademy-sends-it-with-skillsoft-in-a-525m-deal/)
+[^3]: Young, F., & Price, G. (2015, March 14). *Wearables and the happiness quotient* [Conference session]. SXSW 2015, Austin, TX, United States. [https://schedule.sxsw.com/2015/events/event_IAP40939](https://schedule.sxsw.com/2015/events/event_IAP40939)
