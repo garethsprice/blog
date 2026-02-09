@@ -1,4 +1,9 @@
 <footer>
-  <p><a href="{{ site.author.linkedin }}">LinkedIn</a></p>
+  <p>
+    <a href="{{ site.author.linkedin }}" title="LinkedIn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+    <a href="{{ site.author.github }}" title="GitHub" aria-label="GitHub"><i data-lucide="github"></i></a>
+    <a href="{{ site.baseurl }}/feed.xml" title="Atom Feed" aria-label="Atom Feed"><i data-lucide="rss"></i></a>
+  </p>
   <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</p>
 </footer>
+<script>lucide.createIcons();</script>
