@@ -1,13 +1,10 @@
 ---
 layout: page
 title: "Machine Collaboration Has Created a New Form of Writing, Perhaps"
+stand_first: "AI hasn't just made writing faster — it has changed what writing is. This blog exists to test that claim in public."
 created_date: 2026-02-01
 updated_date: 2026-02-09
 ---
-
-### AI hasn't just made writing faster — it has changed what writing is. This blog exists to test that claim in public.
-
-<!--more-->
 
 I've been building software and teams for close to twenty years — running an agency, leading engineering teams at The New York Times, and now working as CTO at an AI startup. That work leaves you with opinions about what actually works, what fails predictably, and which advice is detached from reality.
 

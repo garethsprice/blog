@@ -24,9 +24,14 @@ layout: default
       {% assign age_seconds = now_seconds | minus: post_seconds %}
       <h3><a href="{{ post.url | relative_url }}">{{ post.title | typogrify }}</a>{% if age_seconds > 31536000 %} ({{ check_date | date: "%Y" }}){% endif %}</h3>
     </header>
-    {% if post.excerpt %}
-    <p>{{ post.excerpt | typogrify | strip_html | truncatewords: 40 }} <span class="reading-time"><em>{{ post.content | reading_time | append: " min read." }}</em></span></p>
-    {% endif %}
+    <p>
+      {% if post.stand_first %}
+        {{ post.stand_first | typogrify }}
+      {% elseif post.excerpt %}
+        {{ post.excerpt | typogrify | strip_html | truncatewords: 40 }}
+      {% endif %}
+      <span class="reading-time"><em>{{ post.content | reading_time | append: " min read." }}</em></span>
+    </p>
   </article>
   {% endfor %}
 </section>

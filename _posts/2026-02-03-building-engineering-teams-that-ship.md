@@ -1,13 +1,10 @@
 ---
 layout: post
 title: "Engineering Teams Fail on Execution, Not Principles"
+stand_first: "Most engineering leaders know what good teams look like. The gap between knowing and practising is where most of them stall."
 created_date: 2026-02-03
 updated_date: 2026-02-09
 ---
-
-### Most engineering leaders know what good teams look like. The gap between knowing and practising is where most of them stall.
-
-<!--more-->
 
 The principles for building engineering teams that ship are not mysterious. Hire well, give people ownership, keep process light, connect engineering to the business, and protect the culture. The scale changes — a 6-person agency operates differently from The New York Times — but the fundamentals do not.
 

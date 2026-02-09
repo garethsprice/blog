@@ -1,13 +1,10 @@
 ---
 layout: post
 title: "Organisational Trust Is the Binding Constraint on Enterprise AI"
+stand_first: "Training an LLM on the New York Times archive was technically straightforward. Earning the newsroom's trust was the actual engineering problem."
 created_date: 2026-02-04
 updated_date: 2026-02-09
 ---
-
-### Training an LLM on the New York Times archive was technically straightforward. Earning the newsroom's trust was the actual engineering problem.
-
-<!--more-->
 
 At The New York Times, I was a founding member of the internal generative AI working group. Prior to that, one of our most ambitious projects was TimesMachineAI — an internal LLM trained on the Times archive. The technical work was not where we spent most of our effort.
 
