@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What I Learned Training an LLM on the New York Times Archive"
-date: 2026-02-04
+created_date: 2026-02-04
 ---
 
 At The New York Times, I was a founding member of the internal generative AI working group. One of our most ambitious projects was TimesMachineAI -- an internal LLM trained on the Times' vast archive. Here's what that experience taught me about bringing AI into a legacy organization.
