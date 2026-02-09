@@ -5,16 +5,16 @@
     <summary>Commits</summary>
     {% for rev in page.revisions %}
       {% if forloop.index <= site.max_revisions_count %}
-          <code>commit <a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code>
-          <div class="post-meta"><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | date: "%B %-d, %Y" }}</time></div>
+          <p>
+            <small><code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code></small>
+            <small><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | date: "%B %-d, %Y" }}</time></small></p>
           {% if rev.author != site.author.name %}
-            <div class="post-meta">Author: {{ rev.author }}</div>
+            <div class="post-meta"><small>Author: {{ rev.author }}</small></div>
           {% endif %}
-          <p><em>{{ rev.message }}</em></p>
       {% endif %}
     {% endfor %}
     {% if page.revisions.size >= site.max_revisions_count %}
-        <p><a target="_blank" href="{{ site.author.github_repo }}/commits/main/{{ page.path }}">More commits...</a></p>
+        <p><small><a target="_blank" href="{{ site.author.github_repo }}/commits/main/{{ page.path }}">Full History...</a></small></p>
     {% endif %}
 </details>
 </aside>
