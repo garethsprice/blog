@@ -17,6 +17,10 @@ body {
   margin: 1.5rem;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.75rem;
+}
+
 body > header   { grid-column: 1 / -1; position: relative; }
 .theme-toggle { position: absolute; top: 0; right: 0; background: none; border: none; cursor: pointer; }
 body > .sidebar { grid-column: 1 / span 3; }
@@ -43,5 +47,6 @@ body > footer   { grid-column: 1 / -1; }
 @media (max-width: 40rem) {
   body {
     grid-template-columns: repeat(4, 1fr);
+    margin: 0;
   }
 }
