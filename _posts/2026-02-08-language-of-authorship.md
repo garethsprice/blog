@@ -35,7 +35,7 @@ Some uses should plainly be restricted: publishing claims no one has verified, i
 
 That student in Georgia deserved a word for what she actually did, and a different one for what she was accused of doing. So do the millions of people using these tools not to avoid thinking, but to get their thinking onto the page. The gap in our vocabulary is not a semantic quibble. It shapes what institutions can govern, and who gets punished while they work it out.
 
-<hr />
+---
 
 _This article was written syngraphically. The author supplied the arguments and judgments; multiple AI models assisted with drafting, revision and stress-testing._
 

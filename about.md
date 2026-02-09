@@ -22,7 +22,7 @@ This site is a place to think in public about AI in practice, engineering leader
 
 I'm always open to conversations about AI, engineering leadership, and building great teams. Find me on [LinkedIn](https://www.linkedin.com/in/garethsprice).
 
-<hr />
+---
 
 ### References
 
