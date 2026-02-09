@@ -136,13 +136,27 @@ Here’s a clean addition that fits the existing tone and influences. I’d plac
 
 Use **APA citation style**, adapted for the web.
 
-* Cite sources using **footnotes with links**, not in-text parentheticals.
-* Footnotes should point directly to the original source whenever possible (papers, primary reporting, official documentation).
+### Inline links vs. References
+
+Use **inline links** for casual mentions, supplementary context, and sources that support but don't anchor your argument. These keep the reading flow smooth and are what web readers expect.
+
+Use a **References section** (formatted in APA) at the end of a post when:
+
+* You are making research-backed claims or drawing substantively from a source.
+* The source is not a web page (books, journal articles, conference presentations).
+* You want readers to be able to find the source even if a URL breaks.
+* The post cites enough sources that collecting them in one place aids transparency.
+
+Many posts will use both — inline links for passing mentions, and a References section for anything you're leaning on heavily. If a post only links to a couple of articles in passing, a References section is unnecessary.
+
+### General principles
+
+* Cite sources by pointing directly to the original whenever possible (papers, primary reporting, official documentation).
 * Keep citations factual and minimal. They exist to support claims, not to signal erudition.
 * Do not over-cite obvious facts or common knowledge.
-* When citing opinion or analysis, make clear whether it is the source’s claim or your own interpretation.
+* When citing opinion or analysis, make clear whether it is the source's claim or your own interpretation.
 
-Footnotes should clarify, not interrupt. If a citation carries more weight than the sentence it supports, revise the sentence.
+Citations should clarify, not interrupt. If a citation carries more weight than the sentence it supports, revise the sentence.
 
 ## What not to write
 
