@@ -1,31 +1,31 @@
 ---
 layout: post
-title: "Building Engineering Teams That Ship"
+title: "Engineering Teams Fail on Execution, Not Principles"
 created_date: 2026-02-03
+updated_date: 2026-02-09
 ---
 
-I've built and managed engineering teams at organizations ranging from a 6-person agency to The New York Times. The scale changes, but the principles for building teams that consistently deliver don't.
+### Most engineering leaders know what good teams look like. The gap between knowing and practising is where most of them stall.
 
 <!--more-->
 
-## Hire for trajectory, not just current skill
+The principles for building engineering teams that ship are not mysterious. Hire well, give people ownership, keep process light, connect engineering to the business, and protect the culture. The scale changes — a 6-person agency operates differently from The New York Times — but the fundamentals do not.
 
-The best engineers I've hired weren't always the most experienced on paper. They were curious, collaborative, and demonstrated a pattern of growth. At Codecademy, we refined our interview process specifically for diversity and for identifying potential -- and ended up doubling monthly recurring revenue with teams that were deliberately built this way.
+The hard part is consistency.
 
-## Make ownership real
+### Hire for trajectory, not résumé
+The best engineers I've hired were not always the most experienced on paper. They were curious, collaborative, and showed a pattern of growth. At Codecademy, we redesigned the interview process to identify potential and improve diversity. The teams we built that way doubled monthly recurring revenue.
 
-At every company where I've managed teams, the highest-performing ones had genuine ownership over their domain. Not just "you own this codebase" -- but ownership over outcomes. At the Times, the growth teams owned subscription metrics, not just the code that affected them. That distinction changes how people think about their work.
+### Make ownership mean outcomes, not codebases
+High-performing teams own results, not just repositories. At the Times, growth teams owned subscription metrics — not just the code that affected them. That distinction changes how people think about their work.
 
-## Process should serve the team, not the other way around
+### Fit process to the team
+I'm Agile-certified and have run plenty of sprints. But the best process is the one that disappears. At Ready Set Rocket, client work needed lightweight coordination. At the Times, cross-team dependencies demanded more structure. The methodology matters less than whether it helps people ship.
 
-I'm Agile-certified and have run plenty of sprints. But the best process is the one that gets out of the way. At Ready Set Rocket, we needed lightweight project management for client work. At the Times, we needed more structure to coordinate across teams. The methodology matters less than whether it helps people do their best work.
+### Bridge engineering and the business
+The most effective engineering leaders translate in both directions — from pitching clients at an agency, to working with editorial teams at the Times, to presenting technical strategy to investors at CorralData. Teams led by people who cannot do this tend to build the wrong things well.
 
-## Invest in the bridge between engineering and the business
+### Protect culture deliberately
+At Ready Set Rocket, I watched the company grow from 6 to 50 people. At the Times, I saw engineering culture maintained at scale. The common thread: culture does not survive on autopilot. It requires intention at every stage.
 
-My career has always sat at the intersection of technology and business -- from pitching clients at an agency, to collaborating with editorial teams at the Times, to presenting technical strategy to investors at CorralData. The CTOs and engineering leaders who build the most effective teams are the ones who can translate in both directions.
-
-## Protect the culture as you scale
-
-At Ready Set Rocket, I watched the company grow from 6 to 50 people. At the Times, I saw what it looks like to maintain engineering culture at scale. The common thread: culture doesn't survive on autopilot. You have to be deliberate about it at every stage.
-
-None of this is revolutionary. But in my experience, the gap between knowing these principles and practicing them consistently is where most teams struggle.
+None of this is revolutionary. The gap between knowing these principles and practising them consistently is where most teams fail.
