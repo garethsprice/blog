@@ -7,12 +7,21 @@ layout: default
 </section>
 
 <section class="posts">
-  <h2>Latest Posts</h2>
+  <h2>Articles</h2>
   {% for post in site.posts %}
   <article class="post-preview">
     <header>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      {% assign now_seconds = site.time | date: "%s" | plus: 0 %}
+      {% if post.updated_date %}
+        {% assign check_date = post.updated_date %}
+      {% elsif post.last_modified_at %}
+        {% assign check_date = post.last_modified_at %}
+      {% else %}
+        {% assign check_date = post.date %}
+      {% endif %}
+      {% assign post_seconds = check_date | date: "%s" | plus: 0 %}
+      {% assign age_seconds = now_seconds | minus: post_seconds %}
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>{% if age_seconds > 31536000 %} ({{ check_date | date: "%Y" }}){% endif %}</h3>
     </header>
     {% if post.excerpt %}
     <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
