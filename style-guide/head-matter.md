@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Headlines and Standfirsts
-permalink: /docs/style-guide/headlines-and-standfirsts.html
+title: Head Matter
+permalink: /style-guide/head-matter/
 ---
 
 ### Headlines

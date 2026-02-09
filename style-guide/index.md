@@ -6,20 +6,20 @@ permalink: /style-guide/
 
 A guide for writing on this blog. For contributors, editors, AI agents, and the author.
 
-This guide draws on two influences: The Economist’s editorial discipline and George Orwell’s essay Politics and the English Language. The standard is intellectual rigor. Writing here should be clear, fair-minded, and precise enough to withstand editorial scrutiny at The Economist, The New York Times, or The Atlantic. Clarity is not a stylistic preference; it is an ethical one.
+This guide draws on two influences: _The Economist_’s editorial discipline and George Orwell’s essay _Politics and the English Language_. The standard is intellectual rigor. Writing here should be clear, fair-minded, and precise enough to withstand editorial scrutiny at _The Economist_, _The New York Times_, or _The Atlantic_. Clarity is not a stylistic preference; it is an ethical one.
 
-## Core principle
+### Core principle
 
 Write as if an exacting editor will challenge every claim.
 
-Arguments must be coherent, evidence-based, and stated in plain English. Assertions should survive sceptical reading. Opinions must be earned through reasoning, not tone. If a sentence cannot withstand editorial judgment at The Economist, The New York Times, or The Atlantic, it does not belong here.
+Arguments must be coherent, evidence-based, and stated in plain English. Assertions should survive sceptical reading. Opinions must be earned through reasoning, not tone. If a sentence cannot withstand editorial judgment at _The Economist_, _The New York Times_, or _The Atlantic_, it does not belong here.
 
 If a sentence can be misunderstood, it will be.
 If it can be shortened, shorten it.
 If it conceals weak thinking, rewrite the thinking.
-Draft as if the piece will be line-edited by a senior editor at The Economist: every word must justify its place.
+Draft as if the piece will be line-edited by a senior editor at _The Economist_: every word must justify its place.
 
-## Voice
+### Voice
 
 Write with authority earned through experience, but without self-reference or display. Let judgment and evidence do the work.
 
@@ -38,7 +38,7 @@ Bad: “Our AI journey revealed powerful synergies across the organisation.”
 
 If you are tempted to use a long word, ask whether a short one will do. It usually will.
 
-## Tone
+### Tone
 
 **Clear and unsentimental.** Write to be understood on the first reading.
 
@@ -50,7 +50,7 @@ If you are tempted to use a long word, ask whether a short one will do. It usual
 
 Orwell’s test applies throughout: if a phrase is there because it sounds right rather than because it means something precise, cut it.
 
-## Structure
+### Structure
 
 **Begin with the argument.** State the main claim early and plainly. Do not lead readers through a maze to reach it.
 
@@ -64,7 +64,7 @@ Orwell’s test applies throughout: if a phrase is there because it sounds right
 
 If you find yourself padding the ending, you have already finished.
 
-## Topics
+### Topics
 
 The blog focuses on:
 
@@ -75,7 +75,7 @@ The blog focuses on:
 
 Write only about what you know directly. If something is speculative, label it as such. Do not smuggle opinion in under the guise of fact.
 
-## Language and word choice
+### Language and word choice
 
 Follow Orwell’s rules explicitly:
 
@@ -92,7 +92,7 @@ Watch especially for:
 * Empty modifiers (“robust”, “powerful”, “innovative”)
 * Verbal padding (“in order to”, “with respect to”, “the fact that”)
 
-## Formatting
+### Formatting
 
 Formatting exists to clarify meaning.
 
@@ -104,7 +104,7 @@ Use em dashes — sparingly — for brief asides.
 
 Use the `<!--more-->` separator after the first paragraph to control homepage excerpts.
 
-## Length
+### Length
 
 Length is determined by argument, not habit.
 
@@ -114,7 +114,7 @@ Length is determined by argument, not habit.
 
 If the piece grows longer without becoming sharper, it is not finished.
 
-## Headlines
+### Headlines
 
 Headlines should state what the article is about and why it matters.
 
@@ -127,7 +127,7 @@ Bad: “Thoughts on AI”
 
 A headline that promises more than the article delivers is a form of dishonesty.
 
-## Technical content
+### Technical content
 
 Assume an intelligent, informed reader.
 
@@ -137,7 +137,7 @@ Assume an intelligent, informed reader.
 
 Code examples should illustrate a point, not serve as tutorials. If code is doing rhetorical work rather than explanatory work, remove it.
 
-## Attribution
+### Attribution
 
 Credit sources plainly and accurately. Link where it helps the reader.
 
@@ -145,7 +145,7 @@ Do not name institutions or credentials to borrow authority. Use them only when 
 
 Here’s a clean addition that fits the existing tone and influences. I’d place it as a short standalone section immediately after **Attribution**.
 
-## Citations
+### Citations
 
 Use **APA citation style**, adapted for the web.
 
@@ -157,7 +157,7 @@ Use **APA citation style**, adapted for the web.
 
 Footnotes should clarify, not interrupt. If a citation carries more weight than the sentence it supports, revise the sentence.
 
-## What not to write
+### What not to write
 
 * Commentary on news cycles or online disputes
 * Content that belongs on LinkedIn
@@ -166,7 +166,7 @@ Footnotes should clarify, not interrupt. If a citation carries more weight than 
 * SEO-driven listicles
 * Anything that substitutes style for thought
 
-## For AI agents
+### For AI agents
 
 When drafting or editing:
 

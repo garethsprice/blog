@@ -1,16 +1,16 @@
 <nav>
   <details open>
     <summary>Menu</summary>
-    <ul>
+    <menu>
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Writing</a></li>
+      <li><a href="{{ '/speaking/' | relative_url }}"{% if page.url == '/speaking/' %} aria-current="page"{% endif %}>Speaking</a></li>
       <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
-      <li><a href="{{ '/speaking/' | relative_url }}"{% if page.url == '/speaking/' %} aria-current="page"{% endif %}>Speaking & Writing</a></li>
-      
-      <li><a href="{{ '/docs/style-guide/' | relative_url }}"{% if page.url == '/docs/style-guide/' %} aria-current="page"{% endif %}>.Style Guide</a></li>
-      {% if page.url == '/docs/style-guide/' or page.url == '/docs/style-guide/index.html' %}
-        <ul>
-          <li><a href="{{ '/docs/style-guide/headlines-and-standfirsts.html' | relative_url }}"{% if page.url == '/docs/style-guide/headlines-and-standfirsts.html' %} aria-current="page"{% endif %}>Headlines & Standfirsts</a></li>
-        </ul>
+      <li><a href="{{ '/style-guide/' | relative_url }}"{% if page.url == '/style-guide/' %} aria-current="page"{% endif %}>Style Guide</a></li>
+      {% if page.url == '/style-guide/' or page.url == '/style-guide/index.html' %}
+        <menu>
+          <li><a href="{{ '/style-guide/head-matter/' | relative_url }}"{% if page.url == '/style-guide/head-matter/' %} aria-current="page"{% endif %}>Head Matter</a></li>
+        </menu>
       {% endif %}
-    </ul>
+    </menu>
   </details>
 </nav>
