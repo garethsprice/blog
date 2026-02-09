@@ -4,111 +4,178 @@ title: Style Guide
 permalink: /style-guide/
 ---
 
-A guide for writing on this blog. For contributors, editors, AI agents, and myself.
+A guide for writing on this blog. For contributors, editors, AI agents, and the author.
+
+This guide draws on two influences: The Economist’s editorial discipline and George Orwell’s essay Politics and the English Language. The standard is intellectual rigor. Writing here should be clear, fair-minded, and precise enough to withstand editorial scrutiny at The Economist, The New York Times, or The Atlantic. Clarity is not a stylistic preference; it is an ethical one.
+
+## Core principle
+
+Write as if an exacting editor will challenge every claim.
+
+Arguments must be coherent, evidence-based, and stated in plain English. Assertions should survive sceptical reading. Opinions must be earned through reasoning, not tone. If a sentence cannot withstand editorial judgment at The Economist, The New York Times, or The Atlantic, it does not belong here.
+
+If a sentence can be misunderstood, it will be.
+If it can be shortened, shorten it.
+If it conceals weak thinking, rewrite the thinking.
+Draft as if the piece will be line-edited by a senior editor at The Economist: every word must justify its place.
 
 ## Voice
 
-Write as a practitioner, not a pundit. The perspective is someone who has built and shipped, managed teams, made mistakes, and learned from them. Avoid:
+Write with authority earned through experience, but without self-reference or display. Let judgment and evidence do the work.
 
-- Thought leader posturing
-- Hype and buzzwords
-- Predictions without substance
-- Hot takes for engagement
+Prefer the concrete to the abstract. Prefer the active voice to the passive. Prefer plain words to impressive ones.
 
-Good: "Here's what worked when we trained an internal LLM at the Times."
-Bad: "AI is revolutionizing everything and here's why you need to pay attention."
+Avoid:
+
+* Self-congratulation or war stories
+* “Thought leadership” rhetoric
+* Hype, buzzwords, and fashionable jargon
+* Vague generalities and abstractions
+* Pretending to certainty you do not have
+
+Good: “Training an internal LLM exposed a trade-off between data cleanliness and iteration speed.”
+Bad: “Our AI journey revealed powerful synergies across the organisation.”
+
+If you are tempted to use a long word, ask whether a short one will do. It usually will.
 
 ## Tone
 
-**Direct.** Say what you mean. Don't hedge unnecessarily.
+**Clear and unsentimental.** Write to be understood on the first reading.
 
-**Confident but not arrogant.** Share opinions and lessons learned. Acknowledge uncertainty where it exists.
+**Confident, with restraint.** State conclusions plainly, but do not overstate them.
 
-**Conversational but not casual.** Write like you're explaining something to a smart colleague, not presenting at a conference or posting on social media.
+**Serious, not solemn.** Wit may emerge naturally; jokes should not be engineered.
 
-**Practical.** Readers should finish with something useful -- a framework, a lesson, a different way of thinking about a problem.
+**Analytical.** Explain causes and consequences. Avoid emotional colouring where analysis will suffice.
+
+Orwell’s test applies throughout: if a phrase is there because it sounds right rather than because it means something precise, cut it.
 
 ## Structure
 
-**Start with the point.** Don't bury the lede. The first paragraph should tell readers what they'll get from the post.
+**Begin with the argument.** State the main claim early and plainly. Do not lead readers through a maze to reach it.
 
-**Use headers.** Break up longer posts. Readers skim. Let them.
+**Proceed logically.** Each paragraph should answer the question: “What does this add?”
 
-**Short paragraphs.** One idea per paragraph. White space is fine.
+**Use headings sparingly.** Headings should mark stages of reasoning, not decorate the page.
 
-**End cleanly.** Don't summarize what you just said. Don't add a generic call to action. Just stop when you're done.
+**Short paragraphs.** One idea at a time. If a paragraph tries to do two things, split it.
+
+**End decisively.** Stop when the argument is complete. Do not restate it in weaker form.
+
+If you find yourself padding the ending, you have already finished.
 
 ## Topics
 
-The blog covers:
+The blog focuses on:
 
-- **AI in practice** -- Building, deploying, and operating AI/ML systems. LLMOps. What works and what doesn't. Not the hype cycle.
-- **Engineering leadership** -- Building teams, hiring, culture, process, managing up and across.
-- **Growth engineering** -- Subscription growth, experimentation, conversion optimization, marketing technology.
-- **The startup CTO role** -- Strategy, tradeoffs, being both hands-on and strategic.
+* **AI in practice** — Building, deploying, and operating AI systems; LLMOps; constraints, failures, and trade-offs.
+* **Engineering leadership** — Hiring, incentives, culture, decision-making, and organisational mechanics.
+* **Growth engineering** — Experimentation, subscription economics, and the limits of optimisation.
+* **The startup CTO role** — Strategy versus execution, speed versus correctness, ambition versus reality.
 
-Stay in your lane. Write from experience. If you haven't done it, don't write about it as if you have.
+Write only about what you know directly. If something is speculative, label it as such. Do not smuggle opinion in under the guise of fact.
+
+## Language and word choice
+
+Follow Orwell’s rules explicitly:
+
+* Never use a metaphor, simile, or figure of speech you see in print every day.
+* Never use a long word where a short one will do.
+* If it is possible to cut a word out, cut it out.
+* Never use the passive where you can use the active.
+* Never use a foreign phrase, scientific term, or jargon word if an everyday English equivalent exists.
+* Break any of these rules sooner than say anything outright barbarous.
+
+Watch especially for:
+
+* Pretentious diction (“utilise”, “leverage”, “paradigm”)
+* Empty modifiers (“robust”, “powerful”, “innovative”)
+* Verbal padding (“in order to”, “with respect to”, “the fact that”)
 
 ## Formatting
 
-**Bold** for emphasis, sparingly.
+Formatting exists to clarify meaning.
 
-*Italics* for titles of publications or introducing terms.
+* **Bold**: rare, for emphasis only.
+* *Italics*: titles of publications; first introduction of a term.
+* `Code formatting`: technical terms, commands, file names.
 
-Use `code formatting` for technical terms, file names, commands.
+Use em dashes — sparingly — for brief asides.
 
-Em dashes -- like this -- for asides. Two hyphens in markdown.
-
-Use the `<!--more-->` separator after the first paragraph to control the excerpt shown on the homepage.
+Use the `<!--more-->` separator after the first paragraph to control homepage excerpts.
 
 ## Length
 
-No strict rules. Say what you need to say.
+Length is determined by argument, not habit.
 
-- Most posts: 500-1500 words
-- Quick observations: 200-400 words
-- Deep dives: up to 2500 words
+* Standard essays: 600–1,500 words
+* Short observations: 300–500 words
+* Extended analyses: up to 2,500 words
 
-If it's getting longer, consider whether it should be multiple posts.
+If the piece grows longer without becoming sharper, it is not finished.
 
 ## Headlines
 
-Clear and specific. Tell readers what the post is about.
+Headlines should state what the article is about and why it matters.
 
-Good: "What I Learned Training an LLM on the New York Times Archive"
-Bad: "My AI Journey" or "Thoughts on Large Language Models"
+* Be specific.
+* Avoid ambiguity and intrigue.
+* Prefer statements to questions.
 
-Avoid clickbait. Avoid questions as headlines unless the post genuinely explores the question.
+Good: “Why Most Internal LLM Projects Stall After the Pilot”
+Bad: “Thoughts on AI”
+
+A headline that promises more than the article delivers is a form of dishonesty.
 
 ## Technical content
 
-Assume readers are technical but not necessarily experts in the specific domain. Define acronyms on first use if they're not universal (LLM is fine, RLHF should be explained).
+Assume an intelligent, informed reader.
 
-Don't over-explain basics. Don't under-explain your specific context.
+* Define non-obvious acronyms on first use.
+* Skip textbook explanations.
+* Be explicit about context and constraints.
 
-Code examples should be minimal and illustrative. This isn't a tutorial blog.
+Code examples should illustrate a point, not serve as tutorials. If code is doing rhetorical work rather than explanatory work, remove it.
 
 ## Attribution
 
-Credit sources. Link to relevant prior work. If an idea came from somewhere, say where.
+Credit sources plainly and accurately. Link where it helps the reader.
 
-Don't namedrop for credibility. Mentioning the NYT or Pulitzer should be in service of the point, not self-promotion.
+Do not name institutions or credentials to borrow authority. Use them only when they materially affect the argument.
+
+Here’s a clean addition that fits the existing tone and influences. I’d place it as a short standalone section immediately after **Attribution**.
+
+## Citations
+
+Use **APA citation style**, adapted for the web.
+
+* Cite sources using **footnotes with links**, not in-text parentheticals.
+* Footnotes should point directly to the original source whenever possible (papers, primary reporting, official documentation).
+* Keep citations factual and minimal. They exist to support claims, not to signal erudition.
+* Do not over-cite obvious facts or common knowledge.
+* When citing opinion or analysis, make clear whether it is the source’s claim or your own interpretation.
+
+Footnotes should clarify, not interrupt. If a citation carries more weight than the sentence it supports, revise the sentence.
 
 ## What not to write
 
-- Hot takes on news or drama
-- Posts that are really LinkedIn posts
-- Anything requiring a disclaimer about your employer
-- Vague inspirational content
-- Listicles for SEO
+* Commentary on news cycles or online disputes
+* Content that belongs on LinkedIn
+* Pieces requiring disclaimers or PR framing
+* Inspirational or motivational writing
+* SEO-driven listicles
+* Anything that substitutes style for thought
 
 ## For AI agents
 
-When drafting or editing content for this blog:
+When drafting or editing:
 
-1. Match this voice -- practitioner, direct, practical
-2. Draw from the author's actual experience (CorralData, NYT, Codecademy, Ready Set Rocket, AI degree from Manchester)
-3. Avoid filler, qualifiers, and corporate language
-4. Don't invent experiences or claims
-5. When uncertain about facts or specifics, flag for human review
-6. Keep the brutalist design ethos -- no unnecessary decoration in prose either
+1. Prioritise clarity over fluency
+2. Prefer plain language to polished language
+3. Ground claims in real experience (CorralData, NYT, Codecademy, Ready Set Rocket, University of Manchester)
+4. Remove padding, qualifiers, and vague abstractions
+5. Do not invent authority, experiences, or results
+6. Flag uncertainty for human review
+7. If a sentence sounds impressive but says little, delete it
+
+When in doubt, simplify. When still in doubt, cut.
