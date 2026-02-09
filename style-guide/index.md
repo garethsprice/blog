@@ -2,11 +2,12 @@
 layout: page
 title: Style Guide
 permalink: /style-guide/
+nav_order: 4
 ---
 
 A guide for writing on this blog. For contributors, editors, AI agents, and the author.
 
-This guide draws on two influences: _The Economist_’s editorial discipline and George Orwell’s essay _Politics and the English Language_. The standard is intellectual rigor. Writing here should be clear, fair-minded, and precise enough to withstand editorial scrutiny at _The Economist_, _The New York Times_, or _The Atlantic_. Clarity is not a stylistic preference; it is an ethical one.
+This guide draws on two influences: _The Economist_’s editorial discipline[^1] and George Orwell’s essay _Politics and the English Language_[^2]. The standard is intellectual rigor. Writing here should be clear, fair-minded, and precise enough to withstand editorial scrutiny at _The Economist_, _The New York Times_, or _The Atlantic_. Clarity is not a stylistic preference; it is an ethical one.
 
 ### Core principle
 
@@ -179,3 +180,11 @@ When drafting or editing:
 7. If a sentence sounds impressive but says little, delete it
 
 When in doubt, simplify. When still in doubt, cut.
+
+---
+
+### References
+
+[^1]: The Economist. (n.d.). Introduction. The Economist style guide. Retrieved from archived February 17, 2012 snapshot. [https://web.archive.org/web/20120217194707/https://www.economist.com/styleguide/introduction](https://web.archive.org/web/20120217194707/https://www.economist.com/styleguide/introduction)
+
+[^2]: Orwell, G. (1946, April). Politics and the English language. Horizon. [https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/)
