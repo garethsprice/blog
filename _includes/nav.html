@@ -1,96 +1,31 @@
-{% comment %}
-Dynamic navigation built from page front matter.
-Pages need nav_order to appear. Optional: nav_title, nav_parent, nav_exclude
-Supports 2 levels of nesting.
-{% endcomment %}
-
-{% comment %} Collect all nav pages {% endcomment %}
-{% assign nav_pages = "" | split: "" %}
-{% for pg in site.pages %}
-  {% unless pg.nav_exclude %}
-    {% if pg.nav_order %}
-      {% assign nav_pages = nav_pages | push: pg %}
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-
-{% comment %} Get root level items (no parent) {% endcomment %}
-{% assign root_items = "" | split: "" %}
-{% for pg in nav_pages %}
-  {% unless pg.nav_parent %}
-    {% assign root_items = root_items | push: pg %}
-  {% endunless %}
-{% endfor %}
-{% assign root_items = root_items | sort: "nav_order" %}
+{% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+{% assign root_items = nav_pages | where_exp: "p", "p.nav_parent == nil" %}
 
 <nav>
   <details open>
     <summary>Menu</summary>
     <menu>
       {% for item in root_items %}
-        {% assign nav_title = item.nav_title | default: item.title %}
-        {% assign is_current = false %}
-        {% if item.url == page.url %}
-          {% assign is_current = true %}
-        {% endif %}
-
-        {% comment %} Find children of this item {% endcomment %}
-        {% assign children = "" | split: "" %}
-        {% for child_page in nav_pages %}
-          {% if child_page.nav_parent == item.url %}
-            {% assign children = children | push: child_page %}
-          {% endif %}
-        {% endfor %}
-        {% assign children = children | sort: "nav_order" %}
-
-        {% comment %} Check if current page is this item or a child {% endcomment %}
-        {% assign is_active_branch = is_current %}
-        {% unless is_active_branch %}
-          {% if page.nav_parent == item.url %}
-            {% assign is_active_branch = true %}
-          {% endif %}
-        {% endunless %}
-
+        {% assign title = item.nav_title | default: item.title %}
+        {% assign current = false %}{% if item.url == page.url %}{% assign current = true %}{% endif %}
+        {% assign children = nav_pages | where: "nav_parent", item.url %}
+        {% assign active = current %}{% if page.nav_parent == item.url %}{% assign active = true %}{% endif %}
         <li>
-          {% if is_current %}<span aria-current="page">{{ nav_title }}</span>{% else %}<a href="{{ item.url | relative_url }}">{{ nav_title }}</a>{% endif %}
-          {% if children.size > 0 and is_active_branch %}
+          {% if current %}<span aria-current="page">{{ title }}</span>{% else %}<a href="{{ item.url | relative_url }}">{{ title }}</a>{% endif %}
+          {% if children.size > 0 and active %}
           <menu>
             {% for child in children %}
-              {% assign child_title = child.nav_title | default: child.title %}
-              {% assign child_is_current = false %}
-              {% if child.url == page.url %}
-                {% assign child_is_current = true %}
-              {% endif %}
-
-              {% comment %} Find grandchildren {% endcomment %}
-              {% assign grandchildren = "" | split: "" %}
-              {% for grandchild_page in nav_pages %}
-                {% if grandchild_page.nav_parent == child.url %}
-                  {% assign grandchildren = grandchildren | push: grandchild_page %}
-                {% endif %}
-              {% endfor %}
-              {% assign grandchildren = grandchildren | sort: "nav_order" %}
-
-              {% assign child_is_active = child_is_current %}
-              {% unless child_is_active %}
-                {% if page.nav_parent == child.url %}
-                  {% assign child_is_active = true %}
-                {% endif %}
-              {% endunless %}
-
+              {% assign c_title = child.nav_title | default: child.title %}
+              {% assign c_current = false %}{% if child.url == page.url %}{% assign c_current = true %}{% endif %}
+              {% assign grandchildren = nav_pages | where: "nav_parent", child.url %}
+              {% assign c_active = c_current %}{% if page.nav_parent == child.url %}{% assign c_active = true %}{% endif %}
               <li>
-                {% if child_is_current %}<span aria-current="page">{{ child_title }}</span>{% else %}<a href="{{ child.url | relative_url }}">{{ child_title }}</a>{% endif %}
-                {% if grandchildren.size > 0 and child_is_active %}
+                {% if c_current %}<span aria-current="page">{{ c_title }}</span>{% else %}<a href="{{ child.url | relative_url }}">{{ c_title }}</a>{% endif %}
+                {% if grandchildren.size > 0 and c_active %}
                 <menu>
-                  {% for grandchild in grandchildren %}
-                    {% assign gc_title = grandchild.nav_title | default: grandchild.title %}
-                    {% assign gc_is_current = false %}
-                    {% if grandchild.url == page.url %}
-                      {% assign gc_is_current = true %}
-                    {% endif %}
-                    <li>
-                      {% if gc_is_current %}<span aria-current="page">{{ gc_title }}</span>{% else %}<a href="{{ grandchild.url | relative_url }}">{{ gc_title }}</a>{% endif %}
-                    </li>
+                  {% for gc in grandchildren %}
+                    {% assign gc_title = gc.nav_title | default: gc.title %}
+                    <li>{% if gc.url == page.url %}<span aria-current="page">{{ gc_title }}</span>{% else %}<a href="{{ gc.url | relative_url }}">{{ gc_title }}</a>{% endif %}</li>
                   {% endfor %}
                 </menu>
                 {% endif %}
