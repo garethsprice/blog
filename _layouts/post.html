@@ -8,7 +8,7 @@ layout: default
       <h2>{{ page.title | escape }}</h2>
       <p class="reading-time"><em>{{ page.content | reading_time | append: " min read" }}</em></p>
     </header>
-    {{ content }}
+    {{ content | typogrify }}
     <footer class="post-footer">
       <p><a href="{{ '/' | relative_url }}">Back to all posts</a></p>
     </footer>

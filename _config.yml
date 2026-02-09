@@ -26,6 +26,7 @@ plugins:
   - jekyll-sitemap
   - liquid_reading_time
   - jekyll-timeago
+  - jekyll-typogrify
 
 author:
   name: Gareth Price
