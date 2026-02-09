@@ -1,31 +1,24 @@
 ---
 layout: post
-title: "What I Learned Training an LLM on the New York Times Archive"
+title: "Organisational Trust Is the Binding Constraint on Enterprise AI"
 created_date: 2026-02-04
+updated_date: 2026-02-09
 ---
 
-At The New York Times, I was a founding member of the internal generative AI working group. One of our most ambitious projects was TimesMachineAI -- an internal LLM trained on the Times' vast archive. Here's what that experience taught me about bringing AI into a legacy organization.
+### Training an LLM on the New York Times archive was technically straightforward. Earning the newsroom's trust was the actual engineering problem.
 
 <!--more-->
 
-## Start with a real problem
+At The New York Times, I was a founding member of the internal generative AI working group. Prior to that, one of our most ambitious projects was TimesMachineAI — an internal LLM trained on the Times archive. The technical work was not where we spent most of our effort.
 
-The temptation with any new technology is to build a solution in search of a problem. We deliberately avoided that. The Times archive is one of the most comprehensive records of modern history, but navigating it was difficult. We had a clear user need before we wrote a line of code.
+**Start with a real problem.** The temptation with any new technology is to build a solution looking for a problem. The Times archive is one of the most comprehensive records of modern history, but navigating it was difficult. We had a clear user need before we wrote a line of code.
 
-## Data quality is the whole game
+**Data quality is the whole game.** The Times has been publishing since 1851. That is an extraordinary corpus — but it is also OCR'd text from microfilm, decades of evolving style guides, and metadata ranging from meticulous to nonexistent. We spent more time on data preparation than on model training. This has been true of every AI project I have worked on since.
 
-The Times has been publishing since 1851. That's an extraordinary corpus -- but it's also OCR'd text from microfilm, decades of evolving style guides, and metadata that ranges from meticulous to nonexistent. We spent more time on data preparation than on model training. This is true for every AI project I've worked on since.
+**Organisational trust takes longer than model training.** Getting buy-in from editorial, legal, and leadership was as complex as the technical work. Newsrooms are cautious about AI for good reason — accuracy, attribution, and editorial integrity are not abstract concerns there. Building trust across those groups was the binding constraint, not compute or architecture.
 
-## Organizational trust takes longer than model training
+**Internal tools are the right first deployment.** We built for journalists, researchers, and editors. A controlled environment let us iterate and gather feedback without the risks of a public-facing product. If you are introducing AI into an organisation with high editorial or reputational standards, start internal.
 
-Getting buy-in from editorial, legal, and leadership was as complex as the technical work. Newsrooms are rightfully cautious about AI -- there are real questions about accuracy, attribution, and editorial integrity. The technical work was the easy part. Building trust was the real engineering challenge.
+**Demos move organisations faster than documents.** Our team won the internal Maker Week hackathon, which gave the project visibility and momentum. Organisational change follows demonstration, not documentation.
 
-## Internal tools are an ideal first use case
-
-We were building for internal users -- journalists, researchers, editors. This gave us a controlled environment to iterate, gather feedback, and improve without the risks of a public-facing product. If you're introducing AI into an organization, start internal.
-
-## The hackathon that changed everything
-
-Our team won the internal Maker Week Hackathon, which gave the project visibility and momentum. Sometimes the best way to advance an ambitious project is to ship a compelling demo. Organizational change often follows demonstration, not documentation.
-
-These lessons have directly shaped how I approach AI product development at CorralData today. The technology has advanced rapidly, but the fundamentals haven't changed: start with a real problem, respect your data, and invest as much in organizational alignment as you do in your models.
+These lessons shaped how I approach AI at CorralData. The technology has advanced, but the fundamentals hold: start with a real problem, respect the data, and invest as much in organisational alignment as in the models.
