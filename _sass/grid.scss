@@ -11,17 +11,17 @@ body {
   padding-inline: 1.5rem;
 }
 
-body > header { grid-column: 1 / -1; }
-body > nav    { grid-column: 1 / span 3; }
-body > main   { grid-column: 4 / -1; }
-body > footer { grid-column: 1 / -1; }
+body > header   { grid-column: 1 / -1; }
+body > .sidebar { grid-column: 1 / span 3; }
+body > main     { grid-column: 4 / -1; }
+body > footer   { grid-column: 1 / -1; }
 
 @media (max-width: 64rem) {
   body {
     grid-template-columns: repeat(8, 1fr);
   }
 
-  body > nav,
+  body > .sidebar,
   body > main {
     grid-column: 1 / -1;
   }
