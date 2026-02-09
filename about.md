@@ -18,6 +18,10 @@ Before that, I managed product teams at [Codecademy](https://www.codecademy.com)
 
 This site is a place to think in public about AI in practice, engineering leadership, growth systems, and the evolving role of the CTO — including experiments in writing alongside machine intelligence.
 
+### Why {{ site.title }}
+
+<em><strong>Res cog</strong>itans</em> — the thinking thing. Descartes drew a line between mind and matter, the thing that thinks and the thing that extends in space (<em>Res extensa</em>)[^4]. Three and a half centuries later, that line is less clear. We build systems that reason, generate, and occasionally surprise us, then spend our time arguing over whether they actually think or will do someday. This blog sits on that line. It is written by a thinking thing, about thinking things, and sometimes with them.
+
 ### Get in Touch
 
 I'm always open to conversations about AI, engineering leadership, and building great teams. Find me on [LinkedIn](https://www.linkedin.com/in/garethsprice).
@@ -29,3 +33,4 @@ I'm always open to conversations about AI, engineering leadership, and building 
 [^1]: The Pulitzer Prizes. (2021). *2021 Pulitzer Prize winners & finalists*. [https://www.pulitzer.org/prize-winners-by-year/2021](https://www.pulitzer.org/prize-winners-by-year/2021)
 [^2]: Mascarenhas, N. (2021, December 23). Codecademy sends it with Skillsoft in a $525M deal. *TechCrunch*. [https://techcrunch.com/2021/12/23/codecademy-sends-it-with-skillsoft-in-a-525m-deal/](https://techcrunch.com/2021/12/23/codecademy-sends-it-with-skillsoft-in-a-525m-deal/)
 [^3]: Young, F., & Price, G. (2015, March 14). *Wearables and the happiness quotient* [Conference session]. SXSW 2015, Austin, TX, United States. [https://schedule.sxsw.com/2015/events/event_IAP40939](https://schedule.sxsw.com/2015/events/event_IAP40939)
+[^4]: Descartes, R. (1641). Meditationes de Prima Philosophia [Meditations on First Philosophy]. Project Gutenberg edition. [https://www.gutenberg.org/ebooks/59](https://www.gutenberg.org/ebooks/59).
