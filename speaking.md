@@ -2,6 +2,7 @@
 layout: page
 title: Speaking
 permalink: /speaking/
+nav_order: 2
 ---
 
 I speak and write about AI, wearable technology, growth engineering, and the intersection of technology with culture. I'm actively seeking speaking and writing opportunities.

@@ -1,6 +1,8 @@
 ---
 layout: home
 title: Home
+nav_title: Writing
+nav_order: 1
 ---
 
 I'm **Gareth Price**, CTO at [CorralData](https://www.corraldata.com/) and former engineering leader at [The New York Times](https://nytimes.com), where my teams contributed to the 2021 Pulitzer Prize for Public Service and helped add +$500MM in ARR.

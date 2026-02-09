@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+nav_order: 3
 ---
 
 I’m a CTO and engineer with deep hands-on experience building systems and teams. I hold a BSc (Hons) in Artificial Intelligence from the University of Manchester and attended NYU’s Interactive Telecommunications Program Camp.

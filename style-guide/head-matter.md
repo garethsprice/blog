@@ -2,6 +2,8 @@
 layout: page
 title: Head Matter
 permalink: /style-guide/head-matter/
+nav_order: 1
+nav_parent: /style-guide/
 ---
 
 ### Headlines
