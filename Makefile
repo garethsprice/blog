@@ -5,7 +5,7 @@ DOCKER = docker run --rm -v "$$PWD":/srv/jekyll
 # Run Jekyll development server (serves from root /)
 up: serve
 serve:
-	$(DOCKER) -p 4000:4000 jekyll/jekyll:4 jekyll serve --watch --drafts --baseurl ""
+	$(DOCKER) -p 4000:4000 jekyll/jekyll:4 jekyll serve --watch --drafts --baseurl '/'
 
 # Build the site for production (uses /blog from _config.yml)
 build:
