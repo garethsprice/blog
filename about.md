@@ -24,7 +24,7 @@ I'm always open to conversations about AI, engineering leadership, and building 
 
 <hr />
 
-### Footnotes
+### References
 
 [^1]: The Pulitzer Prizes. (2021). *2021 Pulitzer Prize winners & finalists*. [https://www.pulitzer.org/prize-winners-by-year/2021](https://www.pulitzer.org/prize-winners-by-year/2021)
 [^2]: Mascarenhas, N. (2021, December 23). Codecademy sends it with Skillsoft in a $525M deal. *TechCrunch*. [https://techcrunch.com/2021/12/23/codecademy-sends-it-with-skillsoft-in-a-525m-deal/](https://techcrunch.com/2021/12/23/codecademy-sends-it-with-skillsoft-in-a-525m-deal/)
