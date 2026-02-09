@@ -1,14 +1,15 @@
-.PHONY: serve build clean install update
+.PHONY: up serve build clean install update
 
-JEKYLL = docker run --rm -v "$$PWD":/srv/jekyll jekyll/jekyll:4
+DOCKER = docker run --rm -v "$$PWD":/srv/jekyll
 
-# Run Jekyll development server
+# Run Jekyll development server (serves from root /)
+up: serve
 serve:
-	$(JEKYLL) -p 4000:4000 jekyll serve --watch --drafts
+	$(DOCKER) -p 4000:4000 jekyll/jekyll:4 jekyll serve --watch --drafts --baseurl ""
 
-# Build the site for production
+# Build the site for production (uses /blog from _config.yml)
 build:
-	docker run --rm -v "$$PWD":/srv/jekyll -e JEKYLL_ENV=production jekyll/jekyll:4 jekyll build
+	$(DOCKER) -e JEKYLL_ENV=production jekyll/jekyll:4 jekyll build
 
 # Remove generated files
 clean:
@@ -16,8 +17,8 @@ clean:
 
 # Install/update dependencies
 install:
-	$(JEKYLL) bundle install
+	$(DOCKER) jekyll/jekyll:4 bundle install
 
 # Update dependencies
 update:
-	$(JEKYLL) bundle update
+	$(DOCKER) jekyll/jekyll:4 bundle update
