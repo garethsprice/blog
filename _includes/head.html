@@ -4,6 +4,7 @@
 <title>{% if page.title and page.title != "Home" %}{{ page.title | escape }} – {{ site.author.name }}, {{ site.author.title }} @ {{ site.author.company }} - {{ site.title | escape }}{% else %}{{ site.title | escape }} – {{ site.tagline | escape }}{% endif %}</title>
 <meta name="author" content="{{ site.author.name }}">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script src="https://unpkg.com/lucide@latest"></script>
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% feed_meta %}
 {% seo %}
