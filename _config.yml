@@ -8,6 +8,10 @@ baseurl: "/blog"
 markdown: kramdown
 permalink: /:title/
 excerpt_separator: "<!--more-->"
+exclude:
+  - _drafts
+  - Makefile
+  - README.md
 max_revisions_count: 3
 google_analytics_id: G-H4W90T5EWY
 
