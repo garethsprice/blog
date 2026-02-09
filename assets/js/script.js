@@ -15,3 +15,9 @@ document.querySelector('.theme-toggle').onclick = function() {
   localStorage.setItem('theme', document.documentElement.style.colorScheme);
   setIcon();
 };
+
+// Open revisions details on desktop only
+var revisions = document.querySelector('.revisions-details');
+if (revisions && window.innerWidth >= 768) {
+  revisions.open = true;
+}
