@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Organisational Trust Is the Binding Constraint on Enterprise AI"
-stand_first: "Training an LLM on the New York Times archive was technically straightforward. Earning the newsroom's trust was the actual engineering problem."
+description: "Training an LLM on the New York Times archive was technically straightforward. Earning the newsroom's trust was the actual engineering problem."
 created_date: 2026-02-04
 updated_date: 2026-02-09
 ---

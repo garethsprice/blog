@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Engineering Teams Fail on Execution, Not Principles"
-stand_first: "Most engineering leaders know what good teams look like. The gap between knowing and practising is where most of them stall."
+description: "Most engineering leaders know what good teams look like. The gap between knowing and practising is where most of them stall."
 created_date: 2026-02-03
 updated_date: 2026-02-09
 ---

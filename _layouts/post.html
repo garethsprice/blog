@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% include easter.html %}
 
 <div class="post-container">
   <article class="post">
@@ -8,8 +9,8 @@ layout: default
       <h2>{{ page.title | escape }}</h2>
       <p class="reading-time"><em>{{ page.content | reading_time | append: " min read" }}</em></p>
     </header>
-    {% if page.stand_first %}
-      <h3 class="stand-first">{{ page.stand_first | typogrify }}</h3>
+    {% if page.description %}
+      <h3 class="stand-first">{{ page.description | typogrify }}</h3>
     {% endif %}
     {{ content | typogrify }}
     <footer class="post-footer">

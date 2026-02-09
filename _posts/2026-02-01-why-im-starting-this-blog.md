@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Machine Collaboration Has Created a New Form of Writing, Perhaps"
-stand_first: "AI hasn't just made writing faster — it has changed what writing is. This blog exists to test that claim in public."
+description: "AI hasn't just made writing faster — it has changed what writing is. This blog exists to test that claim in public."
 created_date: 2026-02-01
 updated_date: 2026-02-09
 ---
