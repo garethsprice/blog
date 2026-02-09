@@ -8,7 +8,7 @@ I’m a CTO and engineer with deep hands-on experience building systems and team
 
 I work at the intersection of engineering, product, and growth, with a focus on building AI-enabled systems that ship, scale, and remain understandable to the people responsible for them. I’m particularly interested in how human judgment and emerging machine intelligence collaborate in practice - where that partnership works, and where it breaks.
 
-## Currently
+### Currently
 
 **CTO at [CorralData](https://www.corraldata.com)**, building AI tools that make data accessible to non-experts and leading product and engineering from early experimentation through production.
 
@@ -18,7 +18,7 @@ Before that, I managed product teams at [Codecademy](https://www.codecademy.com)
 
 This site is a place to think in public about AI in practice, engineering leadership, growth systems, and the evolving role of the CTO — including experiments in writing alongside machine intelligence.
 
-## Get in Touch
+### Get in Touch
 
 I'm always open to conversations about AI, engineering leadership, and building great teams. Find me on [LinkedIn](https://www.linkedin.com/in/garethsprice).
 
