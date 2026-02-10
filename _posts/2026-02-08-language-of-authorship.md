@@ -34,7 +34,7 @@ That student in Georgia deserved a word for what she actually did, and a differe
 
 ---
 
-_This article was written syngraphically. The author supplied the arguments and judgments; multiple AI models assisted with drafting, revision and stress-testing._
+{% include syngraphic-disclaimer.html | strip_html %}
 
 ### References
 

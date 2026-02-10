@@ -45,7 +45,7 @@ That is the work of the reader now. The LLM builds the imagined fortress — the
 
 ---
 
-_This article was written [syngraphically]({% post_url 2026-02-08-language-of-authorship %}). The author supplied the arguments and judgments; multiple AI models assisted with drafting, revision and stress-testing._
+{% include syngraphic-disclaimer.html %}
 
 ### References
 
