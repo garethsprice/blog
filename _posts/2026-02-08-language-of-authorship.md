@@ -4,6 +4,7 @@ title: "Our Language of Authorship Is Unprepared for What Is Already Here"
 description: "AI is becoming a writing partner, not just a writing tool. But we have no language for that collaboration — and institutions are already enforcing rules they cannot define."
 created_date: 2026-02-08
 updated_date: 2026-02-09
+syngraphic_disclaimer_link: false
 ---
 
 In 2023 a student at the University of North Georgia was accused of cheating after an AI-detection tool flagged her essay. She said she had written it herself. The trigger turned out to be Grammarly. The university later cleared her[^1]. The episode matters not because it was rare, but because it exposed a problem institutions are already punishing people for: we have no stable way to describe where editing ends and authorship begins.
@@ -34,7 +35,7 @@ That student in Georgia deserved a word for what she actually did, and a differe
 
 ---
 
-{% include syngraphic-disclaimer.html | strip_html %}
+{% include syngraphic-disclaimer.html %}
 
 ### References
 
