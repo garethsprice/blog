@@ -10,10 +10,10 @@ body {
   margin-inline: auto;
   padding-inline: 1.5rem;
 
-  line-height: 1.5rem;
+  line-height: 2rem;
   letter-spacing: 0.0125rem;
 
-  font-size: 18px;
+  font-size: 20px;
   margin: 1.85rem;
   text-wrap: pretty;
 }
@@ -21,7 +21,7 @@ body {
 body > header   { grid-column: 1 / -1; position: relative; }
 .theme-toggle { position: absolute; top: 0; right: 0; background: none; border: none; cursor: pointer; }
 body > .sidebar { grid-column: 1 / span 3; }
-body > main     { grid-column: 4 / -1; }
+body > main     { grid-column: 4 / -1; max-width: 600px; }
 body > footer   { grid-column: 1 / -1; }
 
 @media (max-width: 64rem) {
