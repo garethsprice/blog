@@ -5,13 +5,16 @@
     <summary>Commits</summary>
     {% for rev in page.revisions %}
       {% if forloop.index <= site.max_revisions_count %}
-          <p>
-            <small><code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code></small>
-            <small><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | timeago }}</time></small>
-          </p>
-          {% if rev.author != site.author.name %}
-            <div class="post-meta"><small>Author: {{ rev.author }}</small></div>
-          {% endif %}
+          <details class="revision-commit">
+            <summary>
+              <small><code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code></small>
+              <small><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | timeago }}</time></small>
+            </summary>
+            <p><small>{{ rev.message }}</small></p>
+            {% if rev.author != site.author.name %}
+              <div class="post-meta"><small>Author: {{ rev.author }}</small></div>
+            {% endif %}
+          </details>
       {% endif %}
     {% endfor %}
     {% if page.revisions.size >= site.max_revisions_count %}
