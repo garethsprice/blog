@@ -10,23 +10,24 @@ module Jekyll
         return if ARGV.include?("--no-revision")
 
         items = site.posts.docs + site.pages + site.docs_to_write
+        max_revisions = site.config['max_revisions_count'] || 5
         items.each do |item|
-          logger = GitLogger.new(site.source, item.path, site.config['revision'])
+          logger = GitLogger.new(site.source, item.path, max_revisions)
           revisions = logger.revisions
           item.data['revisions'] = revisions
-          item.data['revisions_max_count'] = logger.max_count
+          item.data['revisions_max_count'] = max_revisions
           item.data['last_modified_at'] = revisions&.first&.dig('date')
         end
       end
     end # Revision
 
     class GitLogger
-      attr_reader :site_source, :page_path, :config
+      attr_reader :site_source, :page_path, :max_count
 
-      def initialize(site_source, page_path, config = {})
+      def initialize(site_source, page_path, max_count = 5)
         @site_source = site_source
         @page_path   = page_path
-        @config      = config || {}
+        @max_count   = max_count
       end
 
       def revisions
@@ -83,10 +84,6 @@ module Jekyll
 
         revisions << current_revision if current_revision
         revisions
-      end
-
-      def max_count
-        config['max_revisions_count'] || 5
       end
 
       private
