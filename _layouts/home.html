@@ -9,7 +9,10 @@ layout: default
 
 <section class="posts">
   <h2>Writing</h2>
-  {% for post in site.posts %}
+  {% assign posts_with_update = site.posts | where_exp: "post", "post.updated_date" | sort: "updated_date" | reverse %}
+  {% assign posts_without_update = site.posts | where_exp: "post", "post.updated_date == nil" | sort: "created_date" | reverse %}
+  {% assign sorted_posts = posts_with_update | concat: posts_without_update %}
+  {% for post in sorted_posts %}
   <article class="post-preview">
     <header>
       {% assign now_seconds = site.time | date: "%s" | plus: 0 %}
