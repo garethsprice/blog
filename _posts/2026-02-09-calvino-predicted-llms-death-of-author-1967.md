@@ -3,7 +3,7 @@ layout: post
 title: "An Italian Novelist Predicted LLMs, the Death of the Author, and the Trap That Follows — in 1967"
 description: "In a lecture that predates the internet by decades, Italo Calvino described a literature machine that would render the author obsolete and shift the full weight of meaning onto the reader. He also described exactly how it would fail — not by producing bad writing, but by producing so much plausible text that readers stop trying to think through it."
 created_date: 2026-02-09
-updated_date: 2026-02-11
+updated_date: 2026-02-13
 ---
 
 Before the author existed, there was the storyteller of the tribe. He sat by the fire and combined the same handful of elements — the jaguar, the coyote, the father, the son, the forbidden thing, the punishment — into every possible arrangement. He did not own these stories. Nobody did. Occasionally, one arrangement would land on something terrifying and true, and the tribe would have a new myth. The storyteller was not a genius. He was a machine.
