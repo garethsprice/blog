@@ -9,9 +9,9 @@ I speak and write about AI, engineering leadership, growth engineering, and the 
 
 ### Talks
 
-- **"Wearables and the Happiness Quotient"** -- SxSW Interactive
-- **High Tech Fashion & Design** -- Northside Festival, Brooklyn
-- **"Defining Tomorrow: The Role of Wearables and Shareables"** -- Digital Dumbo dd:COLLECTIVE at Interbrand
+- [Wearables and the Happiness Quotient](https://schedule.sxsw.com/2015/events/event_IAP40939) -- SxSW Interactive
+- [High Tech Fashion & Design](https://northsidefestival2014.sched.com/event/1kLVFKW/high-tech-fashion-design-presented-by-ready-set-rocket) -- Northside Festival, Brooklyn
+- [Defining Tomorrow: The Role of Wearables and Shareables](https://kaltura.baruch.cuny.edu/media/From+wearables+to+shareables+%3A+creating+consumer+connections.+Part+1+of+3./1_3p1r2f1b) -- Digital Dumbo dd:COLLECTIVE at Interbrand
 
 ### Publications
 
