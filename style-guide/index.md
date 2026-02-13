@@ -103,8 +103,6 @@ Formatting exists to clarify meaning.
 
 Use em dashes — sparingly — for brief asides.
 
-Use the `<!--more-->` separator after the first paragraph to control homepage excerpts.
-
 ### Length
 
 Length is determined by argument, not habit.
