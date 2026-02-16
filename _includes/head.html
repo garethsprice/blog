@@ -13,3 +13,9 @@ if (t) document.documentElement.dataset.theme = t;
 {% feed_meta %}
 {% seo %}
 {% include google-analytics.html %}
+<script type="speculationrules">
+  {
+    "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }],
+    "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
+  }
+</script>
