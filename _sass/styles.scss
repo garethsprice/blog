@@ -1,5 +1,16 @@
+body {
+  line-height: 30px;
+
+  font-size: 20px;
+  margin: 1.85rem;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+
+  color: rgb(54,54,54);
+}
+
 h2 {
-  font-size: 3.5rem;
+  font-size: 40px;
   line-height: 1.2;
   margin: 1rem auto 1.5rem auto;
 }
@@ -8,13 +19,8 @@ h2 {
   font-size: 2rem;
 }
 
-h3 {
-  line-height: 2.2rem;
-}
-
 h3.stand-first {
-  color: #999;
-  color: GrayText;
+  color: rgb(114, 114, 114)
 }
 
 blockquote {
@@ -27,4 +33,14 @@ blockquote {
   margin-bottom: 1em;
   color: #999;
   color: GrayText;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgb(201,201,201); // inverse of rgb(54,54,54)
+  }
+
+  h3.stand-first, blockquote {
+    color: rgb(141,141,141); // inverse of rgb(114,114,114)
+  }
 }
