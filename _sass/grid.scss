@@ -11,25 +11,28 @@ body {
   padding-inline: 1.5rem;
 }
 
-body > header   { grid-column: 1 / -1; position: relative; }
-.theme-toggle { position: absolute; top: 0; right: 0; background: none; border: none; cursor: pointer; }
+body > header   { grid-column: 4 / -1; max-width: 600px; }
+body > header h1 { display: flex; justify-content: space-between; align-items: baseline; }
+.theme-toggle { background: none; border: none; cursor: pointer; margin-right: 0.5rem; }
 body > .sidebar { grid-column: 1 / span 3; }
 body > main     { grid-column: 4 / -1; max-width: 600px; }
-body > footer   { grid-column: 1 / -1; }
+body > footer   { grid-column: 4 / -1; max-width: 600px; }
 
 @media (max-width: 64rem) {
   body {
     grid-template-columns: repeat(8, 1fr);
   }
 
+  body > header,
   body > .sidebar,
-  body > main {
+  body > main,
+  body > footer {
     grid-column: 1 / -1;
   }
 }
 
 @media (min-width: 64.01rem) {
-  nav summary {
+  nav summary .label {
     display: none;
   }
 }
