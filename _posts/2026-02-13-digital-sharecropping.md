@@ -34,11 +34,13 @@ The hardest counterargument is simpler: consumers do not care. Betting on a mass
 
 The question, then, is not how to fix the creator economy. It is what replaces it.
 
-The answer is ownership — of infrastructure, of the audience relationship, of the building itself.
+The answer is ownership — of infrastructure, of the audience relationship, of the building itself. In the words of William Blake (circa 1821):
 
-Archive of Our Own, the nonprofit fanfiction platform, now hosts over 16.5 million works with more than 10 million registered users. It runs on volunteer labour and donations. It carries no advertising and has no algorithmic feed. It was incorporated as a nonprofit so it could never be sold. One of its founders noted that a for-profit version would have attracted acquisition offers by 2011; they chose otherwise.[^10] Tumblr, launched around the same time, sold to Yahoo for $1.1 billion and has been declining since. Wikipedia and the Internet Archive operate on the same principle. These are among the most-used institutions on the internet, and they share a common structure: community governance, nonprofit ownership, and funding that aligns the platform's incentives with its users' interests rather than with advertisers'. They survive because nobody profits from their degradation.
+> Create a System, or be enslav'd by another Mans / I will not Reason & Compare: my business is to Create[^10]
 
-The parallel to physical commerce holds. In New York, as gentrification advanced, the small businesses that survived were overwhelmingly the ones that owned their buildings. Tenants — no matter how established or profitable — were priced out when landlords tripled rents or sold to developers. A Williamsburg pharmacy that had served its community for decades had to relocate when rent became unaffordable; the owners bought a building on a side street.[^11] A family appliance store on the Upper West Side, founded in 1934, survived the blackout riots of 1977 but not Manhattan's commercial rents.[^12] Ownership was not a guarantee of survival, but tenancy was nearly a guarantee of eventual displacement.
+Archive of Our Own, the nonprofit fanfiction platform, now hosts over 16.5 million works with more than 10 million registered users. It runs on volunteer labour and donations. It carries no advertising and has no algorithmic feed. It was incorporated as a nonprofit so it could never be sold. One of its founders noted that a for-profit version would have attracted acquisition offers by 2011; they chose otherwise.[^11] Tumblr, launched around the same time, sold to Yahoo for $1.1 billion and has been declining since. Wikipedia and the Internet Archive operate on the same principle. These are among the most-used institutions on the internet, and they share a common structure: community governance, nonprofit ownership, and funding that aligns the platform's incentives with its users' interests rather than with advertisers'. They thrive because nobody profits from their degradation.
+
+In New York, as gentrification advanced, the small businesses that survived were overwhelmingly the ones that owned their buildings. Tenants — no matter how established or profitable — were priced out when landlords tripled rents or sold to developers. A Williamsburg pharmacy that had served its community for decades had to relocate when rent became unaffordable; the owners bought a building on a side street.[^12] A family appliance store on the Upper West Side, founded in 1934, survived the blackout riots of 1977 but not Manhattan's commercial rents.[^13] Ownership was not a guarantee of survival, but tenancy was nearly a guarantee of eventual displacement.
 
 Creators displaced by AI slop are digital tenants. They built on someone else's land, with someone else's tools, under someone else's rules. This was rational when alternatives were expensive and platforms seemed benign. It is no longer rational. The platforms have made clear — through algorithmic design, revenue splits, and enthusiastic adoption of the AI technology that enables the theft — that their interests and the creators' interests have diverged.
 
@@ -74,8 +76,10 @@ The ad-supported content model is not dying. It is fulfilling its own logic, whi
 
 [^9]: YouTube takes approximately 45% of advertising revenue. Only about 3 million of YouTube's 115 million channels are monetised under the YouTube Partner Program. (DemandSage, 2026; YouTube official data.)
 
-[^10]: Coppa, F., quoted in "An Archive of Our Own: How AO3 built a nonprofit fanfiction empire." Organisation for Transformative Works history.
+[^10]: Blake, W. (ca. 1821). Jerusalem. The emanation of the giant Albion, plate 10 [Illuminated print]. The William Blake Archive. [https://blakearchive.org/copy/jerusalem.e?descId=jerusalem.e.illbk.10](https://blakearchive.org/copy/jerusalem.e?descId=jerusalem.e.illbk.10)
 
-[^11]: Center for New York City Affairs. (2024). "From Bodegas to Boutiques: The Changing Face of Retailing Shows Gentrification's Effects."
+[^11]: Coppa, F., quoted in "An Archive of Our Own: How AO3 built a nonprofit fanfiction empire." Organisation for Transformative Works history.
 
-[^12]: Baker, K. (2018, July). "The Death of a Once Great City." *Harper's Magazine*.
+[^12]: Center for New York City Affairs. (2024). "From Bodegas to Boutiques: The Changing Face of Retailing Shows Gentrification's Effects."
+
+[^13]: Baker, K. (2018, July). "The Death of a Once Great City." *Harper's Magazine*.
