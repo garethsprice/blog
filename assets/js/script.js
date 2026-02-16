@@ -1,6 +1,7 @@
 function isDark() {
-  return document.documentElement.style.colorScheme === 'dark' ||
-    (!document.documentElement.style.colorScheme && matchMedia('(prefers-color-scheme:dark)').matches);
+  var theme = document.documentElement.dataset.theme;
+  if (theme) return theme === 'dark';
+  return matchMedia('(prefers-color-scheme:dark)').matches;
 }
 
 function setIcon() {
@@ -8,11 +9,26 @@ function setIcon() {
   lucide.createIcons();
 }
 
+// Restore saved theme preference
+var savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  document.documentElement.dataset.theme = savedTheme;
+}
+
 setIcon();
 
 document.querySelector('.theme-toggle').onclick = function() {
-  document.documentElement.style.colorScheme = isDark() ? 'light' : 'dark';
-  localStorage.setItem('theme', document.documentElement.style.colorScheme);
+  var newTheme = isDark() ? 'light' : 'dark';
+  var systemPreference = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+
+  if (newTheme === systemPreference) {
+    // Matches system preference, so remove override
+    delete document.documentElement.dataset.theme;
+    localStorage.removeItem('theme');
+  } else {
+    document.documentElement.dataset.theme = newTheme;
+    localStorage.setItem('theme', newTheme);
+  }
   setIcon();
 };
 
