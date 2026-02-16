@@ -3,6 +3,7 @@ layout: post
 title: "AI Reshapes Each User's Perception Individually, and Nobody Has a Product Metric for That"
 description: "Marshall McLuhan argued that a medium's real message is its structural effect on perception, not its content. AI is the first medium whose structural effects are personalised to each user — and the cognitive cost is accumulating faster than any product team is measuring it."
 created_date: 2026-02-09
+updated_date: 2026-02-09
 ---
 
 Every technology humans have built to extend the mind has had the decency to sit still while we studied it. The book reorganised human consciousness over centuries, replacing oral memory with fixed text, communal knowledge with private reading, and it did all of this while remaining the same object on every desk. Television rewired political culture and elevated image over argument, but it did not change its broadcast based on your facial expression. The printing press, the telegraph, the radio, the telephone: each restructured how humans perceive, think, and organise themselves, and each held still long enough for us to understand what it was doing.
