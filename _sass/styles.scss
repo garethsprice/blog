@@ -1,17 +1,17 @@
 :root {
   color-scheme: light;
-  --color-text: rgb(54,54,54);
-  --color-bg: white;
-  --color-muted: rgb(114, 114, 114);
+  --color-text: rgb(51, 51, 51);
+  --color-bg: rgb(245, 245, 240);
+  --color-muted: rgb(51, 51, 51);
 }
 
 // Dark mode via system preference (unless overridden to light)
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --color-text: rgb(201,201,201);
-    --color-bg: black;
-    --color-muted: rgb(141,141,141);
+    --color-text: rgb(224, 224, 224);
+    --color-bg: rgb(26, 26, 26);
+    --color-muted: rgb(204, 204, 204);
   }
 }
 
@@ -23,9 +23,9 @@
 // Manual dark mode override
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --color-text: rgb(201,201,201);
-  --color-bg: black;
-  --color-muted: rgb(141,141,141);
+  --color-text: #E0E0E0
+  --color-bg: rgb(26, 26, 26);
+  --color-muted: rgb(204, 204, 204);
 }
 
 body {
@@ -54,7 +54,7 @@ h3.stand-first {
 
 blockquote {
   font-style: italic;
-  border-left: 2px solid #999;
+  border-left: 2px solid rgb(153, 153, 153);
   padding-left: 1em;
   margin-left: 1em;
   margin-right: 1em;
