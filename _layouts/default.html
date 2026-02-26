@@ -4,11 +4,13 @@
     {% include head.html %}
   </head>
   <body>
+    {% include nav.html %}
     {% include header.html %}
+    {% unless page.url == '/' %}{% if page.revisions.size > 0 %}
     <div class="sidebar">
-      {% include nav.html %}
       {% include revisions.html %}
     </div>
+    {% endif %}{% endunless %}
     <main>
       {{ content | typogrify }}
     </main>
