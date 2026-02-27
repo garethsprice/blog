@@ -3,7 +3,7 @@ layout: post
 title: "AI Is the First Medium That Reshapes Itself Around Each User"
 description: "Marshall McLuhan argued that a medium's real message is its structural effect on perception, not its content. With AI, that effect is personalised, invisible, and different for every user — and the cognitive cost is accumulating unmeasured."
 created_date: 2026-02-09
-updated_date: 2026-02-09
+updated_date: 2026-02-27
 ---
 
 AI is the first medium whose structural effects are personalised to each user. It watches you use it, models your patterns, and adjusts its responses so seamlessly that the restructuring feels like service. Every previous cognitive technology — the book, the television, the search engine — restructured how humans perceive and think, but each one did it uniformly and held still long enough for us to study it. AI does not hold still. Its restructuring is tailored to each user, invisible to each user, and different for each user. That is the most important thing about the technology, and it has no precedent.
