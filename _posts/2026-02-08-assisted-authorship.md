@@ -4,6 +4,7 @@ title: "Authorship Has Outgrown Its Vocabulary"
 description: "AI didn't change what it means to write. It revealed what it has always meant."
 created_date: 2026-02-08
 updated_date: 2026-02-27
+assisted_authorship_link: false
 ---
 A colleague read a strategy document I had written and sent me a message: "Did you write this?"
 
@@ -41,7 +42,7 @@ I used AI to write this essay. I am the author. Next time someone asks "did you 
 
 ---
 
-{% include syngraphic-disclaimer.html %}
+{% include assisted-authorship-disclaimer.html %}
 
 ### References
 

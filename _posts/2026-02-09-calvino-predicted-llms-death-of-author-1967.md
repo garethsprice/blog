@@ -44,7 +44,7 @@ That is the work of the reader now. The LLM builds the imagined fortress — the
 
 ---
 
-{% include syngraphic-disclaimer.html %}
+{% include assisted-authorship-disclaimer.html %}
 
 ### References
 

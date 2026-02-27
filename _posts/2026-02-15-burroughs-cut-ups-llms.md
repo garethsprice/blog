@@ -35,7 +35,7 @@ The best description I have found for human-AI collaboration done well is one th
 
 ---
 
-{% include syngraphic-disclaimer.html %}
+{% include assisted-authorship-disclaimer.html %}
 
 *For an in-depth exploration of the cut-up technique's lineage — from Virgilian centos and Tzara's hat to Shannon's Markov chains, Cage's I Ching, and the evolution toward modern tokenization — see the companion article: [Scissors, Language, and Control: Burroughs' Cut-Up Technique in Context]({% post_url 2026-02-15-burroughs-cut-ups-research %}).*
 

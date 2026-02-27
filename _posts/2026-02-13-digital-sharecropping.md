@@ -55,7 +55,7 @@ The ad-supported content model is not dying. It is fulfilling its own logic, whi
 
 ---
 
-{% include syngraphic-disclaimer.html %}
+{% include assisted-authorship-disclaimer.html %}
 
 ### References
 

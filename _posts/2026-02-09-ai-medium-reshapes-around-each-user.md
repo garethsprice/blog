@@ -38,7 +38,7 @@ AI integrates. It slips into your email client, your search engine, your word pr
 
 ---
 
-{% include syngraphic-disclaimer.html %}
+{% include assisted-authorship-disclaimer.html %}
 
 ### References
 
