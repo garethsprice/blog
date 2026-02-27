@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Digital Sharecroppers Cannot Be Saved by Better Landlords"
-description: "AI pipelines can now strip-mine a creator's entire catalogue, transform it beyond detection, and have it earning ad revenue within hours. The problem is not enforcement — it is that creators built on land they never owned, and the survival strategy is older than the internet."
+description: "AI pipelines can strip-mine a creator's entire catalogue, transform it beyond detection, and have it earning ad revenue within hours. The problem is not enforcement — it is that creators built on land they never owned, and the survival strategy is older than the internet."
 created_date: 2026-02-13
 updated_date: 2026-02-13
 ---
