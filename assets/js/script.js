@@ -37,3 +37,27 @@ var revisions = document.querySelector('.revisions-details');
 if (revisions && window.innerWidth >= 768) {
   revisions.open = true;
 }
+
+// Render relative timestamps client-side
+(function() {
+  var units = [
+    ["year",   31536000],
+    ["month",  2592000],
+    ["week",   604800],
+    ["day",    86400],
+    ["hour",   3600],
+    ["minute", 60],
+    ["second", 1]
+  ];
+  var locale = navigator.language;
+  var rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" });
+  document.querySelectorAll("time[data-relative]").forEach(function(el) {
+    var date = new Date(el.getAttribute("datetime"));
+    el.title = date.toLocaleString(locale, { dateStyle: "full", timeStyle: "short" });
+    var diff = (date - Date.now()) / 1000;
+    for (var i = 0; i < units.length; i++) {
+      if (Math.abs(diff) >= units[i][1] || i === units.length - 1) {
+        el.textContent = rtf.format(Math.round(diff / units[i][1]), units[i][0]);
+        break;
+      }
+    }
