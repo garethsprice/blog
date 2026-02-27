@@ -37,6 +37,8 @@ This section comes first because models weight instructions by position. Read th
 4. Is mechanism separated from interpretation?
 5. Does the paragraph survive "so what?"
 6. Can any sentence be cut without losing meaning?
+7. Does the piece vary its paragraph structure, or does every paragraph follow the same claim-development-resolution pattern?
+8. Are there any straw consensus moves, throat-clearing transitions, or unprovable scope claims?
 
 **Grounding:** Draw claims from real experience (CorralData, NYT, Codecademy, Ready Set Rocket, University of Manchester). Do not invent authority, experiences, or results. Flag uncertainty for human review. If a sentence sounds impressive but says little, delete it.
 
@@ -66,6 +68,8 @@ Bad: "Our AI journey revealed powerful synergies across the organisation."
 **Begin with the argument.** State the main claim in the first paragraph. A narrative opening is permitted if the argument precedes it or is stated within that first paragraph. The test is whether a reader finishing the first paragraph knows what the piece is arguing. Scene-setting that delays the thesis is a maze, not an opening.
 
 **Lead every paragraph with its claim.** Each paragraph should open with a sentence that carries the paragraph's point. The reader should not have to reach the end of a paragraph to discover what it was about.
+
+**Vary the pattern.** Not every paragraph should open with its claim — one in four or five can lead with evidence, detail, or narrative and let the point emerge. Not every paragraph should close with a resolution. Some should spill into the next, leaving the reader to carry the implication across the gap. If every paragraph is a closed loop — claim, development, summary — the writing will feel mechanical regardless of who or what produced it.[^5]
 
 **Apply the "so what?" test.** Every paragraph must survive a sceptical reader asking "so what?" If the answer is "context" or "background," it belongs in a footnote or not at all.
 
@@ -108,7 +112,7 @@ Follow Orwell's rules:
 * Never use a foreign phrase, scientific term, or jargon word if an everyday English equivalent exists.
 * Break any of these rules sooner than say anything outright barbarous.
 
-### Weasel words
+### Weasel words and common tics
 
 Common patterns to eliminate:
 
@@ -116,6 +120,9 @@ Common patterns to eliminate:
 * **False precision**: "nearly all", "significant improvement", "the vast majority"
 * **Unearned authority**: "it is widely believed", "experts agree", "arguably the best"
 * **Qualifiers that dilute**: "I think", "it seems", "generally speaking"
+* **Straw consensus**: "Everyone assumes...", "What most teams miss...", "The conventional wisdom is..." followed by the writer's correction. If you cannot name who holds the position you are arguing against, the consensus may not exist. State your claim directly without manufacturing a mainstream view to push against.
+* **Throat-clearing transitions**: "The evidence bears this out", "It is worth noting that", "This brings us to...", "Let's take a closer look." If the next sentence is strong enough to exist, it does not need an announcement. Cut the transition and let the sentence land.
+* **Unprovable scope claims**: "Almost nobody", "most teams", "everyone in the industry." Treat scope claims as empirical claims. If you cannot support them with a number or a source, they are not rhetorical shading — they are unfinished claims. Either find the evidence or state the point without the scope.
 
 The fix is almost always the same: replace the weasel word with a number, a name, or a date. If you cannot, the claim may not be ready to make.
 
@@ -198,3 +205,5 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 [^3]: Amazon. (2018, November). *Write Like an Amazonian* [Internal training document]. Principles widely summarised; see Sheridan, D. (2019). Amazon Writing Style Tips. Fact of the Day 1. [https://medium.com/fact-of-the-day-1/amazon-writing-style-tip-3-184c76dd2bb7](https://medium.com/fact-of-the-day-1/amazon-writing-style-tip-3-184c76dd2bb7)
 
 [^4]: Bryar, C., & Carr, B. (2021). *Working Backwards: Insights, Stories, and Secrets from Inside Amazon*. St. Martin's Press.
+
+[^5]: Chakrabarty, T., Laban, P., Agarwal, D., Muresan, S., & Wu, C.-S. (2024). Art or artifice? Large language models and the false promise of creativity. *Proceedings of the ACM CHI Conference on Human Factors in Computing Systems*. Expert evaluators identified topic sentences at every paragraph opening, summary sentences at every closing, and ornamental language as structural tics of LLM-generated prose. [https://arxiv.org/abs/2309.14556](https://arxiv.org/abs/2309.14556)
