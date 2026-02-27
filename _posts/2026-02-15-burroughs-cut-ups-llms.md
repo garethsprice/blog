@@ -27,11 +27,11 @@ Burroughs and Gysin called their collaborative book *The Third Mind*. The title 
 
 {% include syngraphic-disclaimer.html %}
 
-*For an in-depth exploration of the cut-up technique's lineage—from Virgilian centos and Tzara's hat to Shannon's Markov chains, Cage's I Ching, and the evolution toward modern tokenization—see the companion article: [Scissors, Language, and Control: Burroughs' Cut-Up Technique in Context]({% post_url 2026-02-15-burroughs-context %}).*
+*For an in-depth exploration of the cut-up technique's lineage—from Virgilian centos and Tzara's hat to Shannon's Markov chains, Cage's I Ching, and the evolution toward modern tokenization—see the companion article: [Scissors, Language, and Control: Burroughs' Cut-Up Technique in Context]({% post_url 2026-02-15-burroughs-cut-ups-research %}).*
 
 ---
 
-## References
+### References
 
 [^1]: Gysin, B. (n.d.). Cut ups. *Brion Gysin Official Website*. Retrieved from https://www.briongysin.com/cut-ups/
 
