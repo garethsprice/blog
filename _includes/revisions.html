@@ -8,7 +8,7 @@
           <details class="revision-commit">
             <summary>
               <small><code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code></small>
-              <small><time datetime="{{ rev.date | date_to_xmlschema }}">{{ rev.date | timeago }}</time></small>
+              <small><time datetime="{{ rev.date | date_to_xmlschema }}" data-relative>{{ rev.date | date: "%b %-d, %Y" }}</time></small>
             </summary>
             <p><small>{{ rev.message }}</small></p>
             {% if rev.author != site.author.name %}

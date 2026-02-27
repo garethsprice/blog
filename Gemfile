@@ -10,6 +10,5 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-tidy"
   gem "liquid_reading_time"
-  gem "jekyll-timeago"
   gem "jekyll-typogrify"
 end
