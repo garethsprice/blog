@@ -15,7 +15,7 @@ pre  { overflow: auto; }
 
 // Body
 body {
-  line-height: 1.5;
+  line-height: 1.45;
   font-size: 1.25rem;
   margin: 0;
   text-wrap: pretty;
@@ -27,11 +27,14 @@ body {
 
 // Heading scale
 h1 { font-size: 2.75rem; line-height: 1.1;  margin: 0 0 0.25rem; letter-spacing: -0.02em; }
-h2 { font-size: 2rem;    line-height: 1.15; margin: 2rem 0 0.75rem; letter-spacing: -0.01em; }
-h3 { font-size: 1.5rem;  line-height: 1.25; margin: 1.5rem 0 0.5rem; }
-h4 { font-size: 1.25rem; line-height: 1.3;  margin: 1.25rem 0 0.5rem; }
+h2 { font-size: 2rem;    line-height: 1.15; margin: 2rem 0 0.75rem; letter-spacing: -0.02em; }
+h3 { font-size: 1.5rem;  line-height: 1.25; margin: 1.5rem 0 0.5rem; letter-spacing: -0.015em; }
+h4 { font-size: 1.25rem; line-height: 1.3;  margin: 1.25rem 0 0.5rem; letter-spacing: -0.01em; }
 h5 { font-size: 1rem;    line-height: 1.4;  margin: 1rem 0 0.25rem; text-transform: uppercase; letter-spacing: 0.04em; }
 h6 { font-size: 0.85rem; line-height: 1.4;  margin: 1rem 0 0.25rem; text-transform: uppercase; letter-spacing: 0.06em; }
+
+// Paragraph spacing
+p { margin: 0.75em 0; }
 
 // Block elements
 blockquote {
