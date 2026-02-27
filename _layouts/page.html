@@ -5,6 +5,7 @@ layout: default
 <article>
   <header>
     <h2>{{ page.title | escape }}</h2>
+    {% include revisions.html %}
   </header>
   {{ content | typogrify }}
 </article>

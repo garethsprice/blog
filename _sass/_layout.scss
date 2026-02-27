@@ -54,13 +54,6 @@ body > footer { grid-column: 4 / 10; }
   margin-top: 0.5rem;
 }
 
-// Sidebar
-.sidebar {
-  grid-column: 1 / span 3;
-  padding-top: 6rem;
-  font-size: 0.85rem;
-}
-
 // Navigation
 .site-nav {
   position: fixed;
@@ -131,11 +124,54 @@ body > footer { grid-column: 4 / 10; }
   gap: 0.25rem;
 }
 
-// Revisions
-.revisions > summary { cursor: pointer; }
+// Article metadata (updated time + commits)
+.article-meta {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+}
 
-.revisions[open] > :not(summary),
-.revision[open] > :not(summary) {
+.article-meta p {
+  margin: 0;
+}
+
+.revisions {
+  margin-top: 0.25rem;
+}
+
+.revisions summary {
+  cursor: pointer;
+  list-style: none;
+  width: fit-content;
+}
+
+.revisions summary::-webkit-details-marker { display: none; }
+
+.revisions summary::before {
+  content: "▸ ";
+}
+
+.revisions[open] summary::before {
+  content: "▾ ";
+}
+
+.revisions ol {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+}
+
+.revisions li {
+  padding: 0.15rem 0;
+}
+
+.revision-message {
+  display: block;
+  padding-left: 1rem;
+  color: var(--color-muted);
+}
+
+.revisions[open] > :not(summary) {
   animation: fade-in 0.15s ease;
 }
 
@@ -152,14 +188,12 @@ body > footer { grid-column: 4 / 10; }
   }
 
   body > header,
-  .sidebar,
   body > main,
   body > footer {
     grid-column: 1 / -1;
   }
 
   body > header { padding-left: 2.5rem; }
-  .sidebar { padding-top: 1rem; }
 }
 
 // Responsive: 4-col
@@ -177,5 +211,4 @@ body > footer { grid-column: 4 / 10; }
 
   body > header { padding-left: 2.5rem; }
   .site-title { font-size: 1.75rem; }
-  .sidebar { padding-top: 1rem; }
 }
