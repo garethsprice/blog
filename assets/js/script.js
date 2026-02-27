@@ -57,12 +57,6 @@ document.querySelector('.theme-toggle').onclick = function() {
   });
 })();
 
-// Open revisions details on desktop only
-var revisions = document.querySelector('.revisions');
-if (revisions && window.innerWidth >= 768) {
-  revisions.open = true;
-}
-
 // Render relative timestamps client-side
 (function() {
   var units = [
