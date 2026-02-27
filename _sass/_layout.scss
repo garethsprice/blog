@@ -126,9 +126,9 @@ body > footer { grid-column: 4 / 10; }
 
 // Article metadata (updated time + commits)
 .article-meta {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-muted);
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .article-meta p {

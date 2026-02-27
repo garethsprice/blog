@@ -9,7 +9,6 @@ layout: default
     {% if page.description %}
       <h3 class="stand-first">{{ page.description | typogrify }}</h3>
     {% endif %}
-    <p class="reading-time"><em>{{ page.content | reading_time | append: " min read" }}</em></p>
     {% include revisions.html %}
   </header>
   {{ content | typogrify }}

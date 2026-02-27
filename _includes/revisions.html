@@ -1,7 +1,14 @@
-{% if page.revisions.size > 0 %}
-{% assign latest = page.revisions | first %}
+{% assign has_revisions = false %}
+{% if page.revisions.size > 0 %}{% assign has_revisions = true %}{% endif %}
+{% assign reading_time = page.content | reading_time %}
+
+{% if has_revisions or reading_time %}
 <div class="article-meta">
-  <p>Updated <time datetime="{{ latest.date | date_to_xmlschema }}" data-relative>{{ latest.date | date: "%b %-d, %Y" }}</time></p>
+  <p>
+    {% if reading_time %}{{ reading_time }} min read{% endif %}
+    {% if reading_time and has_revisions %} · {% endif %}
+    {% if has_revisions %}{% assign latest = page.revisions | first %}Updated <time datetime="{{ latest.date | date_to_xmlschema }}" data-relative>{{ latest.date | date: "%b %-d, %Y" }}</time>{% endif %}
+  </p>
   {% if page.revisions.size > 1 %}
   <details class="revisions">
     <summary>{{ page.revisions.size }}{% if page.revisions.size >= site.max_revisions_count %}+{% endif %} commits</summary>
