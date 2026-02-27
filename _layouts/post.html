@@ -3,18 +3,16 @@ layout: default
 ---
 {% include easter.html %}
 
-<div class="post-container">
-  <article class="post">
-    <header class="post-header">
-      <h2>{{ page.title | escape }}</h2>
-      {% if page.description %}
-        <h3 class="stand-first">{{ page.description | typogrify }}</h3>
-      {% endif %}
-      <p class="reading-time"><em>{{ page.content | reading_time | append: " min read" }}</em></p>
-    </header>
-    {{ content | typogrify }}
-    <footer class="post-footer">
-      <p><a href="{{ '/' | relative_url }}">Back to all posts</a></p>
-    </footer>
-  </article>
-</div>
+<article>
+  <header>
+    <h2>{{ page.title | escape }}</h2>
+    {% if page.description %}
+      <h3 class="stand-first">{{ page.description | typogrify }}</h3>
+    {% endif %}
+    <p class="reading-time"><em>{{ page.content | reading_time | append: " min read" }}</em></p>
+  </header>
+  {{ content | typogrify }}
+  <footer>
+    <p><a href="{{ '/' | relative_url }}">Back to all posts</a></p>
+  </footer>
+</article>

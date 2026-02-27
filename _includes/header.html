@@ -1,4 +1,4 @@
 <header>
-  <h1>{% if page.url == '/' %}{{ site.title | escape }}{% else %}<a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>{% endif %}<button class="theme-toggle" aria-label="Toggle theme"><i data-lucide="moon"></i></button></h1>
-  <p><em>{{ site.tagline | escape }}</em>{% if page.url != '/' %},<br/>by <strong>{{ site.author.name | escape }}</strong>{% if site.author.title %}, {{ site.author.title | escape }}{% endif %} @ <a target="_blank" href="{{ site.author.company_url }}">{{ site.author.company | escape }}</a>.{% else %}.{% endif %}</p>
+  <h1 class="site-title">{% if page.url == '/' %}{{ site.title | escape }}{% else %}<a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>{% endif %}<button class="theme-toggle" aria-label="Toggle theme"><i data-lucide="moon"></i></button></h1>
+  <p class="site-byline"><em>{{ site.tagline | escape }}</em>{% if page.url != '/' %},<br/>by <strong>{{ site.author.name | escape }}</strong>{% if site.author.title %}, {{ site.author.title | escape }}{% endif %} @ <a target="_blank" href="{{ site.author.company_url }}">{{ site.author.company | escape }}</a>.{% else %}.{% endif %}</p>
 </header>

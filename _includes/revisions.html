@@ -1,18 +1,18 @@
 {% unless page.url == '/' %}
 {% if page.revisions.size > 0 %}
 <aside>
-  <details class="revisions-details">
+  <details class="revisions">
     <summary>Commits</summary>
     {% for rev in page.revisions %}
       {% if forloop.index <= site.max_revisions_count %}
-          <details class="revision-commit">
+          <details class="revision">
             <summary>
               <small><code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code></small>
               <small><time datetime="{{ rev.date | date_to_xmlschema }}" data-relative>{{ rev.date | date: "%b %-d, %Y" }}</time></small>
             </summary>
             <p><small>{{ rev.message }}</small></p>
             {% if rev.author != site.author.name %}
-              <div class="post-meta"><small>Author: {{ rev.author }}</small></div>
+              <p><small>Author: {{ rev.author }}</small></p>
             {% endif %}
           </details>
       {% endif %}
