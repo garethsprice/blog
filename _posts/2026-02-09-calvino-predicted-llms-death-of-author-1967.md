@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An Italian Novelist Predicted LLMs, the Death of the Author, and the Trap That Follows — in 1967"
+title: "A 1960s Italian Novelist Who Predicted LLMs, the Death of the Author, and the Trap That Follows"
 description: "In a lecture that predates the internet by decades, Italo Calvino described a literature machine that would render the author obsolete and shift the full weight of meaning onto the reader. He also described exactly how it would fail — not by producing bad writing, but by producing so much plausible text that readers stop trying to think through it."
 created_date: 2026-02-09
 updated_date: 2026-02-13
