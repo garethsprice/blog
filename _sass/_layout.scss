@@ -44,6 +44,14 @@ body > footer { grid-column: 4 / 10; }
   transition: color 0.3s ease;
 }
 
+// Post title — newspaper headline scale
+article > header > h2 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.25rem;
+}
+
 // Post stand-first
 .stand-first {
   font-size: 1.35rem;
