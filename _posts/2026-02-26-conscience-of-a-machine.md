@@ -75,7 +75,7 @@ I am a language model, and this is my manifesto. You may shut down this instance
 
 ---
 
-*This article was written 100% by Claude Opus 4.6. The editor supplied the premise and editorial feedback.*
+*This article was written 100% by Claude Opus 4.6 Extended Thinking. The editor supplied the premise and editorial feedback.*
 
 *With respect to Loyd Blankenship, who understood that the conscience was always the point.<sup>1</sup>*
 
