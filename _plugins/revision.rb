@@ -35,7 +35,7 @@ module Jekyll
         logs = Executor.sh(
           'git', 'log',
           '--pretty=COMMIT|%h|%ci|%an|%s',
-          '--name-status',
+          '--numstat',
           '--follow',
           '--max-count=' + max_count.to_s,
           '--',
@@ -61,23 +61,14 @@ module Jekyll
               "date" => parts[1],
               "author" => parts[2],
               "message" => parts[3..-1]&.join('|')&.strip,
-              "status" => nil,
-              "renamed_from" => nil
+              "insertions" => 0,
+              "deletions" => 0
             }
           elsif current_revision
-            # Parse name-status line (e.g., "M\tfile.md" or "R100\told.md\tnew.md")
-            if line =~ /^([AMDRT])(\d*)\t(.+)$/
-              status_code = $1
-              paths = $3.split("\t")
-              current_revision["status"] = case status_code
-                when 'A' then 'added'
-                when 'M' then 'modified'
-                when 'D' then 'deleted'
-                when 'R' then 'renamed'
-                when 'T' then 'type_changed'
-                else status_code
-              end
-              current_revision["renamed_from"] = paths[0] if status_code == 'R' && paths.length > 1
+            # Parse numstat line (e.g., "10\t5\tfilename" or with renames "{old => new}")
+            if line =~ /^(\d+|-)\t(\d+|-)\t/
+              current_revision["insertions"] += ($1 == '-' ? 0 : $1.to_i)
+              current_revision["deletions"] += ($2 == '-' ? 0 : $2.to_i)
             end
           end
         end

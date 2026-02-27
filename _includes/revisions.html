@@ -12,20 +12,23 @@
   {% if page.revisions.size > 1 %}
   <details class="revisions">
     <summary>{{ page.revisions.size }}{% if page.revisions.size >= site.max_revisions_count %}+{% endif %} commits</summary>
-    <ol>
-      {% for rev in page.revisions %}
-        {% if forloop.index <= site.max_revisions_count %}
-        <li>
-          <code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code>
-          <time datetime="{{ rev.date | date_to_xmlschema }}" data-relative>{{ rev.date | date: "%b %-d, %Y" }}</time>
-          <span class="revision-message">{{ rev.message }}</span>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ol>
-    {% if page.revisions.size >= site.max_revisions_count %}
-    <p><a target="_blank" href="{{ site.author.github_repo }}/commits/main/{{ page.path }}">Full history &rarr;</a></p>
-    {% endif %}
+    <div class="revisions-content">
+      <ol>
+        {% for rev in page.revisions %}
+          {% if forloop.index <= site.max_revisions_count %}
+          <li>
+            <code><a target="_blank" href="{{ site.author.github_repo }}/commit/{{ rev.short_hash }}">{{ rev.short_hash }}</a></code>
+            <time datetime="{{ rev.date | date_to_xmlschema }}" data-relative>{{ rev.date | date: "%b %-d, %Y" }}</time>
+            {% if rev.insertions > 0 or rev.deletions > 0 %}<span class="revision-diff">{% if rev.insertions > 0 %}<span class="diff-add">+{{ rev.insertions }}</span>{% endif %}{% if rev.insertions > 0 and rev.deletions > 0 %} {% endif %}{% if rev.deletions > 0 %} <span class="diff-del">&minus;{{ rev.deletions }}</span>{% endif %}</span>{% endif %}
+            <span class="revision-message">{{ rev.message }}</span>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+      {% if page.revisions.size >= site.max_revisions_count %}
+      <p><a target="_blank" href="{{ site.author.github_repo }}/commits/main/{{ page.path }}">Full history &rarr;</a></p>
+      {% endif %}
+    </div>
   </details>
   {% endif %}
 </div>
