@@ -155,6 +155,22 @@ body > footer { grid-column: 4 / 10; }
   content: "▾ ";
 }
 
+.revisions-content {
+  opacity: 0;
+  transform: translateY(-0.25rem);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.revisions.open .revisions-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.revisions.closing .revisions-content {
+  opacity: 0;
+  transform: translateY(-0.25rem);
+}
+
 .revisions ol {
   list-style: none;
   padding: 0;
@@ -165,14 +181,18 @@ body > footer { grid-column: 4 / 10; }
   padding: 0.15rem 0;
 }
 
+.revision-diff {
+  font-size: 0.85em;
+  font-family: monospace;
+}
+
+.diff-add { color: #2da44e; }
+.diff-del { color: #cf222e; }
+
 .revision-message {
   display: block;
   padding-left: 1rem;
   color: var(--color-muted);
-}
-
-.revisions[open] > :not(summary) {
-  animation: fade-in 0.15s ease;
 }
 
 // Animation

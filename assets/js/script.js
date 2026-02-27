@@ -27,26 +27,27 @@ toggle.addEventListener('click', () => {
   setIcon();
 });
 
-// Nav menu fade animation
-{
-  const details = document.querySelector('.site-nav details');
-  if (details) {
-    details.querySelector('summary').addEventListener('click', (e) => {
-      if (details.open) {
-        e.preventDefault();
-        details.classList.replace('open', 'closing');
-        details.addEventListener('transitionend', () => {
-          details.classList.remove('closing');
-          details.open = false;
-        }, { once: true });
-      } else {
-        requestAnimationFrame(() =>
-          requestAnimationFrame(() => details.classList.add('open'))
-        );
-      }
-    });
-  }
-}
+// Animated details disclosure
+const animateDetails = (el) => {
+  if (!el) return;
+  el.querySelector('summary').addEventListener('click', (e) => {
+    if (el.open) {
+      e.preventDefault();
+      el.classList.replace('open', 'closing');
+      el.addEventListener('transitionend', () => {
+        el.classList.remove('closing');
+        el.open = false;
+      }, { once: true });
+    } else {
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => el.classList.add('open'))
+      );
+    }
+  });
+};
+
+animateDetails(document.querySelector('.site-nav details'));
+animateDetails(document.querySelector('.revisions'));
 
 // Relative timestamps
 {
