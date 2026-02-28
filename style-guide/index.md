@@ -199,70 +199,19 @@ Follow Orwell's rules:
 * Never use a foreign phrase, scientific term, or jargon word if an everyday English equivalent exists.
 * Break any of these rules sooner than say anything outright barbarous.
 
-When in doubt, prefer the shorter, plainer word:
-
-| Instead of | Write |
-|------------|-------|
-| approximately | about |
-| following | after |
-| prior to | before |
-| however | but |
-| sufficient | enough |
-| permit | let |
-| manufacture | make |
-| facility | plant, office, warehouse — name the thing |
-| establish | set up |
-| demonstrate | show |
-| expenditure | spending |
-| participate | take part |
-| utilise | use |
-| commence | begin, start |
-| terminate | end |
-| individuals | people |
-| purchase | buy |
-| regarding | about, on |
-| in order to | to |
-| due to the fact that | because |
-| at this point in time | now |
-
 **Watch for mixed metaphors.** A metaphor that is dead enough to use casually can still clash with another dead metaphor in the same sentence. "Cutting the budget deficit" is fine; "a package cutting the deficit while the government navigates uncharted waters" mixes tools with ships. If you use a metaphor, hold it for the sentence or drop it.[^11]
 
 **Avoid the false possessive.** "CorralData's healthcare market" implies the market belongs to CorralData. Write: "the healthcare market" or "the market CorralData serves." The possessive does the job of *of*, not *in* or *for*.[^12]
 
 **Compare like with like.** When comparing, ensure both sides are the same kind of thing. "Our latency is better than the competitor" compares a measurement to a company. Write: "Our P90 latency is lower than the competitor's." This error is easy to commit and hard to spot.[^13]
 
-#### Common redundancies
-
-These phrases contain words that add nothing. Cut them:
-
-* *cutbacks* → cuts
-* *track record* → record
-* *the policymaking process* → policymaking
-* *weather conditions* → weather
-* *safe haven* → haven
-* *free gift* → gift
-* *this time around* → this time
-* *on a daily basis* → daily
-* *at this moment in time* → now
-* *pre-prepared* → prepared
-* *major speech* → speech (unless comparing to a minor one)
-* *top priority* → priority
-* *the fact that* → that (when possible)
-* *currently* → often serves no purpose; cut or replace with *now*
-* *really*, *actually* → usually redundant
-
-In general: if a compound can be reduced without losing meaning, reduce it.[^14]
+**Cut redundancies.** If a compound can be reduced without losing meaning, reduce it. *Cutbacks* → cuts. *Track record* → record. *The fact that* → that. *Currently* usually serves no purpose.[^14]
 
 #### Usage to get right
 
-* **data** is plural (*the data show*, not *the data shows*).
-* **decimate** means to destroy a proportion, not to destroy almost everything.
-* **disinterested** means impartial; **uninterested** means not interested. Do not confuse them.
 * **beg the question** means to assume the conclusion in the premise, not to *raise* the question.
 * **which** informs; **that** defines. "This is the system that failed" (defines which system). "This system, which failed last Tuesday, has been replaced" (adds information).
-* **fewer** for countable items; **less** for measured quantities. Fewer bugs, less latency.
 * **effectively** means *with effect*. If you mean *in practice* or *essentially*, say so.
-* **enormity** means monstrous wickedness, not immensity.
 * **due to** when used to mean *caused by* must follow a noun. Do not write "It was cancelled due to rain." Write "because of" or restructure.[^15]
 
 ### Weasel words and common tics
@@ -421,7 +370,7 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 [^14]: Adapted from *The Economist Style Guide* (12th ed.), "unnecessary words."
 
-[^15]: Adapted from *The Economist Style Guide* (12th ed.), entries for "data," "decimate," "disinterested," "beg the question," "which and that," "fewer than, less than," "effectively," "enormity," and "due to."
+[^15]: Adapted from *The Economist Style Guide* (12th ed.), entries for "beg the question," "which and that," "effectively," and "due to."
 
 [^16]: Adapted from *The Economist Style Guide* (12th ed.), "horrible words": "Nothing betrays the lazy writer faster than fly-blown and horrible words used in the belief that they are snappy, trendy or cool."
 
