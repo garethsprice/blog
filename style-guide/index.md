@@ -29,8 +29,9 @@ This section comes first because models weight instructions by position. Read th
 - Prefer short words, short sentences, short paragraphs
 - Remove padding, qualifiers, weasel words, and vague abstractions
 - Replace adjectives and adverbs with data wherever possible
+- Hunt nominalisations — abstract nouns ending in *-tion*, *-ment*, *-ness*, *-ity* paired with dull verbs (*was*, *became*, *involved*). Move the action back into the verb. "The implementation of the migration was carried out by the team" → "The team migrated the data."[^20]
 - Avoid imperative openings (*Consider*, *Note that*, *Remember*, *Imagine*). If the sentence is strong enough to exist, it does not need a command to make the reader pay attention.
-- Avoid AI-prose journalese: "Let's take a closer look," "The implications are far-reaching," "This raises an important question," "In an era of…," "At the end of the day," "The real question is not X but Y." These are the AI equivalent of a journalist's "Another week, another bomb." If you catch yourself producing one of these phrases, delete it and see if the paragraph still works. It almost always does.
+- Avoid AI-prose journalese: "Let's take a closer look," "The implications are far-reaching," "This raises an important question," "In an era of…," "At the end of the day," "The real question is not X but Y." These are the AI equivalent of a journalist's "Another week, another bomb." If you catch yourself producing one of these phrases, delete it and see if the paragraph still works. It almost always does. Both human writers and language models share this failure mode: trained on large volumes of similar prose, they reproduce its patterns without conscious effort. The defence is the same — read every phrase as if you chose it deliberately, and ask whether you did.
 - Place evidence at the point the reader needs convincing — not before the claim it supports, not in a separate section, not in a block dump. Statistics should be contextualised, not just stated. Anecdotes should be specific, not hypothetical.
 - For each major claim, ask "why?" and "so what?" If the piece says "X happened," it should explain why. If it says "X matters," it should identify the non-obvious implication. The paragraph that answers "why" is usually where the real insight lives.
 
@@ -48,6 +49,7 @@ This section comes first because models weight instructions by position. Read th
 10. Is the strongest counterargument to the thesis engaged somewhere in the piece? Is it attributed to a real position?
 11. Does the piece go at least one level deeper than surface description? Is there a "why" or "how" that the reader would not have arrived at alone?
 12. Does the piece connect its specific argument to something larger — a historical precedent, a structural force, a broader principle? Does this connection amplify the argument or merely pad it?
+13. Are there nominalisations that could become verbs, or negative constructions that could be stated positively?
 
 **Pre-draft gate (apply at outline stage):** Before writing a full draft, test the outline against four questions. If any answer is weak, revise the outline before drafting — the most expensive mistake is drafting 2,000 words on a thesis that does not hold.[^5]
 
@@ -84,6 +86,8 @@ Avoid self-congratulation, "thought leadership" rhetoric, hype, buzzwords, fashi
 
 Good: "Training an internal LLM exposed a trade-off between data cleanliness and iteration speed."
 Bad: "Our AI journey revealed powerful synergies across the organisation."
+
+**Commit or cut.** Once your evidence is in place and caveats are stated, stand by the claim. Habitual softening — *arguably*, *it might be the case*, *some would say* — is not intellectual caution; it is the writer distancing themselves from their own argument. If the claim is worth making, make it. If it is not, cut it. The hedge is not a compromise; it is a signal you have not decided.[^21]
 
 ### Structure
 
@@ -130,6 +134,8 @@ Identify the most compelling objection to your thesis. Take it seriously. Refute
 
 A piece that has absorbed and addressed its strongest objection is more persuasive than one that has avoided it. The reader's trust is earned by showing you have considered the reasons you might be wrong.
 
+**Avoid false balance.** Engaging the strongest counterargument does not mean manufacturing a 50/50 debate. When the evidence strongly favours one side, say so. Set out the opposing case with the greatest force you can muster, then let the weight of evidence fall where it may. Fence-sitting is not intellectual honesty — it is a failure to judge.[^22]
+
 Good: "Spotify's Daniel Ek has argued that AI-generated content will reduce costs enough to offset the royalty problem. This understates the issue — cost reduction doesn't address the supply-side flood that devalues the catalogue."
 Bad: "Some people think AI will solve the music industry's problems. They're wrong."
 
@@ -171,9 +177,15 @@ Good prose has a kinetic quality. Sentences vary in length and structure. Paragr
 
 **Match pace to material.** Slow down for precision when a mechanism needs careful explanation. Speed up when the argument has momentum and the reader is ready to move. Never stall: if a passage repeats a point without adding new information, it has already made its case.
 
+**Prefer the positive construction.** Sentences phrased negatively (*it is not easy to tell*) can almost always be stated positively (*it is hard to tell*) — shorter and more definite. Stacked negatives are nearly impossible to parse. "That doesn't mean we don't think there aren't things that can't be improved" says the opposite of what it intends. Replace two negatives with a positive and save words in the process.[^23]
+
 ### Editing
 
 Read the draft several times. On each pass, edit ruthlessly — cut, sharpen, compress. If a word adds nothing, remove it. If a sentence survives only because removing it feels wasteful, that is a reason to remove it.
+
+**Build a reverse outline.** After completing a draft, extract each paragraph's main claim into a numbered list. Read the list on its own. Does the argument progress logically? Are there gaps, redundancies, or paragraphs that do not serve the thesis? This catches structural problems that line-editing misses. If a paragraph resists being reduced to a single claim, it is trying to do two things and should be split or cut.[^24]
+
+**Then tighten.** Search specifically for nominalisations — abstract nouns made from verbs (*implementation*, *utilisation*, *observation*) — and move the action back into the verb. Search for negative constructions and restate them positively. Search for *very*, which weakens what it modifies: "He is an honest man" is categorical; "He is a very honest man" puts him on a scale and leaves room for doubt. Try cutting it.[^25]
 
 "As a general rule, run your pen through every other word you have written; you have no idea what vigour it will give to your style" (Sydney Smith).
 
@@ -207,6 +219,8 @@ Follow Orwell's rules:
 
 **Cut redundancies.** If a compound can be reduced without losing meaning, reduce it. *Cutbacks* → cuts. *Track record* → record. *The fact that* → that. *Currently* usually serves no purpose.[^14]
 
+**Use technical terms precisely.** When borrowing terms from specialist fields, ensure they mean what you think. *Exponential growth* is not any rapid growth — it means each period's increase is proportional to the current value. *Inflection point* is a change in the direction of curvature, not simply a turning point. *Quantum leap* is a sudden change without intermediate stages, not a large change. *Parsing* means analysing grammatical structure, not "examining." If the precise term does not fit, use the plain-language alternative rather than the impressive-sounding wrong one.[^26]
+
 #### Usage to get right
 
 * **beg the question** means to assume the conclusion in the premise, not to *raise* the question.
@@ -235,7 +249,7 @@ If a sentence survives only because a vague qualifier is sheltering a weak claim
 
 #### Vogue words to question
 
-These words are not banned, but if you reach for one, ask whether it is the most precise word available or whether you are using it because it sounds authoritative. Many are overrepresented in AI-generated prose.[^16]
+These words are not banned, but if you reach for one, ask whether it is the most precise word available or whether you are using it because it sounds authoritative. Many are overrepresented in AI-generated prose. Apply the temporal test: was this word used in this sense twenty years ago? Will it be in twenty years? If not, there is probably a plainer, more durable alternative.[^16]
 
 * **iconic** — overused to the point of meaning nothing
 * **innovative** — what exactly is new? Say what changed
@@ -270,6 +284,8 @@ Never start a sentence with a figure — spell it out or restructure.
 Use figures for decimals (*4.25*). Use fractions for rough figures (*about 3½%*) and decimals for precise ones (*10.6%*). Do not compare a fraction with a decimal in the same passage.
 
 Prefer rounding. Beware of phoney precision — three decimal places rarely mean what they appear to mean.[^17]
+
+**Treat numbers as claims, not decoration.** A number deployed without context misleads as easily as a number fabricated. When citing research, distinguish correlation from causation. Distinguish statistical significance (how likely a connection exists) from effect size (how strong the connection is) — a "statistically significant" finding can have a negligible real-world effect. Always provide base rates: "doubles the risk" means nothing without the baseline. Distinguish percentage changes from percentage-point changes: if a growth rate moves from 1% to 2%, that is a one-percentage-point increase, not a 100% increase. When contextualising large numbers, prefer per-person figures, shares of GDP, or direct comparisons over raw billions. Avoid "eye-watering" and "whopping" — if the number needs an adjective to seem impressive, it may not be.[^27]
 
 ### Source verification
 
@@ -342,7 +358,7 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 ### References
 
-[^1]: The Economist. (2018). *The Economist Style Guide* (12th ed.). Profile Books.
+[^1]: The Economist. (2018). *The Economist Style Guide* (12th ed.). Profile Books. See also Greene, L. (2023). *Writing with Style: The Economist Guide*. Pegasus Books — a companion volume expanding on the principles and adding extended treatment of vocabulary, numbers, and editing.
 
 [^2]: Orwell, G. (1946, April). Politics and the English language. Horizon. [https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/)
 
@@ -372,10 +388,26 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 [^15]: Adapted from *The Economist Style Guide* (12th ed.), entries for "beg the question," "which and that," "effectively," and "due to."
 
-[^16]: Adapted from *The Economist Style Guide* (12th ed.), "horrible words": "Nothing betrays the lazy writer faster than fly-blown and horrible words used in the belief that they are snappy, trendy or cool."
+[^16]: Adapted from *The Economist Style Guide* (12th ed.), "horrible words": "Nothing betrays the lazy writer faster than fly-blown and horrible words used in the belief that they are snappy, trendy or cool." The temporal test is from Greene (2023), Ch. 1: "Was this word used two decades ago, and will it still be used that way two decades from now?"
 
 [^17]: Adapted from *The Economist Style Guide* (12th ed.), "figures."
 
 [^18]: Adapted from *The Economist Style Guide* (12th ed.), "abbreviations": "There is no need to give the initials of an organisation if it is not referred to again. This clutters both the page and the brain."
 
 [^19]: Adapted from *The Economist Style Guide* (12th ed.), "grammar and syntax," a or the: "Strictly, Barclays is *a* British bank, not *the* British bank." Also "abbreviations": "If in doubt about its familiarity, explain what the organisation is or does."
+
+[^20]: Helen Sword coined the term "zombie nouns" for nominalisations. See Sword, H. (2012). *Stylish Academic Writing*. Harvard University Press. The principle is developed in Greene (2023), Ch. 2 and Ch. 5.
+
+[^21]: Adapted from Greene (2023), Ch. 5, "Simplify, then exaggerate": "It is right and proper to be clear about caveats and uncertainty; it is quite another thing to distance yourself from your own words."
+
+[^22]: Adapted from Greene (2023), Ch. 5: "You should also avoid false balance — suggesting that there are two sides to the story when one of those sides has much more going for it."
+
+[^23]: Adapted from Greene (2023), Ch. 5: "Look for constructions phrased negatively. Often, these can be replaced by positive versions. These are shorter and more definite."
+
+[^24]: The reverse outline is described in Greene (2023), Ch. 5: "Creating a 'reverse outline' (pulling the main points from each paragraph and lining them up) can help you spot flaws in structure."
+
+[^25]: Adapted from Greene (2023), Ch. 5: "Though it looks like an intensifier, [very] weakens what it modifies. Saying 'He is an honest man' is a categorical statement. 'He is a very honest man' puts the subject on a scale of honesty near the top, but leaves room for improvement."
+
+[^26]: Adapted from Greene (2023), Ch. 2, "Borrowing specialist terms." The specific rulings on *exponential growth*, *inflection point*, *quantum leap*, and *begging the question* also appear in the 12th edition but are expanded with examples in Greene.
+
+[^27]: Adapted from Greene (2023), Ch. 4, "The bottom line: writing with numbers." The chapter covers correlation vs causation, statistical significance, effect size, base rates, percentage-point vs percentage changes, and contextualising large figures — none of which appeared in the 12th edition.
