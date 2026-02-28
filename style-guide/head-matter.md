@@ -14,8 +14,8 @@ Headlines should state what the article is about and why it matters.
 * Avoid ambiguity and intrigue.
 * Prefer statements to questions.
 
-Good: “Why Most Internal LLM Projects Stall After the Pilot”
-Bad: “Thoughts on AI”
+Good: "Why Most Internal LLM Projects Stall After the Pilot"
+Bad: "Thoughts on AI"
 
 A headline that promises more than the article delivers is a form of dishonesty.
 
@@ -32,6 +32,7 @@ Example:
 - **Frame a belief, not a topic.** The title should express a position someone could disagree with. "AI and Authorship" is a topic. "Our Language of Authorship Is Unprepared for What Is Already Here" is a claim.
 - **Encode the argument's structure, not just its subject.** The best titles compress the article's central mechanism into a single phrase. If the piece argues that a naming failure causes a policy failure, the title should express that causal chain, not just gesture at the domain.
 - **Prefer assertion over question.** Questions defer; assertions commit. The format demands it.
+- **Clarity over cleverness.** A headline that requires the reader to have already read the piece in order to understand it has failed. Wit is welcome; opacity is not.
 - **Avoid starting with "The".** It weakens the opening. Rephrase to begin with a stronger word — a possessive ("Our"), a noun with no article ("Authorship"), or a declarative construction.
 - **Avoid "The real question is not X but Y"** and similar AI-prose clichés. Rewrite with direct assertion or a single decisive framing.
 - **Keep it short enough to scan, long enough to be precise.** One clause is too blunt; three is too ornate. Aim for a single sentence with internal tension — a claim that contains its own friction.
@@ -60,4 +61,5 @@ Example:
 - **End on consequence, not description.** "We have no word for this" is description. "Institutions are already enforcing rules they cannot define" is consequence. Always close on the latter.
 - **Mirror the tone of the piece.** If the article is declarative and precise, the standfirst should be too. Don't oversell with drama the piece delivers with evidence.
 - **Don't preview the argument's solution.** The standfirst sells the problem. The piece earns the answer.
-- **Avoid throat-clearing.** No "In an era of…", "As we enter a new age of…", or "It's time to ask…". Begin with a claim that is already moving.
+- **No wind-up.** Do not begin with "In an era of…", "As we enter a new age of…", "It's time to ask…", or "The rise of X has forced us to confront Y." These are the written equivalent of clearing your throat before speaking. Begin with a claim that is already moving. If the standfirst needs a warm-up sentence, the first sentence is not strong enough.
+- **The "already underway" test.** Read the standfirst alone. Does it feel like the piece has already started, or like the piece is about to start? If the latter, the standfirst is a preamble, not an opening.
