@@ -20,6 +20,7 @@ This section comes first because models weight instructions by position. Read th
 - Never bury the thesis past the first paragraph.
 - Never present interpretation as mechanism. State what happened before stating what it means.
 - Never silently resolve uncertainty. Mark unverified claims with `[UNVERIFIED]`, uncertain judgments with `[REVIEW]`, and placeholder citations with `[SOURCE NEEDED]`. The human editor's job is to make judgment calls; the agent's job is to make those calls visible.
+- Never produce a piece without engaging the strongest counterargument. If you cannot identify a real person or position that disagrees with the thesis, flag this for human review — the thesis may not be engaging with a real debate.
 
 **Soft preferences (follow unless breaking the rule produces better writing):**
 
@@ -30,6 +31,8 @@ This section comes first because models weight instructions by position. Read th
 - Replace adjectives and adverbs with data wherever possible
 - Avoid imperative openings (*Consider*, *Note that*, *Remember*, *Imagine*). If the sentence is strong enough to exist, it does not need a command to make the reader pay attention.
 - Avoid AI-prose journalese: "Let's take a closer look," "The implications are far-reaching," "This raises an important question," "In an era of…," "At the end of the day," "The real question is not X but Y." These are the AI equivalent of a journalist's "Another week, another bomb." If you catch yourself producing one of these phrases, delete it and see if the paragraph still works. It almost always does.
+- Place evidence at the point the reader needs convincing — not before the claim it supports, not in a separate section, not in a block dump. Statistics should be contextualised, not just stated. Anecdotes should be specific, not hypothetical.
+- For each major claim, ask "why?" and "so what?" If the piece says "X happened," it should explain why. If it says "X matters," it should identify the non-obvious implication. The paragraph that answers "why" is usually where the real insight lives.
 
 **After completing a draft, review every paragraph against this checklist:**
 
@@ -42,6 +45,16 @@ This section comes first because models weight instructions by position. Read th
 7. Does the piece vary its paragraph structure, or does every paragraph follow the same claim-development-resolution pattern?
 8. Are there any straw consensus moves, throat-clearing transitions, or unprovable scope claims?
 9. Could any paragraph be removed without the reader noticing? If so, it is not doing work — cut it or make it load-bearing.
+10. Is the strongest counterargument to the thesis engaged somewhere in the piece? Is it attributed to a real position?
+11. Does the piece go at least one level deeper than surface description? Is there a "why" or "how" that the reader would not have arrived at alone?
+12. Does the piece connect its specific argument to something larger — a historical precedent, a structural force, a broader principle? Does this connection amplify the argument or merely pad it?
+
+**Pre-draft gate (apply at outline stage):** Before writing a full draft, test the outline against four questions. If any answer is weak, revise the outline before drafting — the most expensive mistake is drafting 2,000 words on a thesis that does not hold.[^5]
+
+1. Can you state the thesis in a single sentence specific enough to be disagreed with? Does every planned section serve it?
+2. Has this argument been made before? If you search for the thesis, how many pieces make substantially the same claim? What do you know from direct experience that those writers don't?
+3. Can you name a specific person or institution that would disagree with your thesis? Can you state their strongest argument in terms they would endorse?
+4. Do you have a "why" or "how" insight — a mechanism, a second-order effect, a non-obvious connection? Or are you planning to describe at the surface level?
 
 **Grounding:** Draw claims from real experience (CorralData, NYT, Codecademy, Ready Set Rocket, University of Manchester). Do not invent authority, experiences, or results. Flag uncertainty for human review. If a sentence sounds impressive but says little, delete it.
 
@@ -52,6 +65,8 @@ The author is never in the room. The writing must do all the work.
 Before publishing, ask: if a sceptical reader encountered this piece with no context — no conversation, no verbal supplement, no benefit of the doubt — would it survive? If the argument depends on anything not on the page, it is not finished.
 
 Write as if an exacting editor will challenge every claim. If a sentence can be misunderstood, it will be. If it can be shortened, shorten it. If it conceals weak thinking, rewrite the thinking.
+
+Every argument, every reference, every piece of assumed knowledge must be on the page. A piece that relies on the reader having seen a previous post, having attended the same conference, or sharing the author's professional context is not finished. The test is adversarial: if a sceptical reader with no prior relationship to the author encountered this piece cold, would every claim land?
 
 ### Voice and tone
 
@@ -78,7 +93,7 @@ Bad: "Our AI journey revealed powerful synergies across the organisation."
 
 **Make every paragraph load-bearing.** The piece should be a sequence of paragraphs that follow logically, not a collection of observations sharing a topic. Ideally, removing any single paragraph should damage the argument. If a paragraph can be cut without the reader noticing, it was not doing work.[^9]
 
-**Vary the pattern.** Not every paragraph should open with its claim — one in four or five can lead with evidence, detail, or narrative and let the point emerge. Not every paragraph should close with a resolution. Some should spill into the next, leaving the reader to carry the implication across the gap. If every paragraph is a closed loop — claim, development, summary — the writing will feel mechanical regardless of who or what produced it.[^5]
+**Vary the pattern.** Not every paragraph should open with its claim — one in four or five can lead with evidence, detail, or narrative and let the point emerge. Not every paragraph should close with a resolution. Some should spill into the next, leaving the reader to carry the implication across the gap. If every paragraph is a closed loop — claim, development, summary — the writing will feel mechanical regardless of who or what produced it.[^10]
 
 **Apply the "so what?" test.** Every paragraph must survive a sceptical reader asking "so what?" If the answer is "context" or "background," it belongs in a footnote or not at all.
 
@@ -86,7 +101,15 @@ Bad: "Our AI journey revealed powerful synergies across the organisation."
 
 **Short paragraphs.** One idea at a time. If a paragraph tries to do two things, split it.
 
-**End decisively.** Stop when the argument is complete. Do not restate it in weaker form. If you find yourself padding the ending, you have already finished.
+**End with impact.** Stop when the argument is complete. Do not restate it in weaker form. If you find yourself padding the ending, you have already finished. But "stop" does not mean "trail off." Strong endings in non-fiction do not summarise — they recontextualise, elevate, or complicate. The best endings echo the opening, introduce a forward-looking implication, or land on a concrete image that crystallises the argument. Delete your final paragraph and see if the piece ends better without it. If it does, your ending was a restatement. If it doesn't, look at your opening: can the ending echo, invert, or extend it?
+
+### Originality
+
+Write only what is worth writing. Before drafting, ask: has this argument been made before? If the thesis could be predicted from the headline — if a reader who follows the topic would say "I've read this" — the piece does not yet have a reason to exist.
+
+Originality does not mean contrarianism. It means the writer has thought rather than assembled. An original thesis can come from a novel claim, from unexpected evidence for a familiar claim, from a new framework that reorganises existing knowledge, or from applying an idea from one domain to another.
+
+The original thesis is usually hiding behind the safe one. It is the thing you believe from direct experience that you have not yet been willing to say plainly. Search for your thesis online. If many pieces make substantially the same argument, ask: what do I know from building, shipping, or operating that those writers don't? What have I seen that contradicts the standard take? Start there.
 
 ### Mechanism before interpretation
 
@@ -98,6 +121,55 @@ Good: "Latency increased 3x after we added the retrieval step. This suggests the
 Bad: "The retrieval step was clearly a mistake — it made everything slow."
 
 If something is speculative, label it as such. Do not smuggle opinion in under the guise of fact.
+
+### Intellectual honesty
+
+Engage seriously with the strongest version of the opposing view. If a piece ignores the best counterargument or engages only with a weak one, it signals intellectual rigidity — and a careful reader will notice.
+
+Identify the most compelling objection to your thesis. Take it seriously. Refute it with evidence, incorporate it as a qualification, or use it to sharpen the argument. The counterargument must be attributable to a real, identifiable position — not a manufactured consensus ("Everyone assumes…") constructed as a foil. If you cannot name a specific person or institution that holds the opposing view, the debate you are entering may not exist.
+
+A piece that has absorbed and addressed its strongest objection is more persuasive than one that has avoided it. The reader's trust is earned by showing you have considered the reasons you might be wrong.
+
+Good: "Spotify's Daniel Ek has argued that AI-generated content will reduce costs enough to offset the royalty problem. This understates the issue — cost reduction doesn't address the supply-side flood that devalues the catalogue."
+Bad: "Some people think AI will solve the music industry's problems. They're wrong."
+
+### Analytical depth
+
+Surface-level non-fiction describes what happened. The writing here should explain *why* it happened, *what* it means, and *what* it implies for things the reader has not yet considered.
+
+For each major claim, push one level deeper than the reader expects. If the topic is "AI in healthcare," surface-level is describing use cases. Depth is explaining why certain use cases succeed while others fail, and connecting that to a broader principle about where AI creates value. The "so what?" test applies at the paragraph level; analytical depth applies at the piece level. A piece that stays at "what" throughout — describing phenomena without explaining them — is not finished, no matter how well-crafted the prose.
+
+The paragraph that answers "why" is usually the hardest to write and the easiest to skip. It is also usually where the real insight lives.
+
+### Context
+
+Situate the argument. The best non-fiction makes the reader feel that the specific claim exists within a larger world of meaning — a historical precedent, an industry dynamic, an intellectual tradition, a structural force.
+
+Context is not background. Background says "here is what you need to know before I make my point." Context says "here is why this point matters beyond its immediate scope." The difference is that context amplifies the argument; background delays it. If a contextual paragraph makes the argument feel more significant, it belongs. If it feels like padding, cut it and accept that the piece operates at a narrower scope.
+
+A piece about a technology decision is richer if it connects to the history of similar decisions. A piece about a market shift is more compelling if it acknowledges the structural forces that make the shift inevitable or contingent. But a piece that exists in a vacuum — as if the topic has no history or broader implications — leaves the reader to supply the significance on their own. That is work the writer should do.
+
+### Evidence
+
+Evidence wins arguments. But deployment matters as much as selection.
+
+**Place evidence at point of need.** Introduce a fact, a number, or an example at the moment the reader needs convincing — not before the claim it supports and not in a separate "evidence" section. The reader should never wonder "why is this here?" or "where's the proof?"
+
+**Dose appropriately.** A claim that needs one statistic to land does not need three. A claim that needs a detailed case study cannot be supported by a single number. Match the weight of evidence to the weight of the claim.
+
+**Weave, don't dump.** Evidence blocks — paragraphs of data with no interpretive thread — stop the reader cold. Each piece of evidence should be introduced, presented, and connected to the argument within the same passage. If evidence and argument live in separate paragraphs, bring them together.
+
+**Prefer the specific to the hypothetical.** "When Mount Sinai's radiology department deployed…" is stronger than "Imagine a healthcare provider who…" Named entities, real numbers, and actual examples build credibility. Hypothetical scenarios build nothing.
+
+### Prose and momentum
+
+Good prose has a kinetic quality. Sentences vary in length and structure. Paragraphs connect through logical progression rather than mechanical transition phrases. The pace matches the material — technical explanations slow down with care, narrative sections accelerate.
+
+**Vary sentence rhythm.** A piece built entirely from medium-length declarative sentences will lull the reader regardless of how strong the argument is. Follow a long sentence with a short one. Let a complex construction land, then hit the reader with something blunt. Read the piece aloud: where your voice goes flat, the prose has stalled.
+
+**Cut connective filler.** Search for: "This brings us to," "It is worth noting," "Furthermore," "Additionally," "Moreover," "That said," "In other words." Each one is a transition that can probably be cut, letting the next sentence land on its own. If two paragraphs need a transition phrase to connect them, the problem may be the paragraph order, not the absence of a bridge.
+
+**Match pace to material.** Slow down for precision when a mechanism needs careful explanation. Speed up when the argument has momentum and the reader is ready to move. Never stall: if a passage repeats a point without adding new information, it has already made its case.
 
 ### Editing
 
@@ -153,11 +225,11 @@ When in doubt, prefer the shorter, plainer word:
 | due to the fact that | because |
 | at this point in time | now |
 
-**Watch for mixed metaphors.** A metaphor that is dead enough to use casually can still clash with another dead metaphor in the same sentence. "Cutting the budget deficit" is fine; "a package cutting the deficit while the government navigates uncharted waters" mixes tools with ships. If you use a metaphor, hold it for the sentence or drop it.[^10]
+**Watch for mixed metaphors.** A metaphor that is dead enough to use casually can still clash with another dead metaphor in the same sentence. "Cutting the budget deficit" is fine; "a package cutting the deficit while the government navigates uncharted waters" mixes tools with ships. If you use a metaphor, hold it for the sentence or drop it.[^11]
 
-**Avoid the false possessive.** "CorralData's healthcare market" implies the market belongs to CorralData. Write: "the healthcare market" or "the market CorralData serves." The possessive does the job of *of*, not *in* or *for*.[^11]
+**Avoid the false possessive.** "CorralData's healthcare market" implies the market belongs to CorralData. Write: "the healthcare market" or "the market CorralData serves." The possessive does the job of *of*, not *in* or *for*.[^12]
 
-**Compare like with like.** When comparing, ensure both sides are the same kind of thing. "Our latency is better than the competitor" compares a measurement to a company. Write: "Our P90 latency is lower than the competitor's." This error is easy to commit and hard to spot.[^12]
+**Compare like with like.** When comparing, ensure both sides are the same kind of thing. "Our latency is better than the competitor" compares a measurement to a company. Write: "Our P90 latency is lower than the competitor's." This error is easy to commit and hard to spot.[^13]
 
 #### Common redundancies
 
@@ -179,7 +251,7 @@ These phrases contain words that add nothing. Cut them:
 * *currently* → often serves no purpose; cut or replace with *now*
 * *really*, *actually* → usually redundant
 
-In general: if a compound can be reduced without losing meaning, reduce it.[^13]
+In general: if a compound can be reduced without losing meaning, reduce it.[^14]
 
 #### Usage to get right
 
@@ -191,7 +263,7 @@ In general: if a compound can be reduced without losing meaning, reduce it.[^13]
 * **fewer** for countable items; **less** for measured quantities. Fewer bugs, less latency.
 * **effectively** means *with effect*. If you mean *in practice* or *essentially*, say so.
 * **enormity** means monstrous wickedness, not immensity.
-* **due to** when used to mean *caused by* must follow a noun. Do not write "It was cancelled due to rain." Write "because of" or restructure.[^14]
+* **due to** when used to mean *caused by* must follow a noun. Do not write "It was cancelled due to rain." Write "because of" or restructure.[^15]
 
 ### Weasel words and common tics
 
@@ -214,7 +286,7 @@ If a sentence survives only because a vague qualifier is sheltering a weak claim
 
 #### Vogue words to question
 
-These words are not banned, but if you reach for one, ask whether it is the most precise word available or whether you are using it because it sounds authoritative. Many are overrepresented in AI-generated prose.[^15]
+These words are not banned, but if you reach for one, ask whether it is the most precise word available or whether you are using it because it sounds authoritative. Many are overrepresented in AI-generated prose.[^16]
 
 * **iconic** — overused to the point of meaning nothing
 * **innovative** — what exactly is new? Say what changed
@@ -248,7 +320,7 @@ Never start a sentence with a figure — spell it out or restructure.
 
 Use figures for decimals (*4.25*). Use fractions for rough figures (*about 3½%*) and decimals for precise ones (*10.6%*). Do not compare a fraction with a decimal in the same passage.
 
-Prefer rounding. Beware of phoney precision — three decimal places rarely mean what they appear to mean.[^16]
+Prefer rounding. Beware of phoney precision — three decimal places rarely mean what they appear to mean.[^17]
 
 ### Source verification
 
@@ -291,7 +363,11 @@ A headline that promises more than the article delivers is a form of dishonesty.
 
 Assume an intelligent, informed reader. Skip textbook explanations. Be explicit about context and constraints.
 
-Spell out abbreviations on first use unless they are more familiar in abbreviated form (API, SQL, LLM, AWS, GPU). Do not define an abbreviation you will not use again — it clutters the page for no return. After the first mention, prefer a plain-language reference ("the model," "the service") over repeating the abbreviation, to avoid spattering the page with capital letters.[^17]
+**Move between registers.** Most pieces here address readers with varying levels of domain expertise. Dive into technical specifics when precision matters and then surface to explain implications in plain language. Use technical terms when they add precision, define them when they might confuse, and avoid them when they add nothing. The test: a domain expert and an informed generalist should both be able to read the piece productively. If the piece is pitched at a single register throughout — impenetrably technical or uniformly simplified — it is not reaching its full audience.
+
+Spell out abbreviations on first use unless they are more familiar in abbreviated form (API, SQL, LLM, AWS, GPU). Do not define an abbreviation you will not use again — it clutters the page for no return. After the first mention, prefer a plain-language reference ("the model," "the service") over repeating the abbreviation, to avoid spattering the page with capital letters.[^18]
+
+**Identify entities on first mention.** When a person, company, or organisation appears for the first time, tell the reader what it is — briefly, in apposition, using the indefinite article. "Barclays, **a** British bank" not "Barclays, **the** British bank." The indefinite article avoids implying it is the only one of its kind. If the entity is well-known enough that any description sounds absurd, either drop it or add a distinguishing detail that earns its place: "Toyota, the world's biggest car company" tells the reader something even if they already know what Toyota is. The test is whether a reader outside your field would be able to place the entity without stopping to search. If in doubt, identify.[^19]
 
 Code examples should illustrate a point, not serve as tutorials. If code is doing rhetorical work rather than explanatory work, remove it.
 
@@ -323,7 +399,7 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 [^4]: Bryar, C., & Carr, B. (2021). *Working Backwards: Insights, Stories, and Secrets from Inside Amazon*. St. Martin's Press.
 
-[^5]: Chakrabarty, T., Laban, P., Agarwal, D., Muresan, S., & Wu, C.-S. (2024). Art or artifice? Large language models and the false promise of creativity. *Proceedings of the ACM CHI Conference on Human Factors in Computing Systems*. Expert evaluators identified topic sentences at every paragraph opening, summary sentences at every closing, and ornamental language as structural tics of LLM-generated prose. [https://arxiv.org/abs/2309.14556](https://arxiv.org/abs/2309.14556)
+[^5]: The pre-draft gate is adapted from the TTNW (Test for Thoughtful Non-Fiction Writing, v1.1, 2026), which applies four of its 14 tests — Thesis Architecture, Originality of Thesis, Intellectual Honesty, and Analytical Depth — at outline stage to catch foundation problems before full drafting.
 
 [^6]: Adapted from *The Economist Style Guide* (12th ed.), Introduction: "When you express opinions, do not simply make assertions. The aim is not just to tell readers what you think, but to persuade them."
 
@@ -333,18 +409,22 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 [^9]: Adapted from *The Economist Style Guide* (12th ed.), Introduction: Articles "should not be mere bits of information stitched together. Each should be a coherent whole, a series of paragraphs that follow logically in order and, ideally, will suffer if even one sentence is cut out."
 
-[^10]: Adapted from *The Economist Style Guide* (12th ed.), "metaphors": "Dead or alive, take great care not to mix them."
+[^10]: Chakrabarty, T., Laban, P., Agarwal, D., Muresan, S., & Wu, C.-S. (2024). Art or artifice? Large language models and the false promise of creativity. *Proceedings of the ACM CHI Conference on Human Factors in Computing Systems*. Expert evaluators identified topic sentences at every paragraph opening, summary sentences at every closing, and ornamental language as structural tics of LLM-generated prose. [https://arxiv.org/abs/2309.14556](https://arxiv.org/abs/2309.14556)
 
-[^11]: Adapted from *The Economist Style Guide* (12th ed.), "grammar and syntax," false possessive: "The Chrysler Building is *in* New York, not *of* it."
+[^11]: Adapted from *The Economist Style Guide* (12th ed.), "metaphors": "Dead or alive, take great care not to mix them."
 
-[^12]: Adapted from *The Economist Style Guide* (12th ed.), "grammar and syntax," comparisons: "Take care, too, when making comparisons, to compare like with like."
+[^12]: Adapted from *The Economist Style Guide* (12th ed.), "grammar and syntax," false possessive: "The Chrysler Building is *in* New York, not *of* it."
 
-[^13]: Adapted from *The Economist Style Guide* (12th ed.), "unnecessary words."
+[^13]: Adapted from *The Economist Style Guide* (12th ed.), "grammar and syntax," comparisons: "Take care, too, when making comparisons, to compare like with like."
 
-[^14]: Adapted from *The Economist Style Guide* (12th ed.), entries for "data," "decimate," "disinterested," "beg the question," "which and that," "fewer than, less than," "effectively," "enormity," and "due to."
+[^14]: Adapted from *The Economist Style Guide* (12th ed.), "unnecessary words."
 
-[^15]: Adapted from *The Economist Style Guide* (12th ed.), "horrible words": "Nothing betrays the lazy writer faster than fly-blown and horrible words used in the belief that they are snappy, trendy or cool."
+[^15]: Adapted from *The Economist Style Guide* (12th ed.), entries for "data," "decimate," "disinterested," "beg the question," "which and that," "fewer than, less than," "effectively," "enormity," and "due to."
 
-[^16]: Adapted from *The Economist Style Guide* (12th ed.), "figures."
+[^16]: Adapted from *The Economist Style Guide* (12th ed.), "horrible words": "Nothing betrays the lazy writer faster than fly-blown and horrible words used in the belief that they are snappy, trendy or cool."
 
-[^17]: Adapted from *The Economist Style Guide* (12th ed.), "abbreviations": "There is no need to give the initials of an organisation if it is not referred to again. This clutters both the page and the brain."
+[^17]: Adapted from *The Economist Style Guide* (12th ed.), "figures."
+
+[^18]: Adapted from *The Economist Style Guide* (12th ed.), "abbreviations": "There is no need to give the initials of an organisation if it is not referred to again. This clutters both the page and the brain."
+
+[^19]: Adapted from *The Economist Style Guide* (12th ed.), "grammar and syntax," a or the: "Strictly, Barclays is *a* British bank, not *the* British bank." Also "abbreviations": "If in doubt about its familiarity, explain what the organisation is or does."
