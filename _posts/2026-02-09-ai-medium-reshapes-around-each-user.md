@@ -49,9 +49,6 @@ McLuhan's global village offers the final lens. He predicted that electronic med
 And AI does not sit apart where it can be studied. It slips into your email client, your search engine, your word processor, your children's homework. It is not a new channel. It is a new layer on all existing channels. Anyone building AI products that inform decisions in medicine, finance, policy, or education must reckon with how their system maintains contact with a shared, verifiable reality rather than constructing a comfortable private one. McLuhan built the best toolkit we have for understanding media's effects on the mind. It is not broken by AI. It works. And what it diagnoses is a medium designed to make every user feel uniquely served while quietly dissolving the common perceptual ground on which collective reasoning depends.
 
 ---
-
-{% include assisted-authorship-disclaimer.html %}
-
 ### References
 
 [^1]: Draxler, F., Werner, A., Lehmann, F., Hoppe, M., Schmidt, A., Buschek, D., & Welsch, R. (2024). The AI Ghostwriter Effect: When Users Do Not Perceive Ownership of AI-Generated Text But Self-Declare as Authors. *ACM Transactions on Computer-Human Interaction*, 31(2), 1–40. [https://dl.acm.org/doi/10.1145/3637875](https://dl.acm.org/doi/10.1145/3637875)

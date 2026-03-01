@@ -54,9 +54,6 @@ But the fundamental shift is conceptual. For two decades, the internet's dominan
 The ad-supported content model is not dying. It is fulfilling its own logic, which was always to reduce the cost of content toward zero while maximising the surface area for advertising. AI has not corrupted this model. It has perfected it. The creators who built livelihoods on that foundation are discovering what sharecroppers have always discovered: the landlord's investment in your productivity lasts exactly as long as your labour is cheaper than the alternative. The combine harvester has arrived. It does not care about craft, audiences, or years of work. It cares about yield.
 
 ---
-
-{% include assisted-authorship-disclaimer.html %}
-
 ### References
 
 [^1]: Kapwing. (2025, November). Report on AI-generated content among YouTube's top channels.

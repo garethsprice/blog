@@ -98,9 +98,6 @@ The framework says the second thing. That is what makes it useful.
 The full framework — test descriptions, scoring anchors, revision prompts, tier assignments, score sheet template, and cross-piece tracking log — is available at [Introducing TTNW]({% post_url 2026-02-27-ttnw-test-for-thoughful-nonfiction-writing %}).
 
 ---
-
-{% include assisted-authorship-disclaimer.html %}
-
 ### References
 
 [^1]: Chakrabarty, T., Laban, P., Agarwal, D., Muresan, S., & Wu, C.-S. (2024). Art or artifice? Large language models and the false promise of creativity. *Proceedings of the ACM CHI Conference on Human Factors in Computing Systems*. [https://arxiv.org/abs/2309.14556](https://arxiv.org/abs/2309.14556)

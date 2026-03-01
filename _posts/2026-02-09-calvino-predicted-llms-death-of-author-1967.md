@@ -43,9 +43,6 @@ Calvino ended his essay with an image from his own fiction: Edmond Dantès, impr
 That is the work of the reader now. The LLM builds the imagined fortress — the plausible model, the fluent approximation. The reader's job is to find where it does not coincide with the real one. That is where the escape is. That is where understanding begins.
 
 ---
-
-{% include assisted-authorship-disclaimer.html %}
-
 ### References
 
 [^1]: Calvino, I. (1986). Cybernetics and ghosts [PDF]. In The uses of literature (P. Creagh, Trans.). Harcourt Brace. [https://www.are.na/block/3808967](https://www.are.na/block/3808967) (Original lecture delivered 1967)
