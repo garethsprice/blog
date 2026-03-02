@@ -55,9 +55,7 @@ I still use AI every day. I'm using it right now. The difference is that I no lo
 
 ---
 
-*[Author] is CTO of CorralData, a business intelligence company. He was diagnosed with inattentive ADHD as an adult.*
-
----
+*Gareth Price is CTO of CorralData, a business intelligence company. He was diagnosed with inattentive ADHD as an adult.*
 
 ## References
 
