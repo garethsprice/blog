@@ -46,6 +46,30 @@ body > footer { grid-column: 4 / 10; }
   cursor: pointer;
   color: var(--color-text);
   transition: color 0.3s ease;
+  overflow: hidden;
+  width: 1.125rem;
+  height: 1.125rem;
+  padding: 0;
+}
+
+.theme-toggle-disc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-icon {
+  flex-shrink: 0;
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+// Dark: slide disc up so moon is visible
+.dark-toggle .theme-toggle-disc {
+  transform: translateY(-1.75rem); // -(icon + gap)
 }
 
 // Post title — newspaper headline scale

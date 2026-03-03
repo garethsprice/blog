@@ -6,14 +6,13 @@ const toggle = document.querySelector('.theme-toggle');
 const systemDark = () => matchMedia('(prefers-color-scheme:dark)').matches;
 const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : systemDark();
 
-const setIcon = () => {
-  toggle.innerHTML = `<i data-lucide="${isDark() ? 'sun' : 'moon'}"></i>`;
-  lucide.createIcons();
+const setDisc = () => {
+  toggle.classList.toggle('dark-toggle', isDark());
 };
 
 const saved = localStorage.getItem('theme');
 if (saved) root.dataset.theme = saved;
-setIcon();
+setDisc();
 
 toggle.addEventListener('click', () => {
   const next = isDark() ? 'light' : 'dark';
@@ -24,7 +23,7 @@ toggle.addEventListener('click', () => {
     root.dataset.theme = next;
     localStorage.setItem('theme', next);
   }
-  setIcon();
+  setDisc();
 });
 
 // Animated details disclosure
