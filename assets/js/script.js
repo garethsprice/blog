@@ -29,7 +29,7 @@ toggle.addEventListener('click', () => {
 });
 
 // Animated details disclosure
-const animateDetails = (el) => {
+const animateDetails = (el, onToggle) => {
   if (!el) return;
   el.querySelector('summary').addEventListener('click', (e) => {
     if (el.open) {
@@ -38,17 +38,62 @@ const animateDetails = (el) => {
       el.addEventListener('transitionend', () => {
         el.classList.remove('closing');
         el.open = false;
+        onToggle?.(false);
       }, { once: true });
     } else {
-      requestAnimationFrame(() =>
-        requestAnimationFrame(() => el.classList.add('open'))
-      );
+      requestAnimationFrame(() => {
+        el.offsetHeight; // force reflow before adding class
+        el.classList.add('open');
+      });
+      onToggle?.(true);
     }
   });
 };
 
-animateDetails(document.querySelector('.site-nav details'));
+const navDetails = document.querySelector('.site-nav details');
+if (sessionStorage.getItem('navOpen') === '1' && navDetails) {
+  navDetails.open = true;
+  navDetails.classList.add('open');
+}
+
+animateDetails(navDetails, (open) => {
+  if (open) sessionStorage.setItem('navOpen', '1');
+  else sessionStorage.removeItem('navOpen');
+});
 animateDetails(document.querySelector('.revisions'));
+
+// Nav sub-page toggles
+{
+  const openSet = new Set(JSON.parse(sessionStorage.getItem('navSubs') || '[]'));
+  const toggles = document.querySelectorAll('.nav-toggle');
+
+  const saveSubs = () => {
+    const open = [];
+    toggles.forEach((btn, i) => {
+      if (btn.getAttribute('aria-expanded') === 'true') open.push(i);
+    });
+    sessionStorage.setItem('navSubs', JSON.stringify(open));
+  };
+
+  toggles.forEach((btn, i) => {
+    const sub = btn.parentElement.querySelector('.nav-sub');
+
+    if (openSet.has(i) && sub.hidden) {
+      sub.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    btn.textContent = sub.hidden ? '+' : '\u2212';
+
+    btn.addEventListener('click', () => {
+      const closing = !sub.hidden;
+      sub.hidden = closing;
+      btn.setAttribute('aria-expanded', String(!closing));
+      btn.textContent = closing ? '+' : '\u2212';
+      saveSubs();
+    });
+  });
+}
 
 // Relative timestamps
 {

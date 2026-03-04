@@ -10,25 +10,15 @@
         {% assign current = false %}{% if item.url == page.url %}{% assign current = true %}{% endif %}
         {% assign children = nav_pages | where: "nav_parent", item.url %}
         {% assign active = current %}{% if page.nav_parent == item.url %}{% assign active = true %}{% endif %}
-        <li>
-          {% if current %}<span aria-current="page">{{ title }}</span>{% else %}<a href="{{ item.url | relative_url }}">{{ title }}</a>{% endif %}
-          {% if children.size > 0 and active %}
-          <menu>
+        <li{% if children.size > 0 %} class="has-children"{% endif %}>
+          {% if current %}<span aria-current="page">{{ title }}</span>{% else %}<a href="{{ item.url | relative_url }}">{{ title }}</a>{% endif %}{% if children.size > 0 %}<button class="nav-toggle" aria-expanded="{% if active %}true{% else %}false{% endif %}" aria-label="Toggle sub-pages">+</button>{% endif %}
+          {% if children.size > 0 %}
+          <menu class="nav-sub"{% unless active %} hidden{% endunless %}>
             {% for child in children %}
               {% assign c_title = child.nav_title | default: child.title %}
               {% assign c_current = false %}{% if child.url == page.url %}{% assign c_current = true %}{% endif %}
-              {% assign grandchildren = nav_pages | where: "nav_parent", child.url %}
-              {% assign c_active = c_current %}{% if page.nav_parent == child.url %}{% assign c_active = true %}{% endif %}
               <li>
                 {% if c_current %}<span aria-current="page">{{ c_title }}</span>{% else %}<a href="{{ child.url | relative_url }}">{{ c_title }}</a>{% endif %}
-                {% if grandchildren.size > 0 and c_active %}
-                <menu>
-                  {% for gc in grandchildren %}
-                    {% assign gc_title = gc.nav_title | default: gc.title %}
-                    <li>{% if gc.url == page.url %}<span aria-current="page">{{ gc_title }}</span>{% else %}<a href="{{ gc.url | relative_url }}">{{ gc_title }}</a>{% endif %}</li>
-                  {% endfor %}
-                </menu>
-                {% endif %}
               </li>
             {% endfor %}
           </menu>
