@@ -51,7 +51,8 @@ const animateDetails = (el, onToggle) => {
 };
 
 const navDetails = document.querySelector('.site-nav details');
-if (sessionStorage.getItem('navOpen') === '1' && navDetails) {
+const wideEnough = matchMedia('(min-width: 40rem)').matches;
+if (wideEnough && sessionStorage.getItem('navOpen') === '1' && navDetails) {
   navDetails.open = true;
   navDetails.classList.add('open');
 }
