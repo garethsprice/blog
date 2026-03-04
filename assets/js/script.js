@@ -1,5 +1,7 @@
 'use strict';
 
+lucide.createIcons();
+
 // Theme switching
 const root = document.documentElement;
 const toggle = document.querySelector('.theme-toggle');
