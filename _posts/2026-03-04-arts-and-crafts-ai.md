@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Every Industrial Revolution Gets an Arts and Crafts Movement — Ours Doesn't Have to Fail"
+title: "Every Industrial Revolution Gets an Arts and Crafts Movement"
 description: "A handmade rebellion is sweeping art, design, and fashion — the same reaction every industrial revolution provokes, and the same one that always fails when handmade businesses cannot compete with industrial pricing. But for the first time in 150 years, the technology that triggered the movement can solve the specific economic problem that has defeated every movement before it."
 created_date: 2026-03-04
 updated_date: 2026-03-04
