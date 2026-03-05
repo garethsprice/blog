@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Is the First Medium That Reshapes Itself Around Each User"
-description: "Marshall McLuhan argued that a medium's real message is its structural effect on perception, not its content. With AI, that effect is personalised, invisible, and different for every user — and the cognitive cost is accumulating unmeasured."
+description: "Marshall McLuhan argued that a medium's real message is its structural effect on perception, not its content. With AI, that effect is personalised, invisible, and different for every user — with unknown effects on our collective reality."
 created_date: 2026-02-09
 updated_date: 2026-02-27
 ---
