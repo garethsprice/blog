@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Every Industrial Revolution Gets an Arts and Crafts Movement"
-description: "A handmade rebellion is sweeping art, design, and fashion — the same reaction every industrial revolution provokes, and the same one that always fails when handmade businesses cannot compete with industrial pricing. But for the first time in 150 years, the technology that triggered the movement can solve the specific economic problem that has defeated every movement before it."
+title: "This Industrial Revolution's Arts and Crafts Revival"
+description: "Every industrial revolution sparks a handmade rebellion, and every one fails when craft can't compete with industrial pricing. For the first time, the triggering technology itself can fix that."
 created_date: 2026-03-04
 updated_date: 2026-03-04
 ---
@@ -46,9 +46,9 @@ The strongest objection to the argument I am making is that the line will not ho
 
 ## Give up the paperwork, not the hand
 
-If the line holds, the synthesis available now is better than the one history eventually delivered. The original Arts and Crafts Movement produced Germany's Deutscher Werkbund (1907), the Bauhaus (1919), Scandinavian modernism — designers who understood craft principles and applied them through industrial methods.That synthesis took decades to arrive and it abandoned handwork entirely in favour of machine production informed by craft sensibility — achieving Morris's goal of bringing good design to ordinary people, but only by giving up the hand. This time the trade-off is not required: not machine production informed by craft, but handmade production liberated from the business costs that made it a luxury good. AI-administered craft does not require the maker to give up the hand. It allows them to give up the paperwork.
+If the line holds, the synthesis available now is better than the one history eventually delivered. The original Arts and Crafts Movement produced Germany's Deutscher Werkbund (1907), the Bauhaus (1919), Scandinavian modernism — designers who understood craft principles and applied them through industrial methods. That synthesis took decades to arrive and it abandoned handwork entirely in favour of machine production informed by craft sensibility — achieving Morris's goal of bringing good design to ordinary people, but only by giving up the hand. This time the trade-off is not required: not machine production informed by craft, but handmade production liberated from the business costs that made it a luxury good. AI-administered craft does not require the maker to give up the hand. It allows them to give up the paperwork.
 
-Morris wanted to bring beauty to working people and could not, because the economics of his era defeated him. Every arts and crafts movement since has broken at the same point — not at the bench, but at the books. Ours does not have to. For the first time, the technology that triggered the movement is also the technology that can solve the movement's oldest problem.
+Morris wanted to bring beauty to working people and could not, because the economics of his era defeated him. Every arts and crafts movement since has broken at the same point — not at the bench, but at the books. This one does not have to. For the first time, the technology that triggered the movement is also the technology that can solve the movement's oldest problem.
 
 ---
 
