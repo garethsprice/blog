@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "After the Demolition: What Philosophy Has Been Doing Since It Stopped Believing in Anything"
-description: "The postmodernists dismantled the grand narratives of progress, truth, and reason. The generation that followed had to live in the rubble — and what they built there turns out to be the best toolkit we have for understanding artificial intelligence."
+description: "The postmodernists dismantled the grand narratives of progress, truth, and reason. The generation that followed had to live in the rubble — what they built there is a toolkit for understanding the direction technology is taking us."
 created_date: 2026-03-04
 updated_date: 2026-03-04
 ---
