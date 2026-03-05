@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monkey Software Doesn't Run on Fish Hardware"
-description: "Silicon Valley is amok with trillion-dollar proclamations that everyone will soon build their own software. But the ability to decompose a problem into logical steps is not a universal skill — it is a cognitive mode that surprisingly few people can perform reliably."
+description: "Silicon Valley is again amok with trillion-dollar proclamations that everyone will soon build their own software. But the ability to decompose a problem into logical steps is not a universal skill — it is a cognitive mode that surprisingly few people can perform reliably."
 created_date: 2026-03-05
 updated_date: 2026-03-05
 ---
