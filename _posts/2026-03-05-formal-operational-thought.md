@@ -27,7 +27,7 @@ The distinction is not a spectrum. It is a qualitative difference in how people 
 
 Only 25 to 35 per cent of adults in developed countries operate reliably at the formal operational level when confronting novel problems. Dasen (1994) puts it more starkly: only one-third of adults ever reach formal operations at all. Keating (1979) found that 40 to 60 per cent of college students — pre-selected for academic aptitude — fail at formal operational tasks.[^5]
 
-## Designing for a mind you have never inhabited
+## Design for a mind you have never inhabited
 
 If you are a software engineer, those numbers probably seem implausible. That is because you are a formal operational thinker who works alongside other formal operational thinkers, was educated alongside them, and socialises with them. Your cognitive mode is so natural that you assume it is universal.
 
