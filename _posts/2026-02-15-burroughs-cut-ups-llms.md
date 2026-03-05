@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When You Cut Into the Model the Future Leaks Out"
-description: "LLMs predict the next token to restore the statistical patterns of language. Poet William S Burroughs destroyed the patterns to reveal meaning. The creative use of language models is not to accept their most probable output but to treat it as material — something to collide, disrupt, and curate."
+description: "LLMs predict the next token to restore the statistical patterns of language. Author William S Burroughs destroyed the patterns to reveal meaning. The creative use of language models is not to accept their most probable output but to treat it as material — something to collide, disrupt, and curate."
 created_date: 2026-02-15
 updated_date: 2026-02-15
 ---
