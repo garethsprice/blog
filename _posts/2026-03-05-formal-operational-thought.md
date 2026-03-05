@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monkey Software Doesn't Run on Fish Hardware"
+title: "Hoisting Fish into the Trees"
 description: "Silicon Valley is again amok with trillion-dollar proclamations that everyone will soon build their own software. But the ability to decompose a problem into logical steps is not a universal skill — it is a cognitive mode that surprisingly few people can perform reliably."
 created_date: 2026-03-05
 updated_date: 2026-03-05
@@ -11,7 +11,7 @@ If your mind immediately began sequencing — the roast takes the longest so it 
 
 What percentage of the adult population do you think could do the same? Hold that estimate.
 
-A few years ago, a CEO managing over five billion dollars in assets sat down in front of an early prototype of our AI analytics copilot — a system designed to let non-technical people query data in plain English. They typed a four-character internal code, a shorthand that meant something to them and no one else. The system did not recognise it. They left the room. That was the entire interaction. We did not get the contract.[^1]
+A few years ago, a CEO managing over five billion dollars in assets sat down in front of an early prototype of an AI tool I had built — a system designed to let non-technical people query data in plain English. They typed a four-character internal code, a shorthand that meant something to them and no one else. The system did not recognise it. They left the room, with some choice words that we had wasted their time. That was the entire interaction. We did not get the contract.[^1]
 
 That episode is not a story about a bad demo. It is a symptom of a broken model that technical people have of how most people think — a model that underpins the most consequential bet in technology.
 
@@ -19,7 +19,7 @@ Andrej Karpathy, formerly of OpenAI and Tesla, coined the term "vibe coding" —
 
 ## Two-thirds of adults reason concretely, not abstractly
 
-Remember the dinner question? The thinking it required — abstract, systematic, hypothetical — is what Piaget's developmental framework calls formal operational thought, the fourth and final stage of cognitive development. The stage before it, concrete operational thought, is where roughly two-thirds of adults remain.[^4]
+Remember the dinner question? The thinking it required — abstract, systematic, hypothetical — is what the developmental psychologist Jean Piaget called formal operational thought, the fourth and final stage in his influential model of how human cognition develops from childhood to adulthood. The first two stages — sensorimotor and preoperational — describe how infants and young children learn to perceive and represent the world. The two that matter for this argument are the stages most adults occupy: concrete operational and formal operational. The third stage, concrete operational thought, is where roughly two-thirds of adults remain.[^4]
 
 Concrete operational thinkers reason logically about things they can see, touch, and directly experience. What they cannot reliably do is hold multiple hypothetical states in mind, systematically isolate variables, or decompose a novel problem into an ordered sequence of steps when no template exists.
 
@@ -39,13 +39,13 @@ I run a company that builds AI-powered business intelligence for non-technical u
 
 ## The bottleneck was never writing code
 
-The vibe coding thesis conflates writing code with engineering software. Writing code translates a structured specification into machine instructions — that act is being commoditised. Engineering software takes an ambiguous, contradictory tangle of human needs and produces a coherent system that resolves them. The code records the output of that thinking. Automating the notation does not automate the thought.
+The vibe coding thesis conflates writing code with engineering software. Writing code translates a structured specification into machine instructions — and that act of translation is being commoditised. But the specification itself must still be elicited, and most concrete operational thinkers do not have the cognitive tooling to produce one. Engineering software takes an ambiguous, contradictory tangle of human needs and produces the most coherent system that the constraints will allow — knowing which contradictions to resolve, which to leave flexible, and which to surface back to the stakeholder as their problem, not yours. The code records the output of that thinking. Automating the notation does not automate the thought.
 
 The strongest objection is that people have never been able to think structurally, yet complex software is used by billions anyway. The market solved this through specialisation, not universal competence.[^8] This is partly right. Every wave of tooling — Visual Basic, WordPress, no-code, now AI — has expanded what non-technical people can build. But no wave has eliminated the need for the person who looks at an ambiguous problem and imposes structure. Each tool moved the structured thinker up the stack to harder problems. The pattern has repeated for forty years in software — and for considerably longer in engineering at large.[^9]
 
 The companies that will win a mass audience are not building for the 25% of users who can specify what they want. They are building products that perform structural thinking on behalf of the user — systems that decompose "how are we doing" into the five analytical sub-questions the user does not know to ask (If you are wondering what those five questions are, you might be a concrete thinker).
 
-Engineers who impose structure on ambiguous problems are about to become more valuable, not less. AI generates an effectively infinite supply of code. The scarce resource is the judgment to determine what the code should do.
+Engineers who impose structure on ambiguous problems are about to become more valuable, not less. AI generates an effectively infinite supply of code. The scarce resource is the judgment to determine what the code should do, or not do.
 
 Giving everyone access to powerful tools is not the same as giving everyone the ability to use them. Until the industry grasps that, it will keep hoisting fish up into the trees — and the transformational promise of AI will remain, for the majority of people, exactly that: a promise.
 
