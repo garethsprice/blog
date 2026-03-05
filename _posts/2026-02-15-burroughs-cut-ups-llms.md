@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "When You Cut Into the Model the Future Leaks Out"
-description: "LLMs predict the next token to restore the statistical patterns of language. Burroughs cut text apart to destroy them. The creative use of language models is not to accept their most probable output but to treat it as material — something to collide, disrupt, and curate."
+description: "LLMs predict the next token to restore the statistical patterns of language. Poet William S Burroughs destroyed the patterns to reveal meaning. The creative use of language models is not to accept their most probable output but to treat it as material — something to collide, disrupt, and curate."
 created_date: 2026-02-15
 updated_date: 2026-02-15
 ---
-Large language models are the most precise mechanism ever built for reproducing the statistical center of language. They ingest text, model its patterns, and predict the most probable next token. The output is consensus: the expected phrase, the median answer, the center of the distribution. William S. Burroughs spent decades arguing that the predictable patterns of language are themselves a mechanism of control, and that the only counter-move is to break them. He was describing the problem that LLMs have now perfected — but he was also demonstrating what you do about it. The creative use of a language model is not prompting it and accepting what comes back. It is treating the output as raw material to be cut apart, collided with something it did not expect, and reassembled through human judgment. The model generates. The human disrupts and curates. The value is in the intervention, not the prediction.
+Large language models are a precise mechanism for reproducing the statistical center of language. They ingest text, model its patterns, and predict the most probable next token. The output is consensus: the expected phrase, the median answer, the center of the distribution. The Beat Generation author William S. Burroughs spent decades arguing that the predictable patterns of language are themselves a mechanism of control, and that the only counter-move is to break them. He was describing the problem that LLMs have now perfected — but he was also demonstrating what you do about it. The creative use of a language model is not prompting it and accepting what comes back. It is treating the output as raw material to be cut apart, collided with something it did not expect, and reassembled through human judgment. The model generates. The human disrupts and curates. The value is in the intervention, not the prediction.
 
 The method Burroughs used to break those patterns arrived by accident. In October 1959, the painter Brion Gysin sliced through a stack of newspapers with a Stanley knife in a Parisian hotel room — he had been cutting cardboard and used the papers to protect his table.[^1] The severed sentences, rearranged at random, produced collisions of headline and advertisement. Gysin showed the results to Burroughs, who was staying down the hall.[^2] Within months, Burroughs had turned the accident into a systematic method: take a page, cut it into sections, rearrange them, type out the result.[^3]
 
@@ -13,7 +13,7 @@ The theory behind the technique was more ambitious than the technique itself. Bu
 
 ### Half of English writes itself
 
-Claude Shannon had already mapped the territory Burroughs wanted to destroy. In 1951, Shannon demonstrated that English prose is roughly 50% redundant — filled with patterns predictable enough that subjects could guess the next letter in a passage far more often than chance would allow.[^7] To make the point concrete, he generated random approximations to English using Markov chains: first purely random letters, then letters weighted by frequency, then by pairs and triplets. By the fourth or fifth order, the output reads like plausible prose — recognizably English despite no one intending any meaning.[^8]
+Claude Shannon, known as the father of information theory, had already mapped the territory Burroughs wanted to destroy. In 1951, Shannon demonstrated that English prose is roughly 50% redundant — filled with patterns predictable enough that subjects could guess the next letter in a passage far more often than chance would allow.[^7] To make the point concrete, he generated random approximations to English using Markov chains: first purely random letters, then letters weighted by frequency, then by pairs and triplets. By the fourth or fifth order, the output reads like plausible prose — recognizably English despite no one intending any meaning.[^8]
 
 Shannon's result quantified what Burroughs perceived intuitively: language is grooved. Half the work of producing the next word has already been done by the words that precede it. Shannon treated this redundancy as an engineering property — useful for error correction, compressible for efficient transmission. Burroughs treated the same property as a trap. Both were right. The question is what you want to do with language once you recognize how much of it is running on autopilot.
 
@@ -58,28 +58,28 @@ The best description I have found for this kind of human-AI collaboration predat
 ---
 ### References
 
-[^1]: Gysin, B. (n.d.). Cut ups. *Brion Gysin Official Website*. Retrieved from https://www.briongysin.com/cut-ups/
+[^1]: Gysin, B. (n.d.). Cut ups. *Brion Gysin Official Website*. Retrieved from [https://www.briongysin.com/cut-ups/](https://www.briongysin.com/cut-ups/)
 
-[^2]: William S. Burroughs. (n.d.). In *Wikipedia*. Retrieved from https://en.wikipedia.org/wiki/William_S._Burroughs
+[^2]: William S. Burroughs. (n.d.). In *Wikipedia*. Retrieved from [https://en.wikipedia.org/wiki/William_S._Burroughs](https://en.wikipedia.org/wiki/William_S._Burroughs)
 
-[^3]: Burroughs, W. S. (1961). The cut up method of Brion Gysin. Retrieved from University of Pennsylvania: https://www.writing.upenn.edu/~afilreis/88v/burroughs-cutup.html
+[^3]: Burroughs, W. S. (1961). The cut up method of Brion Gysin. Retrieved from University of Pennsylvania: [https://www.writing.upenn.edu/~afilreis/88v/burroughs-cutup.html](https://www.writing.upenn.edu/~afilreis/88v/burroughs-cutup.html)
 
-[^4]: Calling all reactive agents: Cutting up Burroughs. (n.d.). *Enculturation*. Retrieved from https://enculturation.net/calling_all_reactive_agents
+[^4]: Calling all reactive agents: Cutting up Burroughs. (n.d.). *Enculturation*. Retrieved from [https://enculturation.net/calling_all_reactive_agents](https://enculturation.net/calling_all_reactive_agents)
 
-[^5]: Burroughs, W. S. (n.d.). William S Burroughs cut up method. *Language Is a Virus*. Retrieved from https://www.languageisavirus.com/creative-writing-techniques/william-s-burroughs-cut-ups.php
+[^5]: Burroughs, W. S. (n.d.). William S Burroughs cut up method. *Language Is a Virus*. Retrieved from [https://www.languageisavirus.com/creative-writing-techniques/william-s-burroughs-cut-ups.php](https://www.languageisavirus.com/creative-writing-techniques/william-s-burroughs-cut-ups.php)
 
-[^6]: William S Burroughs – Cut-Ups. (2014, March). *The Allen Ginsberg Project*. Retrieved from https://allenginsberg.org/2014/03/william-s-burroughs-cut-ups/
+[^6]: William S Burroughs – Cut-Ups. (2014, March). *The Allen Ginsberg Project*. Retrieved from [https://allenginsberg.org/2014/03/william-s-burroughs-cut-ups/](https://allenginsberg.org/2014/03/william-s-burroughs-cut-ups/)
 
-[^7]: Shannon, C. E. (1951). Prediction and entropy of printed English. *Bell System Technical Journal*. Retrieved from https://www.princeton.edu/~wbialek/rome/refs/shannon_51.pdf
+[^7]: Shannon, C. E. (1951). Prediction and entropy of printed English. *Bell System Technical Journal*. Retrieved from [https://www.princeton.edu/~wbialek/rome/refs/shannon_51.pdf](https://www.princeton.edu/~wbialek/rome/refs/shannon_51.pdf)
 
-[^8]: Claude E. Shannon and information theory. (2018, July 29). *Literary Theory and Criticism*. Retrieved from https://literariness.org/2018/07/29/claude-e-shannon-and-information-theory/
+[^8]: Claude E. Shannon and information theory. (2018, July 29). *Literary Theory and Criticism*. Retrieved from [https://literariness.org/2018/07/29/claude-e-shannon-and-information-theory/](https://literariness.org/2018/07/29/claude-e-shannon-and-information-theory/)
 
-[^9]: Chakrabarty, T., Laban, P., Agarwal, D., Muresan, S., & Wu, C.-S. (2024). Art or artifice? Large language models and the false promise of creativity. *Proceedings of the ACM CHI Conference on Human Factors in Computing Systems*. https://arxiv.org/abs/2309.14556
+[^9]: Chakrabarty, T., Laban, P., Agarwal, D., Muresan, S., & Wu, C.-S. (2024). Art or artifice? Large language models and the false promise of creativity. *Proceedings of the ACM CHI Conference on Human Factors in Computing Systems*. [https://arxiv.org/abs/2309.14556](https://arxiv.org/abs/2309.14556)
 
-[^10]: Roberts, T. (2013, March). Ty Roberts: From working with David Bowie to co-founding Gracenote. *Hypebot*. Retrieved from https://www.hypebot.com/hypebot/2013/03/ty-roberts-on-the-trail-from-working-with-david-bowie-to-co-founding-gracenote.html
+[^10]: Roberts, T. (2013, March). Ty Roberts: From working with David Bowie to co-founding Gracenote. *Hypebot*. Retrieved from [https://www.hypebot.com/hypebot/2013/03/ty-roberts-on-the-trail-from-working-with-david-bowie-to-co-founding-gracenote.html](https://www.hypebot.com/hypebot/2013/03/ty-roberts-on-the-trail-from-working-with-david-bowie-to-co-founding-gracenote.html)
 
-[^11]: Kid A. (n.d.). *Citizen Insane*. Retrieved from https://citizeninsane.eu/music/kida/kida.html
+[^11]: Kid A. (n.d.). *Citizen Insane*. Retrieved from [https://citizeninsane.eu/music/kida/kida.html](https://citizeninsane.eu/music/kida/kida.html)
 
-[^12]: Gysin, B. (n.d.). Cut ups. *Brion Gysin Official Website*. Retrieved from https://www.briongysin.com/cut-ups/
+[^12]: Gysin, B. (n.d.). Cut ups. *Brion Gysin Official Website*. Retrieved from [https://www.briongysin.com/cut-ups/](https://www.briongysin.com/cut-ups/)
 
-[^13]: Mednick, S. (1962). The associative basis of the creative process. *Psychological Review*, 69(3), 220–232. https://doi.org/10.1037/h0048850
+[^13]: Mednick, S. (1962). The associative basis of the creative process. *Psychological Review*, 69(3), 220–232. [https://doi.org/10.1037/h0048850](https://doi.org/10.1037/h0048850)
