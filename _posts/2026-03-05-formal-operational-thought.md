@@ -47,7 +47,7 @@ The companies that will win a mass audience are not building for the 25% of user
 
 Engineers who impose structure on ambiguous problems are about to become more valuable, not less. AI generates an effectively infinite supply of code. The scarce resource is the judgment to determine what the code should do, or not do.
 
-Giving everyone access to powerful tools is not the same as giving everyone the ability to use them. Until the industry grasps that, it will keep hoisting fish up into the trees — and the transformational promise of AI will remain, for the majority of people, exactly that: a promise.
+Giving everyone access to powerful tools is not the same as designing tools that meet people where they are. Until the industry grasps that, it will keep hoisting fish into trees — and the transformational promise of AI will remain, for the majority of people, something they never knew they were missing.
 
 ---
 
