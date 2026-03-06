@@ -15,7 +15,7 @@ A few years ago, a CEO managing over five billion dollars in assets sat down in 
 
 That episode is not a story about a bad demo. It is a symptom of a broken model that technical people have of how most people think — a model that underpins the most consequential bet in technology.
 
-Andrej Karpathy, formerly of OpenAI and Tesla, coined the term "vibe coding" — describe the vibes, let the AI write the code.[^2] Jensen Huang, CEO of NVIDIA, told an audience in early 2025 that nobody should have to learn to program.[^3] Investors fund startups on the explicit thesis that technical talent is about to become cheap and abundant. Beneath the optimism sits a single assumption: that non-technical people can specify what they want with enough precision for a machine to build it. The cognitive science, the historical record, and the evidence from every company that has put generations of software in front of real users says they cannot.
+Andrej Karpathy, formerly of OpenAI and Tesla, coined the term "vibe coding" — describe the vibes, let the AI write the code.[^2] Jensen Huang, CEO of NVIDIA, told an audience in early 2024 that nobody should have to learn to program.[^3] Investors fund startups on the explicit thesis that technical talent is about to become cheap and abundant. Beneath the optimism sits a single assumption: that non-technical people can specify what they want with enough precision for a machine to build it. The cognitive science, the historical record, and the evidence from every company that has put generations of software in front of real users says they cannot.
 
 ## Two-thirds of adults reason concretely, not abstractly
 
@@ -31,7 +31,9 @@ Only 25 to 35 per cent of adults in developed countries operate reliably at the 
 
 If you are a software engineer, those numbers probably seem implausible. That is because you are a formal operational thinker who works alongside other formal operational thinkers, was educated alongside them, and socialises with them. Your cognitive mode is so natural that you assume it is universal.
 
-There is an Eastern parable, popularised by the writer-philosopher Alan Watts, about a monkey who sees a fish in a river, assumes it is drowning — because the monkey would be — and heroically lifts it into a tree to save it.[^6] The fish dies, no doubt in a state of confusion. Tech companies are the monkey. The software they build is, often, the tree. They sit by the river scooping up fish and wondering why they keep trying to swim away. The industry's error is not malice or stupidity. It is projection: the well-meaning assumption that everyone's mind works like theirs, when most of the world is fish.
+> Kindly let me help you or you will drown, said the monkey, putting the fish safely up a tree.
+
+In this parable, popularised by the writer-philosopher Alan Watts[^6], the fish dies, no doubt in a state of considerable confusion. Tech companies are the monkey. The software they build is, often, the tree. They sit by the river scooping up fish and wondering why they keep trying to swim away. The industry's error is not malice or stupidity. It is projection: the well-meaning assumption that everyone's mind works like theirs, when most of the world is fish.
 
 I studied AI at the University of Manchester and watched the distribution first-hand. The opening weeks of a computer science degree draw a packed lecture hall that dwindles each week and then stabilises — the students who remain are the ones who can connect the logical abstractions of basic programming to the concrete problems those abstractions solve. Many intelligent, motivated people simply cannot make that connection. This is not unique to my experience. A multi-institutional study across 13 countries found an average failure rate of 28 per cent in introductory programming courses — among self-selected students who chose to study computing.[^7] The general population does not have a higher aptitude.
 
@@ -53,20 +55,20 @@ Giving everyone access to powerful tools is not the same as designing tools that
 
 ### Reference
 
-[^1]: The anecdotes in this piece are drawn from real interactions with users of CorralData's AI analytics platform. Details have been altered to protect identities. The product has since been redesigned with unstructured thinkers specifically in mind — which is, in a sense, the point.
+[^1]: The anecdotes in this piece are drawn from my experiences building AI products. Details have been altered to protect identities. The product in question has since been redesigned with unstructured thinkers specifically in mind — which is, in a sense, the point.
 
-[^2]: Karpathy, A. (2025, February 4). *There's a new kind of coding I call "vibe coding"...* [Post]. X (formerly Twitter). [SOURCE NEEDED — verify exact post URL and date]
+[^2]: Karpathy, A. (2025, February 2). There's a new kind of coding I call "vibe coding" [Post]. X (formerly Twitter). [https://x.com/karpathy/status/1886192184808149383](https://x.com/karpathy/status/1886192184808149383)
 
-[^3]: Huang, J. (2025, February). Remarks at the World Government Summit, Dubai. Widely reported; see, e.g., Kharpal, A. (2025, February 11). Nvidia CEO Jensen Huang says kids shouldn't learn to code. *CNBC*. [SOURCE NEEDED — verify exact URL]
+[^3]: Huang, J. (2024, February). Remarks at the World Government Summit, Dubai. Widely reported; see Atherton, M. (2024, February 25). Jensen Huang says kids shouldn't learn to code — they should leave it up to AI. *Tom's Hardware*. [https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-huang-advises-against-learning-to-code-leave-it-up-to-ai](https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-huang-advises-against-learning-to-code-leave-it-up-to-ai)
 
 [^4]: Inhelder, B., & Piaget, J. (1958). *The Growth of Logical Thinking from Childhood to Adolescence* (A. Parsons & S. Milgram, Trans.). Basic Books. The pendulum task and the concrete-to-formal operational distinction are developed in Chapter 4. For the adult distribution, see Kuhn, D., Langer, J., Kohlberg, L., & Haan, N. S. (1977). The development of formal operations in logical and moral judgment. *Genetic Psychology Monographs*, 95(1), 97–188.
 
 [^5]: Dasen, P. (1994). Culture and cognitive development from a Piagetian perspective. In W. J. Lonner & R. S. Malpass (Eds.), *Psychology and Culture*. Allyn and Bacon. Keating, D. P. (1979). Adolescent thinking. In J. Adelson (Ed.), *Handbook of Adolescent Psychology*. Wiley.
 
-[^6]: The parable appears in various forms across Eastern folk traditions. Its best-known English version is from Watts, A. W. (1973). Lecture on virtue [Audio recording]. The phrasing is widely quoted as: "Kindly let me help you or you will drown, said the monkey, putting the fish safely up a tree." Presumably in our use of this metaphor there is a profit mechanism for the monkey when the fish make it into the tree, but like most early-stage startups we will leave the future revenue model to the imagination.
+[^6]: Watts, A. W. (2016). Mind over mind [Audio recording]. Apple Books. https://books.apple.com/us/book/mind-over-mind/id1163933117 (Original work recorded c. 1971–1972). Presumably in our extension of this metaphor there is a profit incentive for the monkey when the fish to make it into the tree, but like most early-stage startups we will leave the revenue model to the imagination.
 
-[^7]: Bennedsen, J., & Caspersen, M. E. (2019). Failure rates in introductory programming — 12 years later. *ACM Inroads*, 10(2), 30–36. [https://doi.org/10.1145/3324888](https://doi.org/10.1145/3324888). The 28 per cent figure is the 2017 global average. [REVIEW — verify DOI is correct]
+[^7]: Bennedsen, J., & Caspersen, M. E. (2019). Failure rates in introductory programming — 12 years later. *ACM Inroads*, 10(2), 30–36. [https://doi.org/10.1145/3324888](https://doi.org/10.1145/3324888). The 28 per cent figure is the 2017 global average.
 
 [^8]: This counterargument is most clearly articulated in Narayanan, A., & Kapoor, S. (2024). *AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference*. Princeton University Press.
 
-[^9]: Vitruvius argued in 30 BC that the architect's job was to absorb complexity on behalf of inhabitants who could not be expected to reason about structure, materials, and climate themselves (Vitruvius, trans. 1914, Book I, Ch. 1). The job description has not changed; only the materials have. Vitruvius, P. (c. 30 BC/1914). The Ten Books on Architecture (M. H. Morgan, Trans.). Harvard University Press. [https://www.gutenberg.org/ebooks/20239](https://www.gutenberg.org/ebooks/20239)
+[^9]: Vitruvius argued in 30 BC that the architect's job was to absorb complexity on behalf of inhabitants who could not be expected to reason about structure, materials, and climate themselves (Vitruvius, trans. 1914, Book I, Ch. 1). The job description has not changed; only the materials have. Vitruvius, P. (c. 30 BC/1914). *The Ten Books on Architecture* (M. H. Morgan, Trans.). Harvard University Press. [https://www.gutenberg.org/ebooks/20239](https://www.gutenberg.org/ebooks/20239)
