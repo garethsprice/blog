@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Don't Work Where Bullshit Is the Job"
-description: "A new study tried to prove that jargon-loving workers are bad at their jobs. It may have accidentally proved the opposite — and that's a more troubling finding."
+description: "A new study claims that jargon-loving workers are bad at their jobs. It may have accidentally proved the opposite — and that's a more troubling finding."
 created_date: 2026-03-06
 updated_date: 2026-03-06
 ---
