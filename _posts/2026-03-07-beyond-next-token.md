@@ -1,22 +1,19 @@
 ---
 layout: post
-title: "World Models May Unlock Genuine Scientific Discovery But Language Models Cannot"
+title: "World Models May Unlock Genuine Scientific Discovery Where Language Models Cannot"
 description: "Every major scientific breakthrough shares a hidden mechanism: someone recognized that the formal structure of one field mapped precisely onto an unsolved problem in another. World models, which learn abstract representations rather than surface patterns, may be the first architecture capable of doing this at combinatorial scale — but only if we build them to verify structural truth, not just generate beautiful correspondences."
 created_date: 2026-03-07
 updated_date: 2026-03-07
 ---
-
 ## Beyond the Next Token
-
-*Every major scientific breakthrough shares a hidden mechanism: someone recognized that the formal structure of one field mapped precisely onto an unsolved problem in another. World models, which learn abstract representations rather than surface patterns, may be the first architecture capable of doing this at combinatorial scale — but only if we build them to verify structural truth, not just generate beautiful correspondences.*
-
----
 
 Ask a large language model to find connections between thermodynamics and information theory. It will produce a fluent, confident paragraph about entropy appearing in both fields, perhaps noting that disorder in physical systems resembles uncertainty in communication channels. The paragraph will sound like a genuine insight. It is not. The model has matched tokens (words that appear in similar contexts across its training corpus) without checking whether the mathematical structures underneath are actually preserved. It has no way to verify that the second law of thermodynamics maps onto a channel capacity theorem, or under what boundary conditions the analogy breaks. It has produced what Hermann Hesse, writing in 1943, would have recognized immediately: a move in the Glass Bead Game.
 
 Hesse's final novel describes Castalia, a future province devoted to an intellectual practice that synthesizes music, mathematics, and philosophy into a single symbolic language. The game's players compose elaborate correspondences between Bach fugues and algebraic proofs. The audience applauds. Nothing is discovered. Castalia's achievement is aesthetic synthesis: pattern-matching across domains that produces elegance without generating testable claims about the world. The novel's protagonist eventually abandons the game, recognizing that beautiful correspondences are sterile when divorced from empirical reality.[^1]
 
 Large language models are Glass Bead Machines. They find cross-domain correspondences faster than any human researcher and across more literatures than any team could read in a lifetime, but they operate on token-level representations that encode surface features (distributional similarity, lexical co-occurrence) rather than the relational structures that would make those correspondences scientifically productive. This is an architectural limitation, not an intelligence limitation. The representation layer is wrong for the task.
+
+### Proof techniques transfer; metaphors do not
 
 The task itself, however, is real and valuable. Look at where the biggest scientific breakthroughs actually came from. Claude Shannon built information theory by recognizing that Boltzmann's entropy formalism, developed for statistical mechanics, mapped onto the problem of quantifying information in a communication channel. The mapping was not metaphorical. Shannon's entropy formula is Boltzmann's entropy formula with different variables. The proof techniques transferred: results about thermodynamic efficiency yielded results about channel capacity.[^2]
 
@@ -26,11 +23,15 @@ These were not lucky analogies. They were precise structural transfers: the rela
 
 The question for AI is whether this mechanism — structural transfer at the level of formal relations — can be systematized and scaled. Not whether AI can find analogies. It already finds them by the thousand, and most are worthless. The question is whether AI can find analogies that are *structurally real*: mappings where the compositional relationships are preserved, where a transformation in domain A corresponds to a transformation in domain B, and where the correspondence generates predictions that survive empirical testing.
 
+### Tokens encode co-occurrence, not composition
+
 Current LLMs cannot do this natively because they lack the right representation layer. Token prediction learns which words follow which other words. It captures distributional patterns that are often correlated with structural relationships but are not the same thing. An LLM trained on physics and finance papers might learn that "entropy" and "diffusion" appear in both literatures. It cannot verify that the second-order partial differential equation governing heat flow is structurally isomorphic to the equation governing option value evolution, because it does not represent equations as mathematical objects with compositional properties. It represents them as sequences of tokens.
 
 World models offer an architectural path past this limitation. The Joint-Embedding Predictive Architecture (JEPA) family, developed by Yann LeCun's research group and now the basis for his new venture AMI Labs (launched December 2025, seeking €500M at a €3B valuation), operates on a different principle. Rather than predicting the next token in a sequence, JEPA learns to predict relationships between abstract representations. It encodes inputs into a latent space where surface-level details are discarded and higher-order structure is preserved, then predicts what should come next in that abstract space rather than in pixel or token space.[^5]
 
 V-JEPA, the video variant, demonstrates why this matters for scientific synthesis. Trained entirely through self-supervised learning on unlabeled video, V-JEPA developed the capacity to detect violations of intuitive physics — it showed measurably higher prediction error when presented with physically impossible events, outperforming models that predict pixels or tokens. The model learned something about the *relational structure* of how objects behave, not just the surface patterns of how videos look.[^6] If a model can learn abstract relational representations of physical domains from raw data, it could in principle learn abstract relational representations of scientific domains from domain-specific corpora — not summaries of the domain, but its formal structure.
+
+### Five stages from skeleton to prediction
 
 The architecture this implies for scientific synthesis is a pipeline, not a monolithic model. It has five stages.
 
@@ -46,11 +47,15 @@ Stage five: empirical routing. Predictions are sent to domain-specific simulator
 
 Each validated cycle feeds back: successful bridges update the relational schemas, and new predictions open bridging opportunities that were not previously visible. This is where compounding occurs. The aesthetic version of synthesis does not compound; it produces more analogies at the same depth. Structural synthesis, because it builds verified bridges that constrain and extend the representation space, can accelerate.
 
+### Start with LLMs; scale with world models
+
 Here is the honest assessment of what exists today. No one has built this full pipeline. The components are scattered across research communities that do not typically interact. Structure-mapping engines have been computational since the 1980s.[^7] Causal world models that build and revise internal representations through active experimentation are an active research frontier. A recent paper proposes "Scientific AI" agents that construct transferable internal models through recursive epistemic loops of hypothesis generation, causal inference, and calibration.[^8] JEPA architectures are producing abstract representations that capture relational structure from raw data.[^5] Category-theoretic approaches to knowledge representation provide formal languages for cross-domain mapping.[^9] But the integrated system (world-model-based skeleton extraction, structural bridge detection, morphism verification, prediction generation, empirical test) does not exist.
 
 What does exist, and what practitioners can build today, is a meaningful approximation using current LLMs as orchestrated components within a pipeline that compensates for their structural blindness. The LLM handles the parts it does well: generating candidate relational schemas from domain literature (a structured prompting task), and articulating known results in source domains that might transfer (a retrieval and articulation task). Formal tools handle the parts that require structural rigor: graph comparison libraries for bridge detection, symbolic algebra systems (SymPy, SageMath) for morphism verification, constraint solvers for checking compositional preservation. An agent framework like LangGraph can orchestrate this as a multi-step pipeline where the LLM generates candidates and formal tools verify them.
 
 This LLM-based version has two limitations that world models would resolve. First, the relational schemas it produces are inferred from text, surface representations of structure rather than structure learned directly from phenomena. A world model trained on domain data would learn relational structure from the phenomena themselves, with higher fidelity. Second, the LLM pipeline requires human-guided iteration and does not scale combinatorially. It is a research tool, not a discovery engine. World models operating natively in representation space are what take this from "useful prototype" to "systematic synthesis at the scale where breakthrough becomes expected rather than serendipitous."
+
+### What the sceptics get right
 
 Three serious counterarguments deserve direct engagement.
 
@@ -59,6 +64,8 @@ First: emergence might handle this. Sufficiently large models trained on suffici
 Second: formal representation does not scale. Structure-mapping engines require hand-coded relational schemas, reintroducing a knowledge-engineering bottleneck. The hybrid approach, using LLMs or world models to *generate candidate* schemas and then applying structural checking as a verification layer, avoids this bottleneck while preserving rigor. The neural component does the breadth. The formal component does the depth.
 
 Third: no benchmark exists for this. How do you evaluate a system that generates novel cross-domain predictions? Existing benchmarks test within-domain performance. A retrospective benchmark is buildable: encode historical cases of successful structural transfer (Shannon, Black-Scholes, Hodgkin-Huxley) as held-out test cases, provide the system with source and target domain formalizations, and measure whether it generates the known bridging prediction. This is imperfect and backward-looking, but it is a start, and the absence of a benchmark is a research opportunity, not a refutation.
+
+### Solutions living in the wrong department
 
 The unsolved problems waiting for this approach are not abstract. Antibiotic resistance in bacterial populations exhibits threshold dynamics that parallel percolation phase transitions in materials science, a field with mature predictive tools for locating critical thresholds in network systems. Protein design (the inverse folding problem) shares structural architecture with adjoint optimization in aerospace engineering, where engineers routinely solve the problem of finding an input geometry that produces a desired output behavior. Earthquake dynamics and neural avalanches share the skeleton of self-organized criticality, and perturbation-response techniques used to detect when neural systems drift from criticality might transfer to seismic early warning. In each case, the formal tools exist in one department and the unsolved problem sits in another, three buildings away on the same university campus.
 
