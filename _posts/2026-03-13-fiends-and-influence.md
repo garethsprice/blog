@@ -2,8 +2,8 @@
 layout: post
 title: "How to Win Fiends and Influential People"
 description: "Jeffrey Epstein built his network using techniques indistinguishable from those in every bestselling book on professional relationships. For anyone who has ever found networking advice faintly repellent, the Epstein files finally explain why."
-created_date: 2026-03-07
-updated_date: 2026-03-07
+created_date: 2026-03-13
+updated_date: 2026-03-13
 ---
 Go to [jmail.world](https://jmail.world){:target="_blank"} and log in. You will find yourself inside Jeffrey Epstein's Gmail inbox — or rather, a pixel-perfect parody of it, built in five hours by Riley Walz, a software engineer known for viral data projects, and Luke Igel, co-founder of Kino AI, a video search company.[^1] The site has drawn 450 million visits since November 2025. Type "island" and get 168 results. Quora notifications sit between messages to Steve Bannon, a political strategist and Trump ally. A Flipboard digest arrives moments after an exchange with Ehud Barak, a former Israeli prime minister. The interface is mundane by design — the same grid of bold subject lines and truncated previews you see in your own inbox every morning. The banality is the point. So is the legibility: for the first time, the internal mechanics of an elite social network are visible at the level of individual emails, individual introductions, individual favours asked and granted.
 
