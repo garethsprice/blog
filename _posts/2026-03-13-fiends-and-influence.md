@@ -11,8 +11,6 @@ The Epstein Files Transparency Act, signed by President Trump on 19 November 202
 
 Before going further: Jeffrey Epstein was a sex trafficker who systematically abused dozens of underage girls over decades, using his wealth and connections to recruit, groom, and silence his victims. Ghislaine Maxwell, his chief recruiter and former girlfriend, is serving a twenty-year sentence.[^3] The girls at the centre of this — many of them high-school students who arrived thinking they had been hired to give massages — had their lives damaged in ways no analytical frame can adequately address. As Awino Okech, a professor of feminist and security studies at SOAS University of London, has argued, the women and girls were not peripheral to the network; they were central to how those connections were built, maintained, and sustained.[^4] What follows examines the structural mechanics, not because they matter more than the crimes, but because understanding how the machinery worked is a prerequisite for ensuring it cannot work again.
 
----
-
 ### Information wants to be free, introductions cost extra
 
 If you have spent time in the technology industry, you have been told to network. You have also, probably, found the prospect faintly repulsive.
@@ -22,8 +20,6 @@ The instinct is more interesting than squeamishness. The internet — and partic
 And yet. Silicon Valley's actual power structure looks nothing like its open-source ideology. It runs on warm introductions, partner meetings, demo days, invitation-only dinners, and Signal groups. The cognitive dissonance between "information wants to be free" and "can you make a warm intro to the partner at Sequoia" is one of the technology industry's great unexamined contradictions. Networking advice feels dishonest to people in tech not because tech people are unusually principled, but because the advice conflicts with the founding mythology of the medium they work in — even as they participate in the same dynamics every working day.
 
 Epstein's career demonstrates what happens when you drop the mythology and run the playbook undiluted.
-
----
 
 ### A climber who climbs
 
@@ -41,8 +37,6 @@ Now trace Epstein's career against this canon.
 
 Every technique that made Epstein's network function is described approvingly in books that have sold millions of copies.
 
----
-
 ### For every open arm, a cold shoulder
 
 The networking canon leaves out the part that made the machinery actually run. Epstein understood something blunter than structural holes: people want things, and the person who supplies them accumulates power over the people who receive them.
@@ -52,8 +46,6 @@ The EFTA emails make this transactional engine visible at the level of individua
 The supply chain did not end with introductions and grant money. The EFTA files and the testimony of survivors make clear that access to young women and girls was part of what Epstein provided to at least some members of his network. The victims were not incidental to the networking; for some participants, they were the product. As *Ms. Magazine* noted, whatever people received from Epstein — access to career-enhancing people, access to young girls, an endless supply of freebies — kept the connectivity relevant.[^16] Harvard's own review found that Epstein visited Nowak's lab over 40 times after his 2008 conviction, "typically accompanied by young women serving as his assistants."[^10] Released emails show elite male scientists making derogatory comments about women's intellectual capacity; one AI researcher suggested it is "hard to be brilliant if you are worrying if you look fat."[^17] The network was not indifferent to women. It actively excluded them from the rooms where funding, connections, and career advancement were distributed.
 
 The broker's power comes from supplying what each node desires. The broker is not required to care — is structurally incentivised not to care — whether what flows through the node is a grant, an introduction, a dinner invitation, or a human being.
-
----
 
 ### Gilding his cage, one bar at a time
 
@@ -69,9 +61,7 @@ The $1 billion minimum may well have been true — Wexner qualified. That is wha
 
 The 2002 *New York Magazine* profile by Landon Thomas Jr. captured the result: a "mysterious, Gatsbyesque figure" who cultivated an air of aloofness.[^13] His net worth at death was roughly $560 million — considerable, but well below what his 737, his townhouse, and his island projected.[^22] The mystique was the product. Manufacturing mystique is what personal branding has always been for.
 
----
-
-### Every other dinner party in Manhattan
+### Eight people sipping Dom Pérignon in Manhattan
 
 We can see all of this only because Epstein's moral ambiguity crossed a line into federal crime.
 
@@ -82,8 +72,6 @@ This is the survivorship bias of scandal. We can map Epstein's network in granul
 How many people are working the same playbook right now — in Manhattan, in Mayfair, on Sand Hill Road — who will never appear on Jmail because their version stays on the legal side of the line? How many connectors are brokering access, manufacturing mystique, cultivating dependency through strategic generosity, and sitting at the junction of disconnected networks — not to traffic children, but to accumulate social power for its own sake, or to extract fees for introductions no one can independently value, or to build reputations on claims no one can check? The Epstein files do not answer this question. They merely make it impossible to avoid.
 
 The problem is not that a monster used good tools badly. The problem is that the tools work best in conditions of darkness, and the world of brokered access has always depended on there being rather a lot of darkness around.
-
----
 
 ### A crack in the shell
 
