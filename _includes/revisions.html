@@ -1,6 +1,7 @@
 {% assign has_revisions = false %}
 {% if page.revisions.size > 0 %}{% assign has_revisions = true %}{% endif %}
-{% assign reading_time = page.content | reading_time %}
+{% assign content_without_footnotes = page.content | split: '<div class="footnotes">' | first %}
+{% assign reading_time = content_without_footnotes | reading_time %}
 
 {% if has_revisions or reading_time %}
 <div class="article-meta">

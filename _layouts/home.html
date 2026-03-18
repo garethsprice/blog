@@ -33,7 +33,8 @@ layout: default
       {% elsif post.excerpt %}
         {{ post.excerpt | typogrify | strip_html | truncatewords: 40 }}
       {% endif %}
-      <span class="reading-time"><em>{{ post.content | reading_time | append: " min read." }}</em></span>
+      {% assign post_content_no_fn = post.content | split: '<div class="footnotes">' | first %}
+      <span class="reading-time"><em>{{ post_content_no_fn | reading_time | append: " min read." }}</em></span>
     </p>
   </article>
   {% endfor %}
