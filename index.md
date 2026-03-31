@@ -9,4 +9,6 @@ I'm **Gareth Price**, CTO at [CorralData](https://www.corraldata.com/) and forme
 
 My intent is to write about **AI engineering**, **technical leadership**, and **building high-performing teams** at startups and scale-ups. What I end up writing often is broader, with a mix of computer history, media theory, and the relationship between emerging technology and artistic expression. I hold a BSc in Artificial Intelligence from the University of Manchester, from a period when AI was not a cool subject.
 
+Most of the writing here is LLM-augmented — an ongoing experiment in what authorship means in this post-AI era. Whether this is a blog for general consumption or a personal newspaper written for an audience of one, I'm genuinely unsure; whether I'm comfortable calling myself its "author," equally so. I suspect perspectives on such things will shift considerably in the coming years.
+
 A synthetic textbook I built to help me do my job, **Applied Alchemy**, is now available to <a href="https://www.startupctobook.com" target="_blank">read online</a> for human and machine readers. It's a field guide for startup CTOs building a high-growth company, covering everything from strategic decision-making and team building to bridging the gap between engineering and business.
