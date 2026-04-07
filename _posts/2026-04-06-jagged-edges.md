@@ -10,7 +10,7 @@ Large language models have centralised the bulk of well-circulated human knowled
 
 What remains valuable are the **jagged edges** of a document: the information it carries that the model does *not* already know. The proprietary numbers. The internal jargon. The org-specific procedure that diverges from the textbook on step 4. The named principle a particular author coined. The footnoted exception. The local convention. These are the parts of a text that do not fit the model's pretraining distribution, and therefore the parts that justify the document's continued existence as a separate artifact.
 
-This paper describes a method for isolating those jagged edges from a source document and rendering them as a compact reference suitable for an LLM's context window or a retrieval index. I believe this specific synthesis — explicit subtraction against the model's prior, multi-class novelty classification, and a human-readable structured artifact — to be novel; the closest published precursor, Zero-RAG (Luo et al., 2025), operationalises the same core intuition at coarser granularity and is discussed below.
+This paper describes a method for isolating those jagged edges from a source document and rendering them as a compact reference suitable for an LLM's context window or a retrieval index. The closest published precursor, Zero-RAG (Luo et al., 2025), applies the same core intuition at coarser granularity and is discussed below; this specific synthesis — explicit subtraction against the model's prior, multi-class novelty classification, and a human-readable structured artifact — appears to be novel.
 
 > *Audience note.* A few terms used without gloss: **RAG** (retrieval-augmented generation — fetching relevant passages from an index and pasting them into the prompt at query time); **frontier model** (the current generation of largest, most capable LLMs); **cloze deletion** (a fill-in-the-blank test where a span is masked and the reader must predict it); **pretraining distribution** (the corpus a model was trained on, which shapes what it already knows).
 
@@ -29,7 +29,7 @@ This reframes document processing as a *differential* operation: produce `Docume
 ## Definitions
 
 - **Common knowledge**: information present, in substantively equivalent form, in a frontier LLM's pretraining. Recoverable by direct prompting without the source document.
-- **Jagged edges**: the novel knowledge in a document — information not recoverable by prompting the model alone. May be novel because it is proprietary, recent, idiosyncratically framed, locally specific, or simply absent from the public web. Geometrically, these are the passages whose neighbourhood in the model's embedding space is sparse: the text sticks out from what the model would otherwise generate.
+- **Jagged edges**: the novel knowledge in a document — information not recoverable by prompting the model alone. May be novel because it is proprietary, recent, idiosyncratically framed, locally specific, or simply absent from the public web.
 - **Contextual bridge**: common-knowledge content retained because a novel atom is otherwise uninterpretable without it. The minimum scaffolding that makes the jagged edges legible.
 - **Knowledge atom**: an extracted unit of novel knowledge — a single fact, procedure, or concept — small enough to deduplicate and recombine.
 
@@ -54,11 +54,9 @@ A classifier sorts every chunk into one of six categories:
 5. `COMMON_KNOWLEDGE` — content the LLM already knows, droppable
 6. `REDUNDANT` — duplicated elsewhere in the same document
 
-This is the heart of the method. The classifier asks the model to introspect on its own prior: *"Would I have known this without being shown it?"* The classification is conservative — when in doubt, a chunk is kept as novel — because false positives only waste tokens, while false negatives destroy information. A separate novelty score (0.0–1.0) lets downstream stages rank chunks rather than apply a hard threshold.
+The classifier asks the model to introspect on its own prior: *"Would I have known this without being shown it?"* The classification is conservative — when in doubt, a chunk is kept as novel — because false positives only waste tokens, while false negatives destroy information. A separate novelty score (0.0–1.0) lets downstream stages rank chunks rather than apply a hard threshold.
 
-The classifier is parameterised by a **skill** — a YAML profile that adapts the criteria to a document genre. A wisdom book (*The Richest Man in Babylon*) and an engineering spec require different notions of novelty. For technical and business documents, common knowledge is suppressed aggressively. For prose and wisdom books, the *framing itself is the value* — a familiar truth recast as a named principle (*The Seven Cures*) is novel even though the underlying advice is not. Skill files override the classifier's default heuristics with genre-specific guidance.
-
-This layer matters: jagged edges are not a property of a document alone but of the **document genre relative to the model's prior**. A wisdom book's jagged edges live in its rhetoric; a financial report's live in its numbers.
+The classifier is parameterised by a **skill** — a YAML profile that adapts the criteria to a document genre. A wisdom book (*The Richest Man in Babylon*) and an engineering spec require different notions of novelty. For technical and business documents, common knowledge is suppressed aggressively. For prose and wisdom books, the *framing itself is the value* — a familiar truth recast as a named principle (*The Seven Cures*) is novel even though the underlying advice is not. Skill files override the classifier's default heuristics with genre-specific guidance. Jagged edges are not a property of a document alone but of the document genre relative to the model's prior: a wisdom book's jagged edges live in its rhetoric; a financial report's live in its numbers.
 
 The current implementation ships five skill profiles, each a small YAML file declaring match patterns, novelty heuristics, extraction targets, and output sections:
 
@@ -78,9 +76,7 @@ Chunks classified as novel pass to type-specific extractors that produce structu
 - `ProcedureAtom` — a named procedure with ordered steps, prerequisites, decision points, outcomes.
 - `ConceptAtom` — a term, a definition, typed relationships to other concepts, examples.
 
-Atomisation matters for two reasons. First, it allows **deduplication** across chunks via semantic fingerprints — the same fact stated in three places collapses to one atom. Second, it allows **recombination**: atoms can be regrouped by topic, concept, or procedure regardless of where they appeared in the source, freeing the output from the source's narrative order.
-
-Every atom carries a `SourceReference` so the final artifact remains auditable back to the original page and section.
+Atomisation enables **deduplication** across chunks via semantic fingerprints — the same fact stated in three places collapses to one atom — and **recombination**, since atoms can be regrouped by topic, concept, or procedure regardless of where they appeared in the source, freeing the output from the source's narrative order. Every atom carries a `SourceReference` so the final artifact remains auditable back to the original page and section.
 
 ### Stage 4 — Synthesis
 
@@ -95,15 +91,15 @@ Synthesis is also where contextual bridges are stitched in — the minimum commo
 
 ## Why this works
 
-The method exploits an asymmetry that did not exist five years ago: **the consumer of the artifact is itself a model that has read most of the world**. Traditional information retrieval and summarisation assume the reader is a blank slate. They optimise for self-contained completeness. But a self-contained summary delivered to a frontier-model reader is mostly a tax — every token spent restating what the model already knows is a token not spent on what only the source could provide.
+The method exploits an asymmetry that did not exist five years ago: the consumer of the artifact is itself a model that has read most of the world. Traditional information retrieval and summarisation assume the reader is a blank slate. They optimise for self-contained completeness. But a self-contained summary delivered to a frontier-model reader is mostly a tax — every token spent restating what the model already knows is a token not spent on what only the source could provide.
 
-What makes the inversion newly tractable is a quantitative shift in three places at once. Frontier models have largely saturated breadth benchmarks like MMLU, meaning most of what a general-purpose textbook covers is now genuinely ambient. Context windows have expanded from a few thousand tokens to a million, making *"just paste the document"* superficially viable but exposing long-context degradation effects[^5] that punish naive scaling. And inference costs have fallen enough that ingestion-time pre-processing is cheaper per query than the tokens it saves at every subsequent call. None of these shifts is qualitatively new; together they convert *"compress against the model"* from a clever framing into an operational decision.
+What makes the inversion newly tractable is a quantitative shift in three places at once. Frontier models now cover enough of the public textbook corpus that restating it is wasted tokens — though, as the limitations section notes, exactly *how* much is the central empirical question this paper still owes evidence on. Context windows have expanded from a few thousand tokens to a million, making *"just paste the document"* superficially viable but exposing long-context degradation effects[^5] that degrade under naive scaling. And inference costs have fallen far enough that ingestion-time pre-processing is plausibly cheaper per query than the tokens it saves at every subsequent call, though the crossover point depends on reuse rate and has not been measured here.
 
-Inverting the objective — keep the surprising, drop the predictable — makes the output densely informative per token of context window. This matters concretely:
+Inverting the objective — keep the surprising, drop the predictable — should make the output densely informative per token of context window. Three downstream effects follow, each a hypothesis the benchmark in *Limitations* is designed to test:
 
 - **Context windows are finite.** A 4kB extract can be injected into every prompt; a 400kB textbook cannot.
-- **Retrieval precision improves.** A vector index over atoms (rather than raw chunks) returns hits that are individually meaningful and individually novel.
-- **Hallucination reduces.** When the model is given only what it could not have produced itself, the boundary between "from the document" and "from my prior" sharpens, and citations become more reliable.
+- **Retrieval precision should improve.** A vector index over atoms (rather than raw chunks) should return hits that are individually meaningful and individually novel.
+- **Hallucination should reduce.** When the model is given only what it could not have produced itself, the boundary between "from the document" and "from my prior" sharpens, and citations become more reliable.
 
 ---
 
@@ -113,9 +109,9 @@ Here is the method run end-to-end on George Clason's *The Richest Man in Babylon
 
 **Compression.** The cleaned source is **42,301 words** (≈56,000 tokens at standard BPE). The final jagged-edge extract is **2,539 words** (≈3,400 tokens) — a 16.7× reduction. The extract fits comfortably inside any modern system prompt; the source does not. The pipeline processed 36 chunks, of which roughly a third were classified `COMMON_KNOWLEDGE` or `REDUNDANT` (publisher front-matter, scene-setting, repeated narrative beats) and dropped before extraction.
 
-**A dropped chunk.** Chunk `92cd1678` — the copyright page and table of contents — was classified `COMMON_KNOWLEDGE` with confidence 1.0 and novelty 0.0. The classifier's reasoning: *"standard publication information... boilerplate publishing information that any LLM would recognize as standard book front matter."* A length-based summariser would also drop this, but for the wrong reason (it isn't a main point) rather than the right one (the model already has it).
+A dropped chunk illustrates the filter at work. Chunk `92cd1678` — the copyright page and table of contents — was classified `COMMON_KNOWLEDGE` with confidence 1.0 and novelty 0.0. The classifier's reasoning: *"standard publication information... boilerplate publishing information that any LLM would recognize as standard book front matter."* A length-based summariser would also drop this, but for the wrong reason (it isn't a main point) rather than the right one (the model already has it).
 
-**A kept chunk.** Chunk `490e927e` — the passage introducing Arkad's *Seven Cures for a Lean Purse* — was classified `NOVEL_CONCEPTUAL` (with `NOVEL_PROCEDURAL` secondary) at confidence 0.9. The underlying advice (*save 10% of what you earn*, *control your expenses*) is itself common knowledge — any frontier model can produce it cold. What is novel, and what the skill profile is calibrated to catch, is the **named, numbered framing**: *The Seven Cures*, each cure as a specific rule with archaic phrasing (*Start thy purse to fattening*). The framing is the jagged edge even when the content is not.
+A kept chunk shows where the skill profile earns its keep. Chunk `490e927e` — the passage introducing Arkad's *Seven Cures for a Lean Purse* — was classified `NOVEL_CONCEPTUAL` (with `NOVEL_PROCEDURAL` secondary) at confidence 0.9. The underlying advice (*save 10% of what you earn*, *control your expenses*) is itself common knowledge — any frontier model can produce it cold. What is novel, and what the `prose-wisdom` profile is calibrated to catch, is the **named, numbered framing**: *The Seven Cures*, each cure as a specific rule with archaic phrasing (*Start thy purse to fattening*). The framing is the jagged edge even when the content is not.
 
 **An extracted atom.** The corresponding `ConceptAtom`, abbreviated:
 
@@ -156,6 +152,8 @@ This method traces that off-manifold outline and discards everything on the smoo
 
 As models absorb more of the public corpus, the smooth interior grows and the off-manifold portion becomes a smaller fraction of any given document — and a *more valuable* fraction, because it is the only fraction that justifies the document's existence as a distinct source. Distillation against the model's prior is therefore not a one-time optimisation but a continuously useful operation whose ratio of value to volume rises over time.
 
+**Stop summarising documents. Start subtracting the model from them.**
+
 ---
 
 ## Comparison to adjacent techniques
@@ -166,7 +164,7 @@ The closest cousin in framing is **information-theoretic compression against a l
 
 Prompt-compression work like LLMLingua is superficially adjacent but targets a different quantity.[^2] LLMLingua prunes tokens the proxy model finds predictable *in context* — low local perplexity. Local perplexity and factual novelty are not the same thing. A token can be predictable given its surrounding words while conveying a fact the consumer model has never seen; a token can be locally surprising while stating something the model knows perfectly well. This method filters on the second axis, not the first.
 
-The closest published precursor to the approach described here is **Zero-RAG** (Luo et al., 2025), which argues that growing LLM parametric knowledge creates significant redundancy between RAG corpora and the models consuming them.[^3] Zero-RAG introduces a *Mastery-Score* measuring how well an LLM has absorbed each passage in a retrieval index, then prunes high-mastery passages entirely — reporting 30% corpus reduction and 22% retrieval acceleration on Wikipedia-backed QA with no loss in downstream accuracy. The core intuition — filter by model mastery — is the same as this paper's, and Zero-RAG deserves credit for operationalising it at scale first. The differences are scope and shape: Zero-RAG operates at **passage level** with a **binary** prune-or-keep decision against a **retrieval index**, optimised for query-time efficiency. Jagged-edge extraction operates at **atom level** with a **multi-class taxonomy** (novel factual / procedural / conceptual / contextual bridge / common / redundant) to produce a **compact human-readable artifact** for prompt injection or system-prompt context. The two approaches are complementary rather than competing — Zero-RAG establishes that the core filter works at corpus scale; this method pushes the same filter to finer granularity and richer output structure.
+The closest published precursor is **Zero-RAG** (Luo et al., 2025), which argues that growing LLM parametric knowledge creates significant redundancy between RAG corpora and the models consuming them.[^3] Zero-RAG introduces a *Mastery-Score* measuring how well an LLM has absorbed each passage in a retrieval index, then prunes high-mastery passages entirely — reporting 30% corpus reduction and 22% retrieval acceleration on Wikipedia-backed QA with no loss in downstream accuracy. The core intuition — filter by model mastery — is the same as this paper's, and Zero-RAG deserves credit for implementing it at scale first. The differences are scope and shape: Zero-RAG works at **passage level** with a **binary** prune-or-keep decision against a **retrieval index**, optimised for query-time efficiency. Jagged-edge extraction works at **atom level** with a **multi-class taxonomy** (novel factual / procedural / conceptual / contextual bridge / common / redundant) to produce a **compact human-readable artifact** for prompt injection or system-prompt context. The two approaches are complementary rather than competing — Zero-RAG establishes that the core filter works at corpus scale; this method pushes the same filter to finer granularity and richer output structure.
 
 ---
 
@@ -176,9 +174,9 @@ If the value of a document to a model-reader lives in its jagged edges, several 
 
 **For writers.** The parts of a draft a model could have generated from the title alone are the parts no one will read. Originality stops being an aesthetic preference and becomes the load-bearing function of the text. Restating consensus is now free; the writer's job collapses toward the surprising claim, the specific number, the framing no one else has used.
 
-**For documentation and knowledge management.** Most internal wikis are largely recapitulated common knowledge wrapped around a smaller core of genuinely local content. Their value-per-page is dominated by the local fraction, but maintenance cost is spread evenly across the whole. A documentation practice that maintained only the jagged edges obsessively and let the rest rot would lose little, on the theory that the rot is now harmless — a model can regenerate it on demand.
+**For documentation and knowledge management.** I'd wager most internal wikis are largely recapitulated common knowledge wrapped around a smaller core of genuinely local content. Their value-per-page is dominated by the local fraction, but maintenance cost is spread evenly across the whole. A documentation practice that maintained only the jagged edges obsessively and let the rest rot would lose little, on the theory that the rot is now harmless — a model can regenerate it on demand.
 
-**For the economics of content.** Publishing models priced per page or per word implicitly assume all content is fungible. As model priors absorb more of the public corpus, the *price* of a piece of writing should track its jagged edges, not its length. This is already visible in the collapse of generic SEO content and the survival of writing whose value is irreducibly local: trade newsletters, niche substacks, primary-source reporting. This method is a procedure for measuring the property publishers are starting to price on instinct.
+**For the economics of content.** Publishing models priced per page or per word implicitly assume all content is fungible. As model priors absorb more of the public corpus, the *price* of a piece of writing should track its jagged edges, not its length. Trade newsletters, niche substacks, and primary-source reporting survive precisely because their value is irreducibly local; generic SEO content, whose jagged-edge fraction is near zero, is collapsing on the same logic. This method is a procedure for measuring the property publishers are starting to price on instinct.
 
 **For organisational memory.** An institution's competitive advantage, through this lens, is the union of its jagged edges — the things its documents say that no other organisation's documents say. Naming and preserving that union is a different exercise from *writing things down*, and most knowledge-management practice is still doing the latter.
 
@@ -186,7 +184,7 @@ If the value of a document to a model-reader lives in its jagged edges, several 
 
 ## Limitations and open questions
 
-**The "summaries are fine, actually" counter.** The strongest objection to this project is that at 200k- and 1M-token context windows, the token-cost argument weakens: you can paste the whole document and let the model ignore what it already knows. Worse, traditional summaries preserve **narrative coherence** — the connective tissue between facts — and there is some evidence that coherent context improves model reasoning in ways a deduplicated bag of atoms does not. Long-context degradation effects like Liu et al.'s *Lost in the Middle* cut the other way: pasting a whole document is no guarantee the model will actually use the parts that matter.[^5] Jagged-edge extraction trades flow for density, and the trade is not obviously correct in every regime. The method earns its keep most clearly when (a) the artifact is reused across many prompts, amortising extraction cost; (b) the source corpus is larger than any single context window; or (c) the consumer is a retrieval index rather than a single prompt. Outside those regimes, just paste the document.
+**The "summaries are fine, actually" counter.** The strongest objection to this project is that at 200k- and 1M-token context windows, the token-cost argument weakens: you can paste the whole document and let the model ignore what it already knows. Worse, traditional summaries preserve **narrative coherence** — the connective tissue between facts — and it is plausible that coherent context helps reasoning in ways a deduplicated bag of atoms does not, though we know of no direct test. Long-context degradation effects like Liu et al.'s *Lost in the Middle* cut the other way: pasting a whole document is no guarantee the model will actually use the parts that matter.[^5] Jagged-edge extraction trades flow for density, and the trade is not obviously correct in every regime. The method earns its keep most clearly when (a) the artifact is reused across many prompts, amortising extraction cost; (b) the source corpus is larger than any single context window; or (c) the consumer is a retrieval index rather than a single prompt. Outside those regimes, just paste the document.
 
 **The classifier's prior is the model's prior.** Whether a chunk is novel is judged by the same family of model that will eventually consume the artifact. This is a feature — the filter is calibrated to its consumer — but also a risk: idiosyncrasies of the judging model leak into what is preserved.
 
@@ -196,13 +194,7 @@ If the value of a document to a model-reader lives in its jagged edges, several 
 
 **Self-report is not knowledge probing.** The classifier currently asks the model *"would you have known this?"* — a metacognitive question models handle unreliably. A more defensible probe is **elicitation**: convert each candidate fact into a cloze deletion, quiz question, or fill-in-the-blank with the source masked, and ask a clean instance of the model to answer cold. Cloze-based knowledge probing has an established foundation — Petroni et al. introduced the LAMA benchmark in 2019 precisely to test what factual knowledge pretrained models hold, using fill-in-the-blank statements derived from subject-relation-object triples.[^4] Applying the same apparatus as a *filter* over candidate atoms is the natural next step. If the model answers correctly without the document, the fact is on the smooth interior and can be dropped. If it fails, hedges, or hallucinates, the fact is a genuine jagged edge. The trick generalises to procedures (mask a step, ask the model to predict it) and concepts (ask for a definition of the term and compare). This converts novelty classification from subjective judgment to a measurable behavioural test against the model's prior, and is the most promising direction for a more rigorous version of the method.
 
-**Evaluation.** A natural metric is *answer quality on document-specific questions, per token of context provided*. Building a benchmark of (document, question, gold-answer) triples that strictly require the source — and measuring whether the extract preserves answerability at a fraction of the tokens — is the obvious next step.
-
----
-
-## One-line summary
-
-**Stop summarising documents. Start subtracting the model from them.**
+**Evaluation.** A natural metric is *answer quality on document-specific questions, per token of context provided*. Building a benchmark of (document, question, gold-answer) triples that strictly require the source — and measuring whether the extract preserves answerability at a fraction of the tokens — is the obvious next step, and the experiment that would convert the three "should" claims in *Why this works* into measured ones.
 
 ---
 
