@@ -140,7 +140,7 @@ A kept chunk shows where the skill profile earns its keep. Chunk `490e927e` — 
 
 Every atom is **traceable**: the `source` field lets a downstream consumer jump back to the original chunk and verify, an auditability property fine-tuning cannot offer. Every atom is also **recombinable**: *Personal Financial Prosperity* was extracted from the foreword, but in the synthesised output it sits alongside related concepts pulled from chapters 4 and 7, regrouped by topic rather than source order.
 
-This is, intentionally, the method's least flattering test case. Wisdom literature is mostly common content in distinctive packaging, so the compression ratio is modest by design and the skill profile has to work hard to preserve the framing. A technical document — an internal runbook, a financial filing, a research paper post-cutoff — should produce higher ratios, because the share of off-manifold content is higher to begin with. `[UNVERIFIED: specific ratios on technical corpora await the benchmark described under Limitations.]`
+This is, intentionally, the method's least flattering test case. Wisdom literature is mostly common content in distinctive packaging, so the compression ratio is modest by design and the skill profile has to work hard to preserve the framing. A technical document — an internal runbook, a financial filing, a research paper post-cutoff — should produce higher ratios, because the share of off-manifold content is higher to begin with.
 
 ---
 
