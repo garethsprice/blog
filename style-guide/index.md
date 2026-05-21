@@ -31,7 +31,11 @@ This section comes first because models weight instructions by position. Read th
 - Replace adjectives and adverbs with data wherever possible
 - Hunt nominalisations — abstract nouns ending in *-tion*, *-ment*, *-ness*, *-ity* paired with dull verbs (*was*, *became*, *involved*). Move the action back into the verb. "The implementation of the migration was carried out by the team" → "The team migrated the data."[^20]
 - Avoid imperative openings (*Consider*, *Note that*, *Remember*, *Imagine*). If the sentence is strong enough to exist, it does not need a command to make the reader pay attention.
-- Avoid AI-prose journalese: "Let's take a closer look," "The implications are far-reaching," "This raises an important question," "In an era of…," "At the end of the day," "The real question is not X but Y." These are the AI equivalent of a journalist's "Another week, another bomb." If you catch yourself producing one of these phrases, delete it and see if the paragraph still works. It almost always does. Both human writers and language models share this failure mode: trained on large volumes of similar prose, they reproduce its patterns without conscious effort. The defence is the same — read every phrase as if you chose it deliberately, and ask whether you did.
+- Avoid AI-prose journalese: "Let's take a closer look," "Let's break it down," "Let's unpack this," "The implications are far-reaching," "This raises an important question," "In an era of…," "In today's [fast-paced / rapidly evolving / digital] world," "When it comes to…," "At its core…," "At the end of the day," "Here's the thing," "Here's where it gets interesting," "But there's a catch," "What's striking is…," "This is where X comes in." These are the AI equivalent of a journalist's "Another week, another bomb." If you catch yourself producing one of these phrases, delete it and see if the paragraph still works. It almost always does. Both human writers and language models share this failure mode: trained on large volumes of similar prose, they reproduce its patterns without conscious effort. The defence is the same — read every phrase as if you chose it deliberately, and ask whether you did.
+- Avoid false-contrast constructions ("negative parallelism"). "It's not just X — it's Y," "Not only X, but Y," "This isn't about X. It's about Y," "The real question is not X but Y," "X is more than Y — it's Z," "No X. No Y. Just Z." These mimic the shape of insight without containing any, and as of 2026 they are among the most-flagged AI tells (Wikipedia editors now revert on sight). If the contrast is real and load-bearing, state it once and move on. If it isn't, drop the sentence — the formula is doing the work the argument should be doing.
+- Don't reach for three. Three adjectives ("clean, concise, compelling"), three-clause sentences, three-bullet lists where two would do. The rule of three makes weak claims feel complete; once you notice it in AI prose you cannot unsee it. When your instinct is three, check whether the third item is real or filler.
+- Prefer plain *is* to *serves as*, *stands as*, *represents*. "The event serves as a reminder" — the event is a reminder, or it isn't. The puffed-up verb adds nothing and reads as AI prose.
+- Be brief. Models trained to be helpful default to verbosity — extra context, restated framing, expanded examples, ceremonial conclusions. Readers tune out. Aim short, then cut again. A piece that makes its case in 800 words is stronger than one that makes the same case in 2,000. See the [Length](#length) section for hard limits: almost no piece should exceed six pages, and most should be shorter.
 - Place evidence at the point the reader needs convincing — not before the claim it supports, not in a separate section, not in a block dump. Statistics should be contextualised, not just stated. Anecdotes should be specific, not hypothetical.
 - For each major claim, ask "why?" and "so what?" If the piece says "X happened," it should explain why. If it says "X matters," it should identify the non-obvious implication. The paragraph that answers "why" is usually where the real insight lives.
 
@@ -50,6 +54,16 @@ This section comes first because models weight instructions by position. Read th
 11. Does the piece go at least one level deeper than surface description? Is there a "why" or "how" that the reader would not have arrived at alone?
 12. Does the piece connect its specific argument to something larger — a historical precedent, a structural force, a broader principle? Does this connection amplify the argument or merely pad it?
 13. Are there nominalisations that could become verbs, or negative constructions that could be stated positively?
+14. The "about anything" test: could this paragraph have been written about almost anything? If swapping out the topic noun (the company, the technology, the situation) would leave the paragraph functional, the paragraph is not earning its place. Generic-confidence prose — polished surface, no specific referent — is the single most reliable AI tell. Add specifics or cut.
+
+**Claude-specific tells (self-check before producing user-facing prose):**
+
+- **Sycophantic openers** — "You're absolutely right!", "Great question," "I love this question," "That's a fair point." Cut.
+- **Action preambles** — "Let me think through this," "Let me walk you through," "Let me break this down." Narrating the action instead of doing it. Cut.
+- **Pseudo-thoughtful pauses** — "It's worth pausing on this," "I want to be careful here," "Let me be honest with you." Performed thoughtfulness as filler. Cut.
+- **The "actually" reframe** — "What you're really asking about is…," "At its core, this is really a question about…," "The deeper issue here is…." Answer the question as asked. Reframe only if the reframe earns its place.
+- **Closing offers / wrap-up tax** — "Happy to dig deeper," "Let me know if you'd like me to expand," "I can also pull this into a doc." Cut unless the user has actually asked.
+- **Mid-sentence overcaution** — "While X is generally true, it's worth noting that…." Hedge only where the hedge is load-bearing.
 
 **Pre-draft gate (apply at outline stage):** Before writing a full draft, test the outline against four questions. If any answer is weak, revise the outline before drafting — the most expensive mistake is drafting 2,000 words on a thesis that does not hold.[^5]
 
@@ -111,7 +125,7 @@ Bad: "Our AI journey revealed powerful synergies across the organisation."
 
 Write only what is worth writing. Before drafting, ask: has this argument been made before? If the thesis could be predicted from the headline — if a reader who follows the topic would say "I've read this" — the piece does not yet have a reason to exist.
 
-Originality does not mean contrarianism. It means the writer has thought rather than assembled. An original thesis can come from a novel claim, from unexpected evidence for a familiar claim, from a new framework that reorganises existing knowledge, or from applying an idea from one domain to another.
+Originality means the writer has thought rather than assembled. An original thesis can come from a novel claim, from unexpected evidence for a familiar claim, from a new framework that reorganises existing knowledge, or from applying an idea from one domain to another. Contrarianism — disagreeing with the mainstream for its own sake — is something else, and often confused for it.
 
 The original thesis is usually hiding behind the safe one. It is the thing you believe from direct experience that you have not yet been willing to say plainly. Search for your thesis online. If many pieces make substantially the same argument, ask: what do I know from building, shipping, or operating that those writers don't? What have I seen that contradicts the standard take? Start there.
 
@@ -134,7 +148,7 @@ Identify the most compelling objection to your thesis. Take it seriously. Refute
 
 A piece that has absorbed and addressed its strongest objection is more persuasive than one that has avoided it. The reader's trust is earned by showing you have considered the reasons you might be wrong.
 
-**Avoid false balance.** Engaging the strongest counterargument does not mean manufacturing a 50/50 debate. When the evidence strongly favours one side, say so. Set out the opposing case with the greatest force you can muster, then let the weight of evidence fall where it may. Fence-sitting is not intellectual honesty — it is a failure to judge.[^22]
+**Avoid false balance.** Engaging the strongest counterargument does not mean manufacturing a 50/50 debate. When the evidence strongly favours one side, say so. Set out the opposing case with the greatest force you can muster, then let the weight of evidence fall where it may. Fence-sitting is a failure to judge.[^22]
 
 Good: "Spotify's Daniel Ek has argued that AI-generated content will reduce costs enough to offset the royalty problem. This understates the issue — cost reduction doesn't address the supply-side flood that devalues the catalogue."
 Bad: "Some people think AI will solve the music industry's problems. They're wrong."
@@ -239,6 +253,9 @@ Common patterns to eliminate:
 * **Straw consensus**: "Everyone assumes...", "What most teams miss...", "The conventional wisdom is..." followed by the writer's correction. If you cannot name who holds the position you are arguing against, the consensus may not exist. State your claim directly without manufacturing a mainstream view to push against.
 * **Throat-clearing transitions**: "The evidence bears this out", "It is worth noting that", "This brings us to...", "Let's take a closer look." If the next sentence is strong enough to exist, it does not need an announcement. Cut the transition and let the sentence land.
 * **Unprovable scope claims**: "Almost nobody", "most teams", "everyone in the industry." Treat scope claims as empirical claims. If you cannot support them with a number or a source, they are not rhetorical shading — they are unfinished claims. Either find the evidence or state the point without the scope.
+* **Inflated significance**: "stands as a testament to", "plays a pivotal role in", "marks a turning point", "underscores the importance of", "reflects a broader shift toward", "sets the stage for", "paves the way for", "highlights the need for", "unlocks new possibilities", "offers valuable insights into." Routine facts wrapped in historical-sounding language. If the fact were genuinely significant, the reader would feel it without the announcement. State the specific claim or cut.
+* **Pivot phrases that promise insight**: "Here's the thing", "Here's where it gets interesting", "But there's a catch", "What's striking is", "The deeper issue here is." Connective tissue masquerading as analysis. The next sentence should carry the insight itself; the pivot does not earn its place.
+* **Formulaic endings**: "Ultimately", "In conclusion", "Moving forward", "The path ahead", "Despite these challenges, the future remains promising", "The future lies in." AI prose reaches for tidy closure even when the subject is unresolved. Stop when the argument is complete.
 
 The fix is almost always the same: replace the weasel word with a number, a name, or a date. If you cannot, the claim may not be ready to make.
 
@@ -250,6 +267,24 @@ If a sentence survives only because a vague qualifier is sheltering a weak claim
 #### Vogue words to question
 
 These words are not banned, but if you reach for one, ask whether it is the most precise word available or whether you are using it because it sounds authoritative. Many are overrepresented in AI-generated prose. Apply the temporal test: was this word used in this sense twenty years ago? Will it be in twenty years? If not, there is probably a plainer, more durable alternative.[^16]
+
+**The vocabulary has leaked.** A study of 740,000 hours of human speech — academic talks and podcast episodes — found that ChatGPT-coded words such as *delve*, *comprehend*, *boast*, *swift*, and *meticulous* spiked in human spoken communication after the model's release. The tell has escaped its source: not just into human writing that mimics AI, but into how humans now talk. *Delve* in your prose reads as AI-influenced even when no AI touched it. When you reach for one of the words below, ask whether you would have used it five years ago, and whether you can defend the choice on grounds other than "it sounds professional."[^28]
+
+*The first cluster — the ChatGPT-coded set — earns the strongest scrutiny.* Dense use of more than two or three of these in a paragraph is itself a tell:
+
+* **delve / dive into / unpack** — say *examine*, *look at*, or just describe what you found
+* **underscore / bolster / foster / harness** — usually *show*, *strengthen*, *build*, *use*
+* **shed light on / pave the way for** — *clarify*, *enable*; or describe the mechanism
+* **pivotal / groundbreaking / cutting-edge / transformative / game-changing** — what changed, specifically?
+* **robust / comprehensive / seamless / intricate / nuanced** (as empty praise) — replace with the specific property
+* **vibrant / multifaceted / holistic / dynamic** — what does it mean here? Find a precise word
+* **testament** — almost always cuttable
+* **realm** (figurative, "the realm of AI") — *field*, *area*, or name the thing
+* **navigate** (figurative, "navigate change") — usually *handle*, *manage*, or describe the action
+* **highlighting / showcasing / emphasizing / fostering / aligns with / advancements** — softer corporate verbs that dominated AI prose from 2025 onward; prefer the plain verb
+* **boasts / nestled / rich tapestry / diverse array** — promotional-brochure language; cut
+
+*Older vogue words, also overused in AI prose:*
 
 * **iconic** — overused to the point of meaning nothing
 * **innovative** — what exactly is new? Say what changed
@@ -268,7 +303,6 @@ These words are not banned, but if you reach for one, ask whether it is the most
 * **lean into** — prefer *pursue*, *accept*, or *emphasise*
 * **north star** — state the goal directly
 * **net-net** — say what you mean
-* **holistic** — unless invoking the Smuts theory, find a precise word
 * **key** (as an adjective) — usually *important* or *main*, or better: say why it matters
 
 ### Specificity over direction
@@ -303,6 +337,12 @@ Formatting exists to clarify meaning.
 
 Use em dashes — sparingly — for brief asides.
 
+**Avoid the "bold term: explanation" list pattern in flowing prose.** "**Clarity:** sentence. **Velocity:** sentence. **Trust:** sentence." This is the single most recognisable AI pattern in long-form output — Wikipedia's AI-writing field guide flags it explicitly, and human readers now register it as machine-generated even when the underlying writing is good. If a list deserves structure, either write it as prose or use plain bullets without bolded labels followed by colons. The shape is the tell, not the content.
+
+The exception is reference / lookup pages where the reader is looking up a specific term rather than reading top-to-bottom (the *Weasel words* and *Vogue words* lists in this guide are intentional examples — they are dictionaries, not arguments). The exception is the lookup function, not the format. If you are writing argument or analysis, drop the bold-label bullets.
+
+**Avoid mid-paragraph bolding.** Bolding key noun phrases inside running prose for "scannability" produces a visual pattern no human writer uses. Reserve bold for true emphasis at the sentence level — once or twice a piece, not as a navigation aid.
+
 **Formatting for online reading.** Assume the reader will skim before they read. Headings, opening sentences of paragraphs, and any standfirst must carry the argument independently. If a skimmer who reads only these elements cannot reconstruct the thesis, the structure is not doing its job.
 
 ### Length
@@ -314,6 +354,10 @@ Length is determined by argument, not habit.
 * Extended analyses: up to 2,500 words
 
 If the piece grows longer without becoming sharper, it is not finished.
+
+**Hard ceiling: six pages.** Almost nothing written here should exceed six pages of rendered prose (roughly 2,500–3,000 words). If a draft is longer, the problem is usually scope creep, not insufficient material — the piece is trying to be two pieces, or it has lost confidence in its thesis and is compensating with volume. Split it, cut it, or revise the thesis until one piece can hold the argument.
+
+**AI drafts run long by default.** Language models trained to be helpful over-explain, restate framing, add ceremonial introductions and conclusions, and pad with hedging context the reader does not need. The reader notices and disengages — long AI prose reads as filler regardless of how strong the underlying argument is. When drafting with AI assistance, treat the first output as roughly twice the length it should be. Cut throat-clearing, cut summary paragraphs that restate what was just said, cut examples that duplicate the point of earlier ones, and cut anywhere the prose is explaining rather than arguing. The reader's attention is the scarce resource; spend it on the claim, not on the cushion around it.
 
 ### Headlines
 
@@ -348,10 +392,11 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 ### What not to write
 
-* Commentary on news cycles or online disputes
-* Content that belongs on LinkedIn or serves as "thought leadership"
-* Pieces requiring disclaimers or PR framing
-* Inspirational, motivational, or SEO-driven writing
+* Reactive commentary on news cycles or online disputes
+* "Thought leadership" — writing whose purpose is to be seen writing rather than to make a claim
+* Pieces requiring disclaimers or PR framing to be defensible
+* Inspirational, motivational, or audience-flattering writing
+* Writing optimised for engagement, ranking, or distribution rather than the reader
 * Anything that substitutes style for thought
 
 ---
@@ -411,3 +456,5 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 [^26]: Adapted from Greene (2023), Ch. 2, "Borrowing specialist terms." The specific rulings on *exponential growth*, *inflection point*, *quantum leap*, and *begging the question* also appear in the 12th edition but are expanded with examples in Greene.
 
 [^27]: Adapted from Greene (2023), Ch. 4, "The bottom line: writing with numbers." The chapter covers correlation vs causation, statistical significance, effect size, base rates, percentage-point vs percentage changes, and contextualising large figures — none of which appeared in the 12th edition.
+
+[^28]: Yakura, H., Lopez-Lopez, E., Brinkmann, L., Serna, I., Gupta, P., Soraperra, I., and Rahwan, I. (2024), "Empirical evidence of Large Language Model's influence on human spoken communication," [arXiv:2409.01754](https://arxiv.org/abs/2409.01754). Applying econometric causal inference to 740,249 hours of human discourse across 360,445 YouTube academic talks and 771,591 conversational podcast episodes, the authors detect a post-ChatGPT lexicographic shift in human speech, including increased use of words preferentially generated by the model — *delve*, *comprehend*, *boast*, *swift*, and *meticulous*.
