@@ -19,6 +19,8 @@ For each key point in the brief:
 
 Structure output as:
 - Claim → evidence → source → tier
+- For every person and organisation the draft may name: a one-line identification for first mention ("Ata-Malik Juvaini, a Persian historian who served the Mongols")
+- For every source: the full citation details APA needs (author, date, title, publisher or outlet, URL), and the exact wording of anything that may be quoted
 - Counterarguments found → evidence → source
 - Specific quotable data points
 - Gaps: claims that couldn't be substantiated (flag for human)

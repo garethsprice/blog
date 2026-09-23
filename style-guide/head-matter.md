@@ -21,17 +21,15 @@ A headline that promises more than the article delivers is a form of dishonesty.
 
 #### Format
 
-Use the Oxford Debate Union motion format: **"This House Believes That…"** followed by a declarative claim. The title proper — the claim itself — should also function as a standalone headline without the prefix.
+Write the title as a declarative claim, in title case. A useful test: the title should read as a debating motion if you put "This House Believes That…" in front of it — but never publish the prefix.
 
-Example:
-- Full: *This House Believes That Our Language of Authorship Is Unprepared for What Is Already Here*
-- Standalone headline: *Our Language of Authorship Is Unprepared for What Is Already Here*
+Example: *Our Language of Authorship Is Unprepared for What Is Already Here*
 
 #### Principles
 
 - **Frame a belief, not a topic.** The title should express a position someone could disagree with. "AI and Authorship" is a topic. "Our Language of Authorship Is Unprepared for What Is Already Here" is a claim.
 - **Encode the argument's structure, not just its subject.** The best titles compress the article's central mechanism into a single phrase. If the piece argues that a naming failure causes a policy failure, the title should express that causal chain, not just gesture at the domain.
-- **Prefer assertion over question.** Questions defer; assertions commit. The format demands it.
+- **Prefer assertion over question.** Questions defer; assertions commit.
 - **Clarity over cleverness.** A headline that requires the reader to have already read the piece in order to understand it has failed. Wit is welcome; opacity is not.
 - **Avoid starting with "The".** It weakens the opening. Rephrase to begin with a stronger word — a possessive ("Our"), a noun with no article ("Authorship"), or a declarative construction.
 - **Avoid "The real question is not X but Y"** and similar AI-prose clichés. Rewrite with direct assertion or a single decisive framing.

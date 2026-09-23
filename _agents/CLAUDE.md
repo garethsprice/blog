@@ -92,7 +92,7 @@ Editing output fixes one post. Editing `_config/` fixes every future post.
 → Run 06 (revise) → 05 (re-score). Repeat until ≥11.0 or you decide to publish.
 
 "This is ready."
-→ Run 07 (copy edit, medium). Answer the queries. Run 07 cleanup.
+→ Run 07 (copy edit: medium, or heavy for an aggressive message-preserving cut). Answer the queries. Run 07 cleanup.
 → Run 08 (publish). Commit output to blog repo.
 
 "Just score this draft, don't revise."

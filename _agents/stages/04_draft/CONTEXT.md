@@ -23,6 +23,7 @@ Write the first complete draft. Follows the brief's angle and thesis, incorporat
 
 **Evidence** (from research output):
 - Ground every claim in something specific from research. Replace adjectives with data.
+- Any fact, number, date, name or quotation not in the research file gets `[UNVERIFIED]` in the draft. Never fill a gap from memory; stage 07 treats unmarked unsupported claims as errors.
 - Research will hold more precedents than the piece has points. Pick the strongest one per point and bridge it to the reader's case; leave the rest in the research file.
 - Cite naturally — "Snowflake's benchmarks show 85%" not "According to a recent study..."
 - When using own production data, be specific about what, when, and where.

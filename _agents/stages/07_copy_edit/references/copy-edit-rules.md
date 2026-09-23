@@ -61,4 +61,4 @@ The parent style guide is authoritative. This file compresses the sections a cop
 
 ## Never touch
 
-Code blocks, commands, config values, file paths, identifiers, error strings, URLs, and the words inside quotation marks. Edit the prose around them.
+Code blocks, commands, config values, file paths, identifiers, error strings, URLs, and the words inside quotation marks. Edit the prose around them. A quotation may be swapped for an exact-meaning paraphrase (marks removed, attribution kept); it may never be edited while staying a quotation.

@@ -2,7 +2,7 @@
 
 Running record of mechanical decisions for the blog, so every post is edited the same way. Seeded on 2026-09-23 from a survey of the 25 posts in `../_posts/`. Stage 07 checks every draft against this sheet and proposes additions; the author approves them. The parent style guide overrides this sheet where they conflict.
 
-Entries marked **OPEN** are inconsistent in the archive and need an author decision. Until decided, stage 07 follows the stated default and raises one FYI query per post.
+Entries marked **OPEN** are inconsistent in the archive and need an author decision. Until decided, stage 07 applies the stated default silently, without a query.
 
 ## Spelling
 

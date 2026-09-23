@@ -21,7 +21,7 @@ When the Cs conflict, communication decides.
 - Respect the author's preference where it is acceptable (Einsohn). A usage that is correct but not the one you would choose stays.
 - Preserve the author's voice. Tighten; don't rewrite into your own style.
 - Never introduce an error. Re-read every sentence you changed, in context, after changing it. Most copy-editing errors are introduced errors.
-- A copy editor does not do developmental editing. Structural problems — argument order, missing counterargument, wrong example — are flagged with a query, never fixed.
+- A copy editor does not do developmental editing. Structural problems — argument order, missing counterargument, wrong example, wrong content type — are flagged with a query, never fixed. The one exception is heavy cutting, which may remove or merge sections under the rules below.
 
 ## Temperament (Plotnik)
 
@@ -38,9 +38,48 @@ Agree the level before starting; it is set in the stage input. Einsohn's three l
 
 - **Light.** Correct indisputable errors of grammar, spelling, usage and house style; make the piece consistent. Einsohn: "correct all indisputable errors in grammar, syntax, and usage, but ignore any locution that is not an outright error"; point out egregiously wordy or convoluted paragraphs, but do not revise them.
 - **Medium (default).** Everything in light, plus fix all errors of grammar, syntax and usage; revise wordy, unclear or jargon-laden sentences; apply the AI-prose rules; query anything unclear in substance.
-- **Heavy.** Everything in medium, plus cut: remove redundant paragraphs and stacked precedents to the house rules, and rewrite sentences for clarity and rhythm. Still no structural changes — those remain queries.
+- **Heavy.** Everything in medium, plus an aggressive, message-preserving cut (see **Heavy cutting** below). Remove or merge sections whose point survives elsewhere. Rewrite sentences for clarity and rhythm. Reframing the piece — a new opening, a new running example, a change of content type, reordering the argument — is still out of scope and goes to a query.
 
-The pipeline default is **medium**. Use **heavy** when the draft is more than 15% over its word target or stage 05 flagged stacked precedents.
+The pipeline default is **medium**. Use **heavy** when the draft is above the bottom third of the length range for its content type, when stage 05 flagged stacked precedents, or when the author asks.
+
+## Heavy cutting
+
+The model is the author's own edit of an AI-drafted post: 2,227 words to 1,378 (−38%) and 27 footnotes to 9, with nothing a reader needed lost. A heavy edit should cut that hard. Sydney Smith's advice in the parent style guide applies literally: run the pen through a large share of the words and see what vigour it gives.
+
+**Target.** Cut 30–40% of body words, and land in the bottom third of the length range for the content type (practical guide 1,000–1,500 → aim for 1,000–1,170; standard essay 600–1,500 → aim for 600–900). Stop short of the target only where the message skeleton would break, and say so in the notes. Footnotes follow the precedents: expect roughly one or two per key point.
+
+**1. Write the message skeleton before cutting anything.** From the read-through, write down:
+- the thesis in one sentence;
+- one line per section: the claim, or the thing the reader should do;
+- the counterargument and how the piece answers it;
+- the running example, if there is one;
+- the closing action or insight.
+
+The skeleton is the invariant. Anything not in it can go. Nothing in it can.
+
+**2. Cut down this ladder, cheapest loss first.** Take each rung across the whole piece before moving to the next.
+1. Precedents that teach a lesson another precedent already teaches. Keep the strongest one per point — the most specific, best sourced and closest to the reader's case.
+2. Second and third examples of a point already made.
+3. Background paragraphs that fail "so what?" for the named reader.
+4. Sentences that restate the one before, preview what comes next, or sum up what was just said.
+5. Detail inside a kept precedent that the point does not need. Keep the one detail that makes the point: Nelson's signal memorandum stays, the dinners aboard *Victory* and the letter to Emma Hamilton go.
+6. Quotations whose wording does not matter. Paraphrase them in fewer words, or cut them.
+7. Sections whose point is already carried elsewhere. Merge the surviving sentence into the neighbouring section. A two-paragraph debate can become one sentence of objection and one of answer.
+8. Hedges and qualifiers that are not load-bearing — never a source caveat (see below).
+
+**3. Never cut:**
+- anything in the skeleton;
+- the engagement with the strongest counterargument (it can shrink, but not vanish);
+- caveats about the strength of a source ("the reporting rests on six anonymous officers");
+- the running example, and the closing action;
+- a definition a later sentence depends on.
+
+**4. Second pass: the deletion test.** With the target nearly met, try deleting each remaining paragraph in turn. If the skeleton still holds without it, delete it, or reduce it to the one sentence that carries weight.
+
+**5. Verify the message survived.**
+- Rebuild the reverse outline from the edited text — one line per paragraph — and check every skeleton line against it. Restore the minimum needed for any line that has gone.
+- Spawn a fresh subagent with only the edited text and ask it the stage 05 cold-reader questions: what is this arguing (or what should I do), and what could I do differently tomorrow? If its answer does not match the skeleton's thesis and closing, the cut went too far. Restore until it matches.
+- Put the skeleton, the before and after counts, and the cold-reader answers at the top of the notes, so the author can see at a glance that the message held.
 
 ## Passes
 
@@ -48,7 +87,7 @@ Never edit on the first read. Work in passes, each with one concern.
 
 0. **Read-through.** Read the whole piece without changing anything. Note the thesis, the reader, the running example, anything that looks structurally wrong, and recurring patterns (a spelling, a tic). Start the post's style sheet.
 1. **Structure (flag only).** Does each section deliver what its heading promises? Is anything out of order, missing or duplicated? Queries only.
-2. **Trim** (heavy only). Cut to the house rules on precedents and length. Record what went and why.
+2. **Trim** (heavy only). Follow **Heavy cutting**: skeleton, ladder, deletion test, verification. Record everything cut and which rung it came from.
 3. **Language — clarity and coherence.** Sentence by sentence: grammar, usage, ambiguity, dangling modifiers, AI-prose tells, weasel words, nominalisations, undefined terms, first-mention identification.
 4. **Mechanics — consistency.** Against the house style sheet and the post's style sheet: spelling, hyphenation, capitalisation, numbers, dates, abbreviations, punctuation, quotation marks, italics, heading case, lists.
 5. **Correctness — facts, quotations, citations.** See below. Run as an independent check where possible.
@@ -57,9 +96,12 @@ Never edit on the first read. Work in passes, each with one concern.
 
 ## Checking content
 
-A copy editor flags; a fact-checker verifies. In this pipeline the research file is the source record, so the check is against it:
+A copy editor flags; a fact-checker verifies. In this pipeline the research file is the source record, so the check is against it.
+
+**Scope of the correctness check.** Check what could mislead a reader: quotations, numbers, dates, names, who said or did what, and whether each source supports the sentence it is attached to. Bibliographic formatting — publisher, initials, subtitles, access dates — is a separate, lower-priority job: fix what the research file supports, and group the rest into one FYI query. Never treat a missing publisher as a factual error.
 
 - Every quotation matches the research file word for word, including punctuation and capitalisation inside the quote. Silent changes to a quotation are never allowed; use brackets or ellipses only as house style allows.
+- **Quotation or paraphrase, never a mix.** Replacing a quotation with a paraphrase is allowed (and encouraged where the wording doesn't matter): remove the quotation marks, keep the attribution and the citation, and keep the meaning exact. Changing words while keeping the quotation marks is never allowed.
 - Every number, date and name matches the research file. Numbers that should add up do. Dates are consistent with each other (a person cannot act after their death; "twelve days before" is twelve days).
 - Every citation is complete and consistent in format, and supports the sentence it is attached to.
 - Anything not in the research file, or that contradicts it, gets `[SOURCE NEEDED]` or a query. Do not fix it from memory.
@@ -93,11 +135,14 @@ Check the draft against the house sheet first. A decision the house sheet does n
 Queries are the copy editor's main way of talking to the author. Einsohn stresses getting the timing, length and tone right: too many, too cryptic or sarcastic, and the author stops trusting the edit.
 
 - One issue per query, numbered (Q1, Q2 …), anchored in the text with `<!-- Q1 -->` right after the passage.
+- **Anchor placement.** Anchors go at the end of a body paragraph or list item, never inside the YAML front matter, on a heading line, inside a code block or table, or inside quotation marks. For a heading, the title or the standfirst, anchor at the end of the first body paragraph after it and say in the query which element it refers to.
 - Quote the passage, say what the problem is for the reader, and propose a fix the author can accept with one word. "Q4: 'The drone may carry on' — 'carry on' could mean continue flying or continue the attack. Suggest 'finish the attack'. OK?"
 - Neutral, courteous, brief. No rhetorical questions ("Do you really mean…?"), no lectures on rules.
 - Don't query what the level of edit lets you fix — fix it and log it. Don't query taste.
 - Mark each query **must answer** (meaning, fact, legal, structure) or **FYI** (explaining a change the author might not expect).
 - Group repeated issues into one global query ("Q9: changed 'defense' to 'defence' throughout (house style) — 4 instances").
+- **Keep the count down.** Aim for no more than about 12 queries, and fewer must-answers. Group sourcing gaps into one query per section, listing each gap. If more than eight claims lack support in the research file, the problem is upstream: say so at the top of the notes and recommend returning to stage 03 before the author answers anything.
+- Don't raise a query for an OPEN entry in the house style sheet. Apply its default silently.
 
 ## Author review and clean-up
 
