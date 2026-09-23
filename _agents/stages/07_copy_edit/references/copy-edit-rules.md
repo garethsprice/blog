@@ -7,6 +7,7 @@ The parent style guide is authoritative. This file compresses the sections a cop
 - Journalese and pivots: "Let's take a closer look", "Here's the thing", "What's striking is", "When it comes to", "At its core", "This is where X comes in". Delete; the paragraph almost always works without it.
 - False contrast: "not just X — it's Y", "This isn't about X. It's about Y", "No X. No Y. Just Z." State the real contrast once or cut.
 - Aphoristic couplets and zingers: "X carries over. Y does not.", "A filters. B never signs.", "No X, no Y.", a closing line built to be quoted. Rewrite as one plain sentence.
+- Closing image: allowed only if it follows the closing action **and** claims no more than the evidence supports. "If that number is rising, the agent has not become less trustworthy; you have found a telegraph" fails: it asserts a diagnosis the piece hasn't shown. A quotable closer is rewritten even when an action precedes it.
 - Rule of three where the third item is filler. Cut to two.
 - *serves as / stands as / represents* → *is*.
 - Staccato runs: three or more short declaratives in a row. Join with a participle, colon or semicolon.
@@ -57,7 +58,7 @@ The parent style guide is authoritative. This file compresses the sections a cop
 - Bold rare. Italics for publication titles and a term's first introduction. `Code` for commands, file names, identifiers.
 - Em dashes spaced ( — ), sparingly.
 - Headings: sentence case, eight words or fewer, carry a claim or name the section's question; no counts, no compound claims.
-- Title per `../style-guide/head-matter.md`; standfirst in the format for the content type, plain, no antithesis couplet.
+- Title per `../style-guide/head-matter.md`; standfirst in the format for the content type, plain, no antithesis couplet. Title and standfirst are display copy: bringing them to house format is a house-style change, not a reframe.
 
 ## Never touch
 

@@ -10,7 +10,7 @@ It runs once, after the loop. Running it inside the loop is wasted work, because
 - **cleanup**: after the author has answered the queries, apply the answers and produce the final text.
 
 ## Level of edit
-Set by the human when starting the stage: **light**, **medium** (default) or **heavy**. Definitions in `references/editing-practice.md` › Level of edit. Use heavy when the draft is above the bottom third of the length range for its content type, when the latest score file flags stacked precedents, or when the author asks. Heavy is an aggressive cut — 30–40% of body words — that must preserve the message; follow `references/editing-practice.md` › Heavy cutting.
+Set by the human when starting the stage: **light**, **medium** (default) or **heavy**. Definitions in `references/editing-practice.md` › Level of edit. Use heavy when the draft is above the bottom third of the length range for its content type, when the latest score file flags stacked precedents, or when the author asks. Heavy is an aggressive cut — to the bottom third of the content-type range, and never less than 30% of body words — that must preserve the message; follow `references/editing-practice.md` › Heavy cutting.
 
 ## Preconditions — stop and ask if any fails
 - **Content type.** The brief must state it (essay, framework, practical guide, etc.). The standfirst format, headings, length range and worked-example rule all depend on it. If it is missing, stop and ask the human; do not guess.
@@ -40,7 +40,7 @@ Follow the passes in `references/editing-practice.md` in order, one concern per 
 
 0. **Read-through** — no changes. Note thesis, reader, running example, recurring patterns. Start `[topic-slug]-style-sheet.md`.
 1. **Structure** — queries only.
-2. **Trim** — heavy only. Write the message skeleton, cut down the ladder to 30–40% shorter and the bottom third of the content-type range, run the deletion test, then verify with the reverse outline and a fresh cold-reader subagent. Log every cut with its rung.
+2. **Trim** — heavy only. Write the message skeleton, compress it by merging lines that share a reader action, cut down the ladder to the bottom third of the content-type range (at least 30% shorter), run the deletion test, then verify with the reverse outline and a fresh cold-reader subagent. Log every cut with its rung.
 3. **Language** — clarity and coherence, with `copy-edit-rules.md`.
 4. **Mechanics** — consistency against `house-style-sheet.md` and the post's style sheet.
 5. **Correctness** — spawn a fresh subagent with **only** the edited draft and the research file. It checks quotations word for word, numbers, dates, names, attributions, and whether each source supports its sentence, and returns a table of mismatches. Bibliographic formatting is out of its scope. Resolve each: correct to the research record, mark `[SOURCE NEEDED]`, or query. Then check internal consistency (dates, sums, names) and bias-free and legal flags yourself.
@@ -50,7 +50,7 @@ Follow the passes in `references/editing-practice.md` in order, one concern per 
 **Hard limits** (from stage 06, plus the copy editor's):
 - Change how it reads, not what it says. At heavy level, whole precedents, paragraphs and sections may be cut or merged as long as the message skeleton holds; every number, name, date and caveat that stays is kept exactly.
 - Never alter code, commands, config values, file paths, identifiers or URLs. Never change words inside quotation marks; a quotation may be replaced by an exact-meaning paraphrase with the attribution kept.
-- Never reframe: no new opening, running example or content type, and no reordering of the argument — query it.
+- Never reframe: no new opening, running example or content type, and no reordering of the argument — query it. The title and standfirst are display copy, not the opening: rewriting them to house format is house style, logged as such.
 - Never resolve a fact from memory. The research file is the record.
 - Unclear thinking gets `[REVIEW]` and a query, not polish.
 

@@ -46,7 +46,9 @@ The pipeline default is **medium**. Use **heavy** when the draft is above the bo
 
 The model is the author's own edit of an AI-drafted post: 2,227 words to 1,378 (−38%) and 27 footnotes to 9, with nothing a reader needed lost. A heavy edit should cut that hard. Sydney Smith's advice in the parent style guide applies literally: run the pen through a large share of the words and see what vigour it gives.
 
-**Target.** Cut 30–40% of body words, and land in the bottom third of the length range for the content type (practical guide 1,000–1,500 → aim for 1,000–1,170; standard essay 600–1,500 → aim for 600–900). Stop short of the target only where the message skeleton would break, and say so in the notes. Footnotes follow the precedents: expect roughly one or two per key point.
+**Target.** Land in the bottom third of the length range for the content type (practical guide 1,000–1,500 → 1,000–1,170; standard essay 600–1,500 → 600–900). Whatever the starting length, cut at least 30% of body words. Stop short of the target only where the skeleton, after compression (step 1b), would break, and say so in the notes.
+
+Footnote counts are an outcome of the cuts, not a target. The model edit's 9 footnotes followed from keeping one precedent per point; don't cut a citation to hit a number.
 
 **1. Write the message skeleton before cutting anything.** From the read-through, write down:
 - the thesis in one sentence;
@@ -57,6 +59,8 @@ The model is the author's own edit of an AI-drafted post: 2,227 words to 1,378 (
 
 The skeleton is the invariant. Anything not in it can go. Nothing in it can.
 
+**1b. Compress the skeleton.** A draft built from a long list — nine mechanisms, four failure modes — produces a skeleton too long to fit the target. Before cutting prose, merge skeleton lines that lead the reader to the same action or the same lesson: rehearsing before granting authority and reviewing after each run are one recommendation ("earn authority on the record"); two failure modes with the same fix are one. A merged line keeps the claims of both; it loses only the second heading and the second set of supporting prose. Never drop a skeleton line outright, and never merge the thesis, the counterargument or the closing with anything. List each merge in the notes. Aim for no more than five or six body lines.
+
 **2. Cut down this ladder, cheapest loss first.** Take each rung across the whole piece before moving to the next.
 1. Precedents that teach a lesson another precedent already teaches. Keep the strongest one per point — the most specific, best sourced and closest to the reader's case.
 2. Second and third examples of a point already made.
@@ -64,7 +68,7 @@ The skeleton is the invariant. Anything not in it can go. Nothing in it can.
 4. Sentences that restate the one before, preview what comes next, or sum up what was just said.
 5. Detail inside a kept precedent that the point does not need. Keep the one detail that makes the point: Nelson's signal memorandum stays, the dinners aboard *Victory* and the letter to Emma Hamilton go.
 6. Quotations whose wording does not matter. Paraphrase them in fewer words, or cut them.
-7. Sections whose point is already carried elsewhere. Merge the surviving sentence into the neighbouring section. A two-paragraph debate can become one sentence of objection and one of answer.
+7. Sections whose point is already carried elsewhere, or whose skeleton lines were merged in step 1b. Fold the surviving sentences into the neighbouring section. A two-paragraph debate can become one sentence of objection and one of answer; a failure mode with its own precedent can become one line in a list of risks.
 8. Hedges and qualifiers that are not load-bearing — never a source caveat (see below).
 
 **3. Never cut:**
