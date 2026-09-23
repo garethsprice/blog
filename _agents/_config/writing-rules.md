@@ -27,6 +27,8 @@
 ## Practical guides (content type: framework or practical guide)
 
 - Thesis is the reader's decision: "Decide what an overnight agent may do while you're asleep."
+- Right after the thesis, name the conditions under which the advice doesn't hold.
+- Governing test: readers can find what they need, understand it first time, and use it (ISO 24495-1).
 - One worked example, introduced in the opening, applied in every section. When advising what to write (prompt, policy, config), show a short example of it.
 - Address the reader as "you". No invented role nouns ("the operator", "the approver").
 - Headers name the task or question: "Explain what success means."

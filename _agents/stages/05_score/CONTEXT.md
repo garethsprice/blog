@@ -39,6 +39,15 @@ Report:
 - Does the opening deliver on the angle promised in the brief?
 - Practical guides: is the brief's running example used in every main section?
 
+### Cold-reader check
+The scorer has read the brief, so it cannot read the draft cold. Spawn a fresh subagent with **only the draft** — no brief, research, rubric or config — and ask it:
+1. In one sentence, what is this piece arguing? (Practical guides: what should I do?)
+2. For each H2, what would you expect to find under it? Did you find it?
+3. Which terms, names or references did you have to guess at?
+4. What could you do differently tomorrow after reading this? (Practical guides only.)
+
+Compare its answers with the brief's thesis seed and reader's decision. Record the answers verbatim in the score file. A thesis mismatch lowers F1; guessed terms lower Fx3; headings that misled lower F1 or Fx3 (whichever fits); no usable action in a practical guide lowers F5. This is the find / understand / use test from ISO 24495-1 (see `../style-guide/index.md` › Practical guides).
+
 ### Known Scoring Biases
 AI tends generous on F2 (prose momentum) and Fx2 (register fluidity). Human should calibrate these.
 
@@ -48,4 +57,5 @@ AI tends generous on F2 (prose momentum) and Fx2 (register fluidity). Human shou
 ## Quality Checks (human review gate)
 - Agree with the TTNW scores? (Especially F2 and Fx2.)
 - Agree with the style flags?
+- Does the cold reader's summary match what you meant? If not, the draft is unclear, whatever the scores say.
 - Decision: proceed to stage 06 (revise), proceed to stage 07 (publish), or back to stage 01 (wrong angle)?

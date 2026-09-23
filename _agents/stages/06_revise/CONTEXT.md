@@ -25,7 +25,12 @@ Revise the draft addressing the score file's findings. Priority order:
 
 **Do not over-revise.** The goal is targeted fixes to the identified problems, not a full rewrite. If F1 is 0.9 and E3 is 0.6, spend effort on E3 and leave F1 alone.
 
-After revision, report what changed: which tests were targeted, what was cut/added/rewritten, expected impact on scores.
+**Change how it reads, not what it says.**
+- Cutting a whole precedent, example or paragraph is allowed. Every number, name, date and caveat that stays must stay exactly as it was — no rounding, no softening, no dropped qualifier.
+- Never reword code blocks, commands, config values, file paths, error strings or quotations. Rewrite the prose around them.
+- If a passage is unclear because the thinking is unclear, not the wording, mark it `[REVIEW]` with a one-line note and leave it. Polishing confused reasoning hides it from the human.
+
+After revision, report what changed: which tests were targeted, what was cut/added/rewritten, expected impact on scores. List every caveat, qualification or source-strength statement removed, with the reason. If the answer is "none", say so.
 
 ## Outputs
 - `[topic-slug]-draft-vN+1.md` → `output/`

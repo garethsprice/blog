@@ -18,6 +18,9 @@ Run before stage 07 output. Every item must pass.
 - [ ] Closing adds — no restatement, no wind-down, no zinger?
 - [ ] Within word count target from brief?
 - [ ] Read aloud test: smart colleague or press release?
+- [ ] Latest cold-reader check (stage 05) matched the brief's thesis, with no guessed terms left unresolved?
+- [ ] Code blocks, commands, config values and quotations unchanged since research/draft?
+- [ ] No `[REVIEW]` markers left in the body?
 - [ ] Technical terms introduced for the named audience?
 - [ ] Standfirst in the right format for the content type (essay: status shift → gap + consequence; practical guide: reader's decision → source of the advice)? Plain, no antithesis couplet?
 - [ ] SEO description present, under 160 chars?

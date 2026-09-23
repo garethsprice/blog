@@ -413,7 +413,11 @@ Do not name institutions or credentials to borrow authority. Footnotes should cl
 
 Some pieces argue a thesis; others help the reader make a decision or do a job. When the brief's content type is a practical guide or framework, the rules above still apply, with these adjustments.
 
+**The governing test: find, understand, use.** A practical guide works when readers can find what they need, understand it the first time they read it, and use it.[^28] Headings serve finding: a reader looking for "how much authority to give an agent" should land on it from the heading list alone. Plain wording and defined terms serve understanding. The worked example and the closing action serve use. When a rule below seems to conflict with good writing, this test decides.
+
 **Frame the thesis as the reader's decision.** "Decide what an overnight agent may do while you're asleep, and which decisions must wait until morning" is a thesis the reader can act on. The opening scenario (see [Structure](#structure)) should put that decision in front of them.
+
+**Say early what would change the advice.** After the thesis, name the few conditions under which the recommendation does not hold — a different risk level, team size, or kind of system. The reader should learn early whether the guide applies to them, not in a caveat near the end.
 
 **Carry one worked example through the piece.** Introduce it in the opening and apply every recommendation to it. When the advice is about what to write — a prompt, a policy, a config, a runbook — show a short example of the thing itself, in a blockquote or code block. Abstract tiers ("allowed / proposed / forbidden") become useful when the reader sees them filled in: "allowed: edit application code and run tests in a development environment."
 
@@ -495,3 +499,5 @@ Some pieces argue a thesis; others help the reader make a decision or do a job. 
 [^26]: Adapted from Greene (2023), Ch. 2, "Borrowing specialist terms." The specific rulings on *exponential growth*, *inflection point*, *quantum leap*, and *begging the question* also appear in the 12th edition but are expanded with examples in Greene.
 
 [^27]: Adapted from Greene (2023), Ch. 4, "The bottom line: writing with numbers." The chapter covers correlation vs causation, statistical significance, effect size, base rates, percentage-point vs percentage changes, and contextualising large figures — none of which appeared in the 12th edition.
+
+[^28]: International Organization for Standardization. (2023). *ISO 24495-1:2023 Plain language — Part 1: Governing principles and guidelines*. The standard's four principles are that readers get what they need (relevant), can easily find it (findable), can easily understand it (understandable), and can easily use it (usable). [https://www.iso.org/standard/78907.html](https://www.iso.org/standard/78907.html)
