@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Your Overnight Agent Is a Lieutenant With No Radio"
-description: "Decide what an overnight agent may do while you're asleep and which decisions must wait until morning. Military delegation offers lessons about setting limits and resisting needless approval."
+title: "Overnight Agents Need Standing Orders and Fewer Approvals"
+description: "Decide what an overnight agent may do while you sleep. Centuries of military delegation show how to set its limits, and why re-approving them stalls the work."
 created_date: 2026-09-23
 updated_date: 2026-09-23
 ---
