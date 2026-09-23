@@ -28,7 +28,7 @@ Suppose the failing test checks that customer records survive a database upgrade
 
 ### Write down the limits, and the evidence each action needs
 
-Helmuth von Moltke, chief of the Prussian general staff, gave each subordinate "freedom of action and decision within his authority" in his 1869 instructions to senior commanders.[^hughes] The goal and the limits are separate parts of the order. For the test-fixing agent, those limits might be:
+In his 1869 instructions to senior commanders, Helmuth von Moltke, chief of the Prussian general staff, held that each level of command "retains freedom of action and decision within his authority."[^hughes] The goal and the limits are separate parts of the order. For the test-fixing agent, those limits might be:
 
 - allowed: edit application code and run tests in a development environment
 - proposed: prepare a migration change for a human to approve
@@ -64,7 +64,7 @@ A reviewer agent can reduce that workload by rejecting incomplete proposals or a
 
 Shared authority needs a procedure for resolving disagreement. A two-person rule should require both people to sign. Reserve it for a short list of actions that cannot be undone, and leave the action pending when the reviewers disagree.
 
-Review turns into rubber-stamping when the volume outruns the reviewer's attention. In April 2024, *+972 Magazine*, an Israeli-Palestinian outlet, and *Local Call* reported on Lavender, an AI system that suggested targets. They said intelligence officers spent about 20 seconds checking each target. One officer told the reporter: "I had zero added value as a human, apart from being a stamp of approval."[^abraham] The Israel Defense Forces disputed the account, saying an analyst must examine each target independently. The reporting rests on six anonymous officers. It raises a question about whether reviewers have enough time to make an independent judgment.
+Review turns into rubber-stamping when the volume outruns the reviewer's attention. In April 2024, *+972 Magazine*, an Israeli-Palestinian outlet, and *Local Call* reported on Lavender, an AI system that suggested targets. They said intelligence officers spent about 20 seconds checking each target. One officer told the reporter: "I had zero added value as a human, apart from being a stamp of approval."[^abraham] The Israel Defense Forces disputed the account, saying an analyst must examine each target independently. The reporting rests on six Israeli intelligence officers, identified only by initials. It raises a question about whether reviewers have enough time to make an independent judgment.
 
 That question also matters for an agent approval queue. If almost every proposal is approved within seconds, check whether the reviewer has time to read the change and its evidence. For a migration, that includes what would happen to existing data; a green test result alone does not answer that. The review screen needs to make that information available before asking for a decision.
 

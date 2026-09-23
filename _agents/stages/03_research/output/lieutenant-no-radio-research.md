@@ -121,3 +121,12 @@ Source tiers per `references/source-standards.md`. All items below were checked 
 - Backbrief definition: no doctrinal cite yet.
 - Agent-framework claim ("approval gates, durable pauses, scheduled missions in the last 18 months"): no specific frameworks named. Author to supply.
 - The USAF 2009 Flight Plan URL is not captured.
+
+## Post-publication verification (2026-09-23)
+
+Claims in the published post that were missing from this file, checked against sources:
+
+- **Moltke 1869, "freedom of action and decision".** Shunk (2016) quotes Hughes p.185: "The higher the authority, the shorter and more general will the orders be. The next lower command adds what further precision appears necessary. The detail of the execution is left to the verbal order, to the command. Each thereby retains freedom of action and decision within his authority." "Each" = each level of command, not each subordinate. Verified via Shunk only; Hughes not seen. https://www.govinfo.gov/content/pkg/GOVPUB-D110-9b33f99d39f0ac5361de11fc96b7e709/pdf/GOVPUB-D110-9b33f99d39f0ac5361de11fc96b7e709.pdf
+- **Lavender sources.** Abraham (2024): "According to six Israeli intelligence officers, who have all served in the army during the current war on the Gaza Strip and had first-hand involvement with the use of AI to generate targets…" Officers identified by initials (A., B., C.), never called "anonymous". https://www.972mag.com/lavender-ai-israeli-army-gaza/
+- **Nichols.** Author bio: "Maj. Cody "Turbo" Nichols is a cyber officer in the U.S. Air Force." Article dated 31 August 2026. https://warontherocks.com/stop-using-ai-start-commanding-it/
+- **Nelson memorandum date.** Signed copy (Bonhams): "Victory, off Cádiz, 9th October, 1805" — 12 days before Trafalgar (21 October). Royal Collection fair copy RCIN 1198306 catalogued "Dated 9-10 October 1805" (covers more than one memorandum). https://www.bonhams.com/auction/27633/lot/136/ ; https://www.rct.uk/collection/1198306/
