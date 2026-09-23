@@ -33,7 +33,7 @@ Example: *Our Language of Authorship Is Unprepared for What Is Already Here*
 - **Clarity over cleverness.** A headline that requires the reader to have already read the piece in order to understand it has failed. Wit is welcome; opacity is not.
 - **Avoid starting with "The".** It weakens the opening. Rephrase to begin with a stronger word — a possessive ("Our"), a noun with no article ("Authorship"), or a declarative construction.
 - **Avoid "The real question is not X but Y"** and similar AI-prose clichés. Rewrite with direct assertion or a single decisive framing.
-- **Practical guides state the claim behind the advice, not the task.** "Overnight Agents Need Standing Orders and Fewer Approvals" commits to a position a reader could dispute; "How to Delegate to Overnight Agents" only names the job.
+- **Practical guides state the claim behind the advice, not the task.** "Agents Need Standing Orders and Fewer Approvals" commits to a position a reader could dispute; "How to Delegate to Overnight Agents" only names the job.
 - **Keep it short enough to scan, long enough to be precise.** One clause is too blunt; three is too ornate. Aim for a single sentence with internal tension — a claim that contains its own friction.
 
 ---

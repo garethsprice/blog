@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Overnight Agents Need Standing Orders and Fewer Approvals"
+title: "Agents Need Standing Orders and Fewer Approvals"
 description: "Decide what an overnight agent may do while you sleep. Centuries of military delegation show how to set its limits, and why re-approving them stalls the work."
 created_date: 2026-09-23
 updated_date: 2026-09-23

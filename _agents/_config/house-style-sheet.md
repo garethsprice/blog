@@ -34,7 +34,7 @@ Entries marked **OPEN** are inconsistent in the archive and need an author decis
 
 | Decision | Note |
 |---|---|
-| Post titles in title case: *Overnight Agents Need Standing Orders and Fewer Approvals* | Archive: 24 of 25 titles. Capitalise short verbs (*Is*); lowercase articles, conjunctions and prepositions of three letters or fewer unless first word. Fix *Default is Destiny* → *Default Is Destiny* when next updated. |
+| Post titles in title case: *Agents Need Standing Orders and Fewer Approvals* | Archive: 24 of 25 titles. Capitalise short verbs (*Is*); lowercase articles, conjunctions and prepositions of three letters or fewer unless first word. Fix *Default is Destiny* → *Default Is Destiny* when next updated. |
 | H2/H3 headings in sentence case: *Explain what success means* | |
 | Historical and period names lowercase unless proper: *the American civil war* (Economist style) | |
 | *the Pentagon*, *the White House*, *the US Army*, *US Air Force* | *US* without points. |
