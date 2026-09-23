@@ -63,3 +63,16 @@ Example:
 - **Don't preview the argument's solution.** The standfirst sells the problem. The piece earns the answer.
 - **No wind-up.** Do not begin with "In an era of…", "As we enter a new age of…", "It's time to ask…", or "The rise of X has forced us to confront Y." These are the written equivalent of clearing your throat before speaking. Begin with a claim that is already moving. If the standfirst needs a warm-up sentence, the first sentence is not strong enough.
 - **The "already underway" test.** Read the standfirst alone. Does it feel like the piece has already started, or like the piece is about to start? If the latter, the standfirst is a preamble, not an opening.
+- **Plain over clever.** The standfirst is often the only text a reader sees in a feed or search result. Say what the piece is about in words they would use. Avoid antithesis couplets ("Their methods carry over to AI agents almost unchanged. Their accountability does not"); they sound like a thesis but leave the reader guessing what the piece covers.
+
+#### Practical guides
+
+When the piece helps the reader make a decision or do a job, the standfirst tells them what they will be able to decide and where the lessons come from. The status-shift format and the "don't preview the solution" rule do not apply; the reader chooses a practical guide because it previews the job.
+
+1. **Sentence one: the reader's decision or task**, in their terms.
+2. **Sentence two: the source of the advice and what it covers.**
+
+Example:
+> *Decide what an overnight agent may do while you're asleep and which decisions must wait until morning. Military delegation offers lessons about setting limits and resisting needless approval.*
+
+Keep it under 160 characters where possible; it doubles as the SEO description.

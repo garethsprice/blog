@@ -17,7 +17,7 @@ This section comes first because models weight instructions by position. Read th
 
 - Never fabricate a citation, source, or statistic. Never generate a citation from memory. Every footnote must be verified against the actual source before inclusion.
 - Never publish a claim without a specific referent — a number, a name, a date, or a concrete example. If a claim lacks one, revise until it does or cut the claim.
-- Never bury the thesis past the first paragraph.
+- Never bury the thesis past the first paragraph. The one exception: a first paragraph that is a short, concrete scenario setting up the reader's problem, followed by the thesis in the second.
 - Never present interpretation as mechanism. State what happened before stating what it means.
 - Never silently resolve uncertainty. Mark unverified claims with `[UNVERIFIED]`, uncertain judgments with `[REVIEW]`, and placeholder citations with `[SOURCE NEEDED]`. The human editor's job is to make judgment calls; the agent's job is to make those calls visible.
 - Never produce a piece without engaging the strongest counterargument. If you cannot identify a real person or position that disagrees with the thesis, flag this for human review — the thesis may not be engaging with a real debate.
@@ -26,14 +26,16 @@ This section comes first because models weight instructions by position. Read th
 
 - Prefer plain language to polished language
 - Prefer active voice
-- Prefer short words, short sentences, short paragraphs
+- Prefer short words and short paragraphs. Keep sentences plain, but don't chop one idea into a run of short declaratives — see [Prose and momentum](#prose-and-momentum)
 - Remove padding, qualifiers, weasel words, and vague abstractions
 - Replace adjectives and adverbs with data wherever possible
 - Hunt nominalisations — abstract nouns ending in *-tion*, *-ment*, *-ness*, *-ity* paired with dull verbs (*was*, *became*, *involved*). Move the action back into the verb. "The implementation of the migration was carried out by the team" → "The team migrated the data."[^20]
-- Avoid imperative openings (*Consider*, *Note that*, *Remember*, *Imagine*). If the sentence is strong enough to exist, it does not need a command to make the reader pay attention.
+- Avoid imperative openings (*Consider*, *Note that*, *Remember*, *Imagine*). If the sentence is strong enough to exist, it does not need a command to make the reader pay attention. The exception is *Suppose* introducing a specific worked example that the rest of the piece goes on to use.
 - Avoid AI-prose journalese: "Let's take a closer look," "Let's break it down," "Let's unpack this," "The implications are far-reaching," "This raises an important question," "In an era of…," "In today's [fast-paced / rapidly evolving / digital] world," "When it comes to…," "At its core…," "At the end of the day," "Here's the thing," "Here's where it gets interesting," "But there's a catch," "What's striking is…," "This is where X comes in." These are the AI equivalent of a journalist's "Another week, another bomb." If you catch yourself producing one of these phrases, delete it and see if the paragraph still works. It almost always does. Both human writers and language models share this failure mode: trained on large volumes of similar prose, they reproduce its patterns without conscious effort. The defence is the same — read every phrase as if you chose it deliberately, and ask whether you did.
 - Avoid false-contrast constructions ("negative parallelism"). "It's not just X — it's Y," "Not only X, but Y," "This isn't about X. It's about Y," "The real question is not X but Y," "X is more than Y — it's Z," "No X. No Y. Just Z." These mimic the shape of insight without containing any, and as of 2026 they are among the most-flagged AI tells (Wikipedia editors now revert on sight). If the contrast is real and load-bearing, state it once and move on. If it isn't, drop the sentence — the formula is doing the work the argument should be doing.
 - Don't reach for three. Three adjectives ("clean, concise, compelling"), three-clause sentences, three-bullet lists where two would do. The rule of three makes weak claims feel complete; once you notice it in AI prose you cannot unsee it. When your instinct is three, check whether the third item is real or filler.
+- Avoid aphoristic couplets and quotable closers. "Their methods carry over. Their accountability does not." "Reviewer agents filter. They never sign." "No evidence, no authority." "The name on the order was the King's, and so was the blame." These are built to be quoted, not to inform; they compress a claim past the point where the reader can check it. Say the thing plainly in a full sentence.
+- Don't coin terms. "Action class," "autonomy ratchet," "fan-out problem" give an idea a label the reader must learn and the writer never needed. If a term needs a definition in brackets, write the definition instead. Use an established term only when the piece will use it again.
 - Prefer plain *is* to *serves as*, *stands as*, *represents*. "The event serves as a reminder" — the event is a reminder, or it isn't. The puffed-up verb adds nothing and reads as AI prose.
 - Be brief. Models trained to be helpful default to verbosity — extra context, restated framing, expanded examples, ceremonial conclusions. Readers tune out. Aim short, then cut again. A piece that makes its case in 800 words is stronger than one that makes the same case in 2,000. See the [Length](#length) section for hard limits: almost no piece should exceed six pages, and most should be shorter.
 - Place evidence at the point the reader needs convincing — not before the claim it supports, not in a separate section, not in a block dump. Statistics should be contextualised, not just stated. Anecdotes should be specific, not hypothetical.
@@ -52,9 +54,10 @@ This section comes first because models weight instructions by position. Read th
 9. Could any paragraph be removed without the reader noticing? If so, it is not doing work — cut it or make it load-bearing.
 10. Is the strongest counterargument to the thesis engaged somewhere in the piece? Is it attributed to a real position?
 11. Does the piece go at least one level deeper than surface description? Is there a "why" or "how" that the reader would not have arrived at alone?
-12. Does the piece connect its specific argument to something larger — a historical precedent, a structural force, a broader principle? Does this connection amplify the argument or merely pad it?
+12. Does the piece connect its specific argument to something larger — a historical precedent, a structural force, a broader principle? Does this connection amplify the argument or merely pad it? Is there one precedent per point, and does each one have a sentence stating what it means for the reader's case?
 13. Are there nominalisations that could become verbs, or negative constructions that could be stated positively?
-14. The "about anything" test: could this paragraph have been written about almost anything? If swapping out the topic noun (the company, the technology, the situation) would leave the paragraph functional, the paragraph is not earning its place. Generic-confidence prose — polished surface, no specific referent — is the single most reliable AI tell. Add specifics or cut.
+14. Does any sentence exist mainly to sound quotable? Rewrite it as a plain statement or cut it.
+15. The "about anything" test: could this paragraph have been written about almost anything? If swapping out the topic noun (the company, the technology, the situation) would leave the paragraph functional, the paragraph is not earning its place. Generic-confidence prose — polished surface, no specific referent — is the single most reliable AI tell. Add specifics or cut.
 
 **Claude-specific tells (self-check before producing user-facing prose):**
 
@@ -103,9 +106,13 @@ Bad: "Our AI journey revealed powerful synergies across the organisation."
 
 **Commit or cut.** Once your evidence is in place and caveats are stated, stand by the claim. Habitual softening — *arguably*, *it might be the case*, *some would say* — is not intellectual caution; it is the writer distancing themselves from their own argument. If the claim is worth making, make it. If it is not, cut it. The hedge is not a compromise; it is a signal you have not decided.[^21]
 
+**Commit to judgments; calibrate evidence.** Commit or cut applies to your own recommendations. Evidence is different: state it as strongly as the source allows and no more. When a source is anonymous, disputed, or partisan, say so in the text and draw the narrower conclusion it supports. "The reporting rests on six anonymous officers. It raises a question about whether reviewers have enough time" is honest. "Whatever happened in Gaza, the failure it describes does not need a war" claims more than the source can carry. Don't announce that a source is right ("The reply is right, and the history above backs it"); show why.
+
 ### Structure
 
-**Begin with the argument.** State the main claim in the first paragraph. A narrative opening is permitted if the argument precedes it or is stated within that first paragraph. The test is whether a reader finishing the first paragraph knows what the piece is arguing. Scene-setting that delays the thesis is a maze, not an opening. The opening sentence should carry the seed of the entire piece — not just announce the topic, but compress the argument into a form that makes the reader want to see it developed. No gimmickry. No scene-setting. Plain words that provoke a thought.[^8]
+**Begin with the argument.** State the main claim in the first paragraph. The opening sentence should carry the seed of the entire piece — not just announce the topic, but compress the argument into a form that makes the reader want to see it developed. No gimmickry. Plain words that provoke a thought.[^8]
+
+A concrete scenario may open instead, if it puts the reader's own problem on the page in a few sentences and the second paragraph states the thesis. "Suppose an agent spends the night fixing failing tests. It traces one failure to a database migration. Should it change the application, rewrite the migration or leave the problem for you?" earns its place; it makes the stakes specific before the argument arrives. Scene-setting that is atmosphere rather than problem — or that pushes the thesis past the second paragraph — is a maze, not an opening. The test is whether a reader finishing the second paragraph knows what the piece is arguing. Don't open with an aphorism that compresses the thesis into a slogan ("Armies solved the overnight-agent problem long ago"); it asks the reader to accept a claim before they know what it means.
 
 **Lead every paragraph with its claim.** Each paragraph should open with a sentence that carries the paragraph's point. The reader should not have to reach the end of a paragraph to discover what it was about.
 
@@ -115,11 +122,13 @@ Bad: "Our AI journey revealed powerful synergies across the organisation."
 
 **Apply the "so what?" test.** Every paragraph must survive a sceptical reader asking "so what?" If the answer is "context" or "background," it belongs in a footnote or not at all.
 
-**Use headings sparingly.** Headings should mark stages of reasoning, not decorate the page. A heading should carry a claim, not announce a topic. "The consensus machine" argues; "How LLMs work" labels. The reader who sees only the headings should be able to reconstruct the article's argument.
+**Use headings sparingly.** Headings should mark stages of reasoning, not decorate the page. A heading may carry a claim ("The consensus machine") or name the question the section answers ("Where delegation breaks," "How much authority to give an agent"). What it should not do is label a topic with no direction ("How LLMs work," "Background"). Keep headings short — roughly eight words or fewer. Don't pack two claims into one heading ("Delegation breaks in four ways, and a good approval screen makes the worst one easier") and don't announce a count ("Eight army routines…"); the count is a promise of completeness the section rarely needs. The reader who sees only the headings should be able to follow the article's route.
 
 **Short paragraphs.** One idea at a time. If a paragraph tries to do two things, split it.
 
 **End with impact.** Stop when the argument is complete. Do not restate it in weaker form. If you find yourself padding the ending, you have already finished. But "stop" does not mean "trail off." Strong endings in non-fiction do not summarise — they recontextualise, elevate, or complicate. The best endings echo the opening, introduce a forward-looking implication, or land on a concrete image that crystallises the argument. Delete your final paragraph and see if the piece ends better without it. If it does, your ending was a restatement. If it doesn't, look at your opening: can the ending echo, invert, or extend it?
+
+Avoid the zinger: a final line engineered to be quoted ("…the agent's commander may have found a telegraph"). An image can close a piece, but attach it to something the reader now understands or can do. "Every unnecessary approval puts you back at the telegraph and leaves the agent waiting for orders" works because it follows a concrete instruction.
 
 ### Originality
 
@@ -167,6 +176,10 @@ Situate the argument. The best non-fiction makes the reader feel that the specif
 
 Context is not background. Background says "here is what you need to know before I make my point." Context says "here is why this point matters beyond its immediate scope." The difference is that context amplifies the argument; background delays it. If a contextual paragraph makes the argument feel more significant, it belongs. If it feels like padding, cut it and accept that the piece operates at a narrower scope.
 
+**One precedent per point.** Research usually turns up more precedents than the piece has points. Use the strongest one for each point. A second precedent must add something the first does not — a different failure, a counter-case — not the same lesson from another century. Nelson's signal memorandum makes the point about fallback orders; adding the Mongol hunt, the Roman century, and Moltke's staff to the same section adds footnotes, not understanding.
+
+**Bridge every precedent.** After a historical example or quotation, state in one sentence what it means for the reader's case. "Nelson specified what to do when signals failed. An agent needs an equally explicit fallback, even if that means stopping and leaving a proposal." Without the bridge, the reader has to do the translation, and a precedent the writer has not translated is decoration. If you cannot write the bridge, cut the precedent.
+
 A piece about a technology decision is richer if it connects to the history of similar decisions. A piece about a market shift is more compelling if it acknowledges the structural forces that make the shift inevitable or contingent. But a piece that exists in a vacuum — as if the topic has no history or broader implications — leaves the reader to supply the significance on their own. That is work the writer should do.
 
 ### Evidence
@@ -179,13 +192,17 @@ Evidence wins arguments. But deployment matters as much as selection.
 
 **Weave, don't dump.** Evidence blocks — paragraphs of data with no interpretive thread — stop the reader cold. Each piece of evidence should be introduced, presented, and connected to the argument within the same passage. If evidence and argument live in separate paragraphs, bring them together.
 
-**Prefer the specific to the hypothetical.** "When Mount Sinai's radiology department deployed…" is stronger than "Imagine a healthcare provider who…" Named entities, real numbers, and actual examples build credibility. Hypothetical scenarios build nothing.
+**Prefer the specific to the hypothetical.** "When Mount Sinai's radiology department deployed…" is stronger than "Imagine a healthcare provider who…" Named entities, real numbers, and actual examples build credibility. A hypothetical never counts as evidence.
+
+A hypothetical can still do a different job: a *worked example* that applies the argument. When the piece gives advice, pick one concrete case — a specific task, system and failure — and show each recommendation applied to it. A test-fixing agent that traces a failure to a database migration makes "separate the goal from the limits" something the reader can check. Keep it specific enough to be wrong, and keep it the same case throughout; a new hypothetical per section is scatter, not illustration.
 
 ### Prose and momentum
 
 Good prose has a kinetic quality. Sentences vary in length and structure. Paragraphs connect through logical progression rather than mechanical transition phrases. The pace matches the material — technical explanations slow down with care, narrative sections accelerate.
 
 **Vary sentence rhythm.** A piece built entirely from medium-length declarative sentences will lull the reader regardless of how strong the argument is. Follow a long sentence with a short one. Let a complex construction land, then hit the reader with something blunt. Read the piece aloud: where your voice goes flat, the prose has stalled.
+
+Staccato is monotony too. Three or more short declaratives in a row read as engineered emphasis ("The order says what to achieve and why. It leaves the how to the person on the spot. The person on the spot can see what the author cannot."). Join related short sentences with a participle, colon or semicolon: "The order explains what needs to happen and why, leaving the details to the person on the spot, who can see what has changed." Save the blunt short sentence for the point that deserves it.
 
 **Cut connective filler.** Search for: "This brings us to," "It is worth noting," "Furthermore," "Additionally," "Moreover," "That said," "In other words." Each one is a transition that can probably be cut, letting the next sentence land on its own. If two paragraphs need a transition phrase to connect them, the problem may be the paragraph order, not the absence of a bridge.
 
@@ -255,6 +272,7 @@ Common patterns to eliminate:
 * **Unprovable scope claims**: "Almost nobody", "most teams", "everyone in the industry." Treat scope claims as empirical claims. If you cannot support them with a number or a source, they are not rhetorical shading — they are unfinished claims. Either find the evidence or state the point without the scope.
 * **Inflated significance**: "stands as a testament to", "plays a pivotal role in", "marks a turning point", "underscores the importance of", "reflects a broader shift toward", "sets the stage for", "paves the way for", "highlights the need for", "unlocks new possibilities", "offers valuable insights into." Routine facts wrapped in historical-sounding language. If the fact were genuinely significant, the reader would feel it without the announcement. State the specific claim or cut.
 * **Pivot phrases that promise insight**: "Here's the thing", "Here's where it gets interesting", "But there's a catch", "What's striking is", "The deeper issue here is." Connective tissue masquerading as analysis. The next sentence should carry the insight itself; the pivot does not earn its place.
+* **Aphoristic couplets**: "X carries over. Y does not.", "A filters. B signs.", "No X, no Y.", "The name was X's, and so was the blame.", "Those three words matter most." Rhetorical shape standing in for an explained claim. Write the full sentence.
 * **Formulaic endings**: "Ultimately", "In conclusion", "Moving forward", "The path ahead", "Despite these challenges, the future remains promising", "The future lies in." AI prose reaches for tidy closure even when the subject is unresolved. Stop when the argument is complete.
 
 The fix is almost always the same: replace the weasel word with a number, a name, or a date. If you cannot, the claim may not be ready to make.
@@ -349,6 +367,7 @@ Length is determined by argument, not habit.
 
 * Standard essays: 600–1,500 words
 * Short observations: 300–500 words
+* Practical guides: 1,000–1,500 words
 * Extended analyses: up to 2,500 words
 
 If the piece grows longer without becoming sharper, it is not finished.
@@ -386,7 +405,29 @@ Credit sources plainly and accurately. Link where it helps the reader.
 
 Use **APA citation style**, adapted for the web. Cite sources using **footnotes with links**, not in-text parentheticals. Footnotes should point directly to the original source whenever possible. Keep citations factual and minimal. When citing opinion or analysis, make clear whether it is the source's claim or your own interpretation.
 
+**Quote only when the wording matters.** A quotation earns its place when the exact words do something a paraphrase cannot — a memorable formulation, an admission, a term of art. Paraphrase archaic, translated or bureaucratic wording: "the tribune 'knows by the marks from what quarter the tablet has not returned'" becomes "the tablets' markings let the tribune trace a missing return to a particular part of the camp." Name the speaker before the quote, so the reader knows whose words they are reading: "Helmuth von Moltke, chief of the Prussian general staff, gave each subordinate 'freedom of action and decision within his authority.'"
+
 Do not name institutions or credentials to borrow authority. Footnotes should clarify, not interrupt. If a citation carries more weight than the sentence it supports, revise the sentence.
+
+### Practical guides
+
+Some pieces argue a thesis; others help the reader make a decision or do a job. When the brief's content type is a practical guide or framework, the rules above still apply, with these adjustments.
+
+**Frame the thesis as the reader's decision.** "Decide what an overnight agent may do while you're asleep, and which decisions must wait until morning" is a thesis the reader can act on. The opening scenario (see [Structure](#structure)) should put that decision in front of them.
+
+**Carry one worked example through the piece.** Introduce it in the opening and apply every recommendation to it. When the advice is about what to write — a prompt, a policy, a config, a runbook — show a short example of the thing itself, in a blockquote or code block. Abstract tiers ("allowed / proposed / forbidden") become useful when the reader sees them filled in: "allowed: edit application code and run tests in a development environment."
+
+**Address the reader as *you*.** Don't invent a role noun ("the operator," "the approver") for the person reading. It puts the advice at arm's length.
+
+**Headings name the task or the question.** "Explain what success means," "How much authority to give an agent." The heading list should read as the steps or questions the reader works through.
+
+**Historical and outside precedents are illustrations, not the spine.** Use one per point, bridged to the worked example. If a section is mostly precedent, it has drifted from the reader's job.
+
+**End with the next action.** Close on something the reader can do before the next run, meeting or release — specific enough to act on tomorrow. An image may carry it, as long as the action comes first.
+
+**Standfirst:** use the practical-guide format in [Head Matter](/style-guide/head-matter/).
+
+**Length:** a practical guide that runs past 1,500 words usually has more precedents than steps.
 
 ### What not to write
 
