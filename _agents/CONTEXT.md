@@ -15,4 +15,5 @@ Each stage has its own CONTEXT.md that specifies exact inputs. Load only what th
 | 04_draft | Write first complete draft | `stages/04_draft/CONTEXT.md` |
 | 05_score | TTNW + style scoring | `stages/05_score/CONTEXT.md` |
 | 06_revise | Targeted revision from scores | `stages/06_revise/CONTEXT.md` |
-| 07_publish | Jekyll-ready output | `stages/07_publish/CONTEXT.md` |
+| 07_copy_edit | Professional copy edit, queries, style sheet | `stages/07_copy_edit/CONTEXT.md` |
+| 08_publish | Jekyll-ready output | `stages/08_publish/CONTEXT.md` |

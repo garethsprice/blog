@@ -29,19 +29,20 @@ The author's voice, style guide, and TTNW rubric live in the parent blog repo at
 
 | Task | Stages | Notes |
 |------|--------|-------|
-| New post from scratch | 01 → 02 → 03 → 04 → 05 → 06 → 05 → ... → 07 | Full pipeline. Loop 05↔06 until exit criteria. |
+| New post from scratch | 01 → 02 → 03 → 04 → 05 → 06 → 05 → ... → 07 → 08 | Full pipeline. Loop 05↔06 until exit criteria, then copy edit once. |
 | Evaluate a topic only | 01 → 02 | Stop after pre-draft TTNW. Go/no-go decision. |
-| Write from existing brief | 03 → 04 → 05 → 06 → ... → 07 | Skip selection. |
+| Write from existing brief | 03 → 04 → 05 → 06 → ... → 07 → 08 | Skip selection. |
 | Score an existing draft | 05 | Score only, no revision. |
 | Revise a scored draft | 06 → 05 | Revise then re-score. |
-| Re-draft (keep research) | 04 → 05 → 06 → ... → 07 | Re-run draft stage with same research. |
-| Publish approved draft | 07 | Format and output only. |
+| Re-draft (keep research) | 04 → 05 → 06 → ... → 07 → 08 | Re-run draft stage with same research. |
+| Copy edit an approved draft | 07 (edit) → human answers queries → 07 (cleanup) → 08 | Set the level: light, medium (default) or heavy. |
+| Publish copy-edited text | 08 | Format and output only. Requires stage 07 cleanup to be complete. |
 
-The 05↔06 cycle is the review loop. It is not automated — the human runs stage 05, reads the scores, then decides whether to run stage 06 (revise) or proceed to stage 07 (publish). Three cycles without reaching 11.0/14.0 → consider whether the angle is wrong (back to 01) rather than continuing to polish.
+The 05↔06 cycle is the review loop. It is not automated — the human runs stage 05, reads the scores, then decides whether to run stage 06 (revise) or proceed to stage 07 (copy edit). Three cycles without reaching 11.0/14.0 → consider whether the angle is wrong (back to 01) rather than continuing to polish.
 
 ### Incremental recompilation
 
-ICM supports re-running individual stages without re-running the full pipeline. If the research is good but the draft doesn't work, re-run stage 04. If the voice guide changes in `_config/`, re-run only the stages that load it (04, 06). The stage contracts' Inputs tables are the dependency graph.
+ICM supports re-running individual stages without re-running the full pipeline. If the research is good but the draft doesn't work, re-run stage 04. If the voice guide changes in `_config/`, re-run only the stages that load it (04, 06). If the copy-edit rules or house style sheet change, re-run only stage 07. The stage contracts' Inputs tables are the dependency graph.
 
 ---
 
@@ -52,6 +53,7 @@ ICM supports re-running individual stages without re-running the full pipeline. 
 - Score files: `-score-v1.md`, matching the draft version scored
 - Jekyll output: `YYYY-MM-DD-slug.md`
 - Research: `-research.md` (single file per post)
+- Copy edit: `-copyedit.md`, `-copyedit-notes.md`, `-style-sheet.md` (one set per post; cleanup mode overwrites `-copyedit.md`)
 
 ---
 
@@ -70,6 +72,8 @@ After each post is published, review the pipeline:
 | Banned words sneak through | Audit banned-words.md — is the replacement guidance specific enough? |
 | Cutting stacked historical precedents | One-precedent and bridge-sentence rules in writing-rules.md; E4 anchor in ttnw-rubric.md |
 | Rewriting clever lines as plain ones | Add the pattern to banned-words.md (aphoristic couplets, coined labels) |
+| Same copy-edit category dominates the stage 07 change log | Fix the drafter's rules (writing-rules.md, banned-words.md), not the copy editor's |
+| Same mechanical decision made at stage 07 on every post | Add it to `_config/house-style-sheet.md` |
 
 Editing output fixes one post. Editing `_config/` fixes every future post.
 
@@ -88,7 +92,8 @@ Editing output fixes one post. Editing `_config/` fixes every future post.
 → Run 06 (revise) → 05 (re-score). Repeat until ≥11.0 or you decide to publish.
 
 "This is ready."
-→ Run 07 (publish). Commit output to blog repo.
+→ Run 07 (copy edit, medium). Answer the queries. Run 07 cleanup.
+→ Run 08 (publish). Commit output to blog repo.
 
 "Just score this draft, don't revise."
 → Run stage 05 only.

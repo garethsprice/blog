@@ -1,6 +1,6 @@
 # Pre-Publish Checklist
 
-Run before stage 07 output. Every item must pass.
+Run before stage 08 output. Every item must pass.
 
 - [ ] First two sentences carry a specific claim, tension or reader scenario? Thesis stated by the second paragraph?
 - [ ] Zero banned words in body?

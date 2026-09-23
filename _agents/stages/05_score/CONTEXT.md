@@ -58,4 +58,4 @@ AI tends generous on F2 (prose momentum) and Fx2 (register fluidity). Human shou
 - Agree with the TTNW scores? (Especially F2 and Fx2.)
 - Agree with the style flags?
 - Does the cold reader's summary match what you meant? If not, the draft is unclear, whatever the scores say.
-- Decision: proceed to stage 06 (revise), proceed to stage 07 (publish), or back to stage 01 (wrong angle)?
+- Decision: proceed to stage 06 (revise), proceed to stage 07 (copy edit), or back to stage 01 (wrong angle)?

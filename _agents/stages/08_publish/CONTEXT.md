@@ -1,14 +1,15 @@
-# Stage 07: Publish
+# Stage 08: Publish
 
 ## Purpose
-Convert the final draft into Jekyll-ready markdown with correct frontmatter. Output a file committable to the blog repo.
+Convert the copy-edited final text into Jekyll-ready markdown with correct frontmatter. Output a file committable to the blog repo. Formatting only — wording changes belong in stage 07.
 
 ## Inputs
 | File | Layer | Purpose |
 |------|-------|---------|
-| Final approved draft from `../06_revise/output/` or `../04_draft/output/` | 4 (working) | The draft to format |
+| `../07_copy_edit/output/[topic-slug]-copyedit.md` (after cleanup mode) | 4 (working) | The final text to format |
+| `../07_copy_edit/output/[topic-slug]-copyedit-notes.md` | 4 (working) | Confirms queries closed and correctness checked |
 | `../01_op_ed_selection/output/[topic-slug]-brief.md` | 4 (working) | For metadata (audience, content type) |
-| `stages/07_publish/references/jekyll-template.md` | 3 (reference) | Frontmatter format, conventions |
+| `stages/08_publish/references/jekyll-template.md` | 3 (reference) | Frontmatter format, conventions |
 | `_config/pre-publish-checklist.md` | 3 (reference) | Final gate checks |
 
 ## Process
@@ -17,7 +18,7 @@ Convert the final draft into Jekyll-ready markdown with correct frontmatter. Out
 ```yaml
 ---
 layout: post
-title: "[from final draft H1, sentence case, quoted]"
+title: "[from final draft H1, title case per _config/house-style-sheet.md, quoted]"
 description: "[standfirst: 2 sentences — essay: status shift, then gap + consequence; practical guide: reader's decision, then source of the advice. Plain, under 160 chars where possible]"
 created_date: YYYY-MM-DD
 updated_date: YYYY-MM-DD
@@ -32,7 +33,9 @@ updated_date: YYYY-MM-DD
 - No closing CTA unless the topic warrants a specific one (not generic)
 
 ### Pre-publish checklist
-Run every item from `_config/pre-publish-checklist.md`. Report results. Flag failures.
+Refuse to run if the copy-edit notes show any unanswered must-answer query, or the text still contains `<!-- Q`, `[REVIEW]` or `[SOURCE NEEDED]`.
+
+Run every item from `_config/pre-publish-checklist.md`. Items the stage 07 notes already verify (correctness table, style sheet) can be confirmed from the notes. Report results. Flag failures.
 
 ### Output filename
 `YYYY-MM-DD-[slug].md` — matches Jekyll convention in the parent blog repo.

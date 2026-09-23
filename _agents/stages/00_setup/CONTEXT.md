@@ -17,9 +17,13 @@ Walk through the questionnaire. Answers generate or update the following `_confi
 
 **banned-words.md** (<300 tokens) — Kill list with replacements. Source: questionnaire answers + `../style-guide/` vogue words section.
 
+**stages/07_copy_edit/references/copy-edit-rules.md** (~1,200 tokens) — Line-level copy-editing extract. Source: `../style-guide/index.md` sections on AI-prose tells, language, weasel words, numbers, formatting, technical content, attribution and quotations, and `../style-guide/head-matter.md`.
+
+**house-style-sheet.md** — Not regenerated. It accumulates decisions approved at stage 07. Re-survey `../_posts/` only if starting it again.
+
 ## Outputs
 - `setup/answers.md` — completed questionnaire
-- Updates to `_config/voice.md`, `_config/writing-rules.md`, `_config/banned-words.md`
+- Updates to `_config/voice.md`, `_config/writing-rules.md`, `_config/banned-words.md`, `stages/07_copy_edit/references/copy-edit-rules.md`
 
 ## Notes
 The `_config/` files are compressed extracts for per-stage token budgets. The parent `../style-guide/index.md` is the authoritative source. When in doubt, read the parent.

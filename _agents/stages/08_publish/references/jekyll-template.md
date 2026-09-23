@@ -4,7 +4,7 @@
 ```yaml
 ---
 layout: post
-title: "Title in Sentence Case with Quotation Marks"
+title: "Title in Title Case With Quotation Marks"
 description: "1-2 sentence standfirst describing the claim, not the topic"
 created_date: YYYY-MM-DD
 updated_date: YYYY-MM-DD
@@ -13,7 +13,7 @@ updated_date: YYYY-MM-DD
 
 **Notes:**
 - `layout: post` always (author defaults to "Gareth Price" via _config.yml)
-- `title` is always quoted, sentence case
+- `title` is always quoted, title case (see `_config/house-style-sheet.md`); H2/H3 headings are sentence case
 - `description` is the standfirst — two sentences; format depends on content type (below)
 - `created_date` and `updated_date` are separate fields
 - No categories or tags (not currently used)
