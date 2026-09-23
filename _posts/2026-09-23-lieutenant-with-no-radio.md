@@ -12,9 +12,11 @@ Military commanders have spent centuries giving orders to people they cannot rea
 
 Horatio Nelson wrote orders for just such a loss of contact. On 9 October 1805, twelve days before Trafalgar, he told his captains what to do if they could no longer read his signals: "in case Signals can neither be seen or perfectly understood, no Captain can do very wrong if he places his Ship alongside that of an Enemy."[^nelson]
 
+Nelson specified what to do when signals failed. An agent needs an equally explicit fallback, even if that means stopping and leaving a proposal.
+
 ## Explain what success means
 
-Military doctrine calls this idea mission command; the Prussian version is called *Auftragstaktik*. The order explains what needs to happen and why, leaving the details to the person on the spot, who can see what has changed. Helmuth von Moltke, chief of the Prussian general staff, made it a rule in 1858: "an order should contain only what the subordinate for the achievement of his goals cannot determine on his own."[^muth] US Air Force doctrine uses the same distinction: commanders direct "what" and "why"; subordinates devise "how."[^afdp]
+Military doctrine calls this approach mission command; the Prussian version is called *Auftragstaktik*. The order explains what needs to happen and why, leaving the details to the person on the spot, who can see what has changed. US Air Force doctrine puts it plainly: commanders direct "what" and "why"; subordinates devise "how."[^afdp]
 
 Approval gates and scheduled runs control when an agent works, but don't tell you what instructions to write. A task list gives little guidance when the situation falls outside it. The agent also needs to know what a successful result would look like.
 
@@ -26,7 +28,7 @@ Suppose the failing test checks that customer records survive a database upgrade
 
 ### Write down the limits, and the evidence each action needs
 
-Moltke's 1869 instructions to senior commanders give each subordinate "freedom of action and decision within his authority."[^hughes] The goal and the limits are separate parts of the order. For the test-fixing agent, those limits might be:
+Helmuth von Moltke, chief of the Prussian general staff, gave each subordinate "freedom of action and decision within his authority" in his 1869 instructions to senior commanders.[^hughes] The goal and the limits are separate parts of the order. For the test-fixing agent, those limits might be:
 
 - allowed: edit application code and run tests in a development environment
 - proposed: prepare a migration change for a human to approve
@@ -44,13 +46,13 @@ Retraining or disabling an agent may change its behaviour, but it does not make 
 
 ### Rehearse, monitor and review
 
-In late September 1805, Nelson explained his plan to his captains over dinners aboard *Victory*. On 1 October he wrote to Emma Hamilton that the effect "was like an electric shock."[^emma] Before an overnight run, ask the agent to explain its plan. That gives you a chance to catch a misunderstanding before it starts.
+Before an overnight run, ask the agent to explain its plan. That gives you a chance to catch a misunderstanding before it starts.
 
 Explaining a plan gives little evidence of how the agent will behave. Have it prepare proposals for you to assess before granting permission to carry them out. The test-fixing agent could work this way until you've seen how it handles ambiguous failures, including when it leaves a migration alone.
 
-The reporting routine needs to account for missing reports. Polybius, a Greek historian who travelled with Roman armies, described their camp routine in the mid-second century BC. At sunset a chosen soldier collected the watchword from the tribune on a wooden tablet. It passed from unit to unit and had to return before dark. If a tablet was missing, the tribune "knows by the marks from what quarter the tablet has not returned".[^poly6] You need an equivalent way to notice when an expected report fails to arrive, with a rule for when that absence should wake someone.
+The reporting routine needs to account for missing reports. Polybius, a Greek historian who travelled with Roman armies, described their camp routine in the mid-second century BC. At sunset a chosen soldier collected the watchword from the tribune on a wooden tablet. It passed from unit to unit and had to return before dark. The tribune checked which tablets came back; their markings let him trace a missing return to a particular part of the camp.[^poly6] You need an equivalent way to notice when an expected report fails to arrive, with a rule for when that absence should wake someone.
 
-Use completed runs to decide whether to change the agent's permissions. US Space Force doctrine tells commanders to delegate "greater authority to subordinates who have demonstrated competency".[^sdp] An agent's review history can help you decide whether a type of action is ready to move from proposed to allowed. A serious failure should prompt you to reconsider that permission and whether the evidence you required was sufficient.
+Use completed runs to decide whether to change the agent's permissions. US Space Force doctrine ties greater authority to demonstrated competence.[^sdp] An agent's review history can help you decide whether a type of action is ready to move from proposed to allowed. A serious failure should prompt you to reconsider that permission and whether the evidence you required was sufficient.
 
 ### Keep teams small, and keep sign-off with humans
 
@@ -66,13 +68,13 @@ Review turns into rubber-stamping when the volume outruns the reviewer's attenti
 
 That question also matters for an agent approval queue. If almost every proposal is approved within seconds, check whether the reviewer has time to read the change and its evidence. For a migration, that includes what would happen to existing data; a green test result alone does not answer that. The review screen needs to make that information available before asking for a decision.
 
-An agent also needs room to revise its plan when the original approach stops serving the goal. At Waterloo on 18 June 1815, Marshal Grouchy heard the cannon before noon, and one of his generals urged him to march toward it. Grouchy replied, by one account, "My duty is to execute the Emperor's orders".[^grouchy] For the test-fixing agent, changing course might mean investigating the migration and preparing a proposal instead of continuing to patch application code. It should report that change of plan, so you know what remains unfinished. The new plan still has to fit within the agreed limits.
+An agent also needs room to revise its plan when the original approach stops serving the goal. If application patches cannot fix the failure, the agent should investigate the migration and prepare a proposal. That changes its approach without expanding its authority. It should report that change of plan, so you know what remains unfinished.
 
-Easy communication creates a different problem: the person at the top can take back decisions they have already delegated. Abraham Lincoln spent long hours in the War Department's telegraph office and sent about a thousand telegrams during the American civil war.[^wheeler] After Gettysburg, Washington pressed George Meade by telegraph for a pursuit that Meade judged unwise. On 14 July 1863 a telegram told him that Lee's escape had caused "great dissatisfaction in the mind of the President". Meade asked to be relieved.[^mackowski] A century later, Martin van Creveld, a military historian, described a company commander in a Vietnam firefight, watched by his battalion commander circling above, "who was in turn supervised by the brigade commander circling a thousand or so feet higher up".[^vancreveld]
+Communication also changes what a commander can do from a distance. Abraham Lincoln spent long hours in the War Department's telegraph office and sent about a thousand telegrams during the American civil war.[^wheeler] The telegraph let him reach commanders far from Washington. In an agent workflow, that ability to stay in touch can become a temptation to intervene in every decision.
 
-Better communications gave senior commanders closer access to decisions below them. An approval screen can encourage the same habit by making it easy to send every decision through one person, including work that person has already authorised. The queue then grows with the work, and everything waits for the approver.
+An approval screen lets you take back decisions you've already delegated. If every permitted application fix still needs your signature, the agent can work only as fast as you can review.
 
-Tomorrow, count how often you require fresh approval for actions you've already authorised, and ask why. If there's no new risk behind the extra checks, the agent's commander may have found a telegraph.
+Before the next overnight run, check what still needs your approval. Keep the checks that protect against a specific risk. Remove those that merely ask you to repeat a decision you've already made. Every unnecessary approval puts you back at the telegraph and leaves the agent waiting for orders.
 
 ---
 
@@ -80,13 +82,9 @@ Tomorrow, count how often you require fresh approval for actions you've already 
 
 [^nelson]: Nelson, H. (1805, October 9). *Memorandum* [The Trafalgar memorandum]. British Library, Add MS 37953; fair copy in the Royal Collection, RCIN 1198306. [https://www.rct.uk/collection/1198306/](https://www.rct.uk/collection/1198306/). Text as transcribed in Corbett, J. S. (Ed.). (1905). *Fighting instructions, 1530–1816*. Navy Records Society.
 
-[^muth]: Moltke, H. von (1858), as translated in Muth, J. (2011, September 9). An elusive command philosophy and a different command culture. *Foreign Policy*. [https://foreignpolicy.com/2011/09/09/an-elusive-command-philosophy-and-a-different-command-culture/](https://foreignpolicy.com/2011/09/09/an-elusive-command-philosophy-and-a-different-command-culture/)
-
 [^afdp]: US Air Force. (2023, August 14). *Air Force Doctrine Publication 1-1: Mission command*. LeMay Center. [https://www.doctrine.af.mil/Portals/61/documents/AFDP_1-1/AFDP%201-1%20Mission%20Command.pdf](https://www.doctrine.af.mil/Portals/61/documents/AFDP_1-1/AFDP%201-1%20Mission%20Command.pdf)
 
 [^hughes]: Moltke, H. von. (1993). Instructions for large unit commanders (1869). In D. J. Hughes (Ed.), *Moltke on the art of war: Selected writings* (p. 185). Presidio. Quoted in Shunk, D. (2016, March 18). German mission orders: Their doctrinal and operational development from 1866–1940 and mission order combat illustrations from the 1870–71, 1914–18 and 1939–45 wars. *Army Press Online Journal*, 16-12. [https://www.govinfo.gov/content/pkg/GOVPUB-D110-9b33f99d39f0ac5361de11fc96b7e709/pdf/GOVPUB-D110-9b33f99d39f0ac5361de11fc96b7e709.pdf](https://www.govinfo.gov/content/pkg/GOVPUB-D110-9b33f99d39f0ac5361de11fc96b7e709/pdf/GOVPUB-D110-9b33f99d39f0ac5361de11fc96b7e709.pdf)
-
-[^emma]: Nelson, H. (1805, October 1). Letter to Lady Hamilton. In N. H. Nicolas (Ed.), *The dispatches and letters of Vice Admiral Lord Viscount Nelson* (Vol. 7). [https://www.wtj.com/archives/nelson/1805_10a.htm](https://www.wtj.com/archives/nelson/1805_10a.htm)
 
 [^poly6]: Polybius. (1922–27). *The histories* (W. R. Paton, Trans.), 6.34–37. Loeb Classical Library. [https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/6*.html](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/6*.html)
 
@@ -98,10 +96,4 @@ Tomorrow, count how often you require fresh approval for actions you've already 
 
 [^abraham]: Abraham, Y. (2024, April 3). 'Lavender': The AI machine directing Israel's bombing spree in Gaza. *+972 Magazine*. [https://www.972mag.com/lavender-ai-israeli-army-gaza/](https://www.972mag.com/lavender-ai-israeli-army-gaza/)
 
-[^grouchy]: Millar, S. "My duty is to execute the Emperor's orders": Grouchy at Walhain. *The Napoleon Series*. [https://www.napoleon-series.org/military-info/battles/1815/c_grouchyorders.html](https://www.napoleon-series.org/military-info/battles/1815/c_grouchyorders.html)
-
 [^wheeler]: Wheeler, T. (2006). *Mr. Lincoln's T-mails: The untold story of how Abraham Lincoln used the telegraph to win the Civil War*. HarperCollins.
-
-[^mackowski]: Halleck, H. W. (1863, July 14). Telegram to G. G. Meade. *Official Records*, Ser. I, Vol. 27. Discussed in Mackowski, C. (2022, July 14). Halleck and Meade in the days after Gettysburg. *Emerging Civil War*. [https://emergingcivilwar.com/2022/07/14/halleck-and-meade-in-the-days-after-gettysburg/](https://emergingcivilwar.com/2022/07/14/halleck-and-meade-in-the-days-after-gettysburg/)
-
-[^vancreveld]: van Creveld, M. (1985). *Command in war* (p. 255). Harvard University Press. Quoted in Pigeau, R., & McCann, C. (2002). Re-conceptualizing command and control. *Canadian Military Journal*, 3(1), 53–64. [https://www.journal.forces.gc.ca/vo3/no1/doc/53-64-eng.pdf](https://www.journal.forces.gc.ca/vo3/no1/doc/53-64-eng.pdf)
